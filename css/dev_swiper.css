@@ -1,0 +1,20 @@
+.swiper-button-next {
+    -ms-transform: rotate(270deg);
+    /* IE 9 */
+    -webkit-transform: rotate(270deg);
+    /* Safari prior 9.0 */
+    transform: rotate(270deg);
+    /* Standard syntax */
+    position: absolute;
+    top: 10%;
+    /* width: calc(var(--swiper-navigation-size) / 44 * 27); */
+    width: calc(50vw) !important;
+    height: var(--swiper-navigation-size);
+    /* margin-top: calc(-1 * var(--swiper-navigation-size) / 2); */
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color, var(--swiper-theme-color));
+}

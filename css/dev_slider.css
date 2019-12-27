@@ -1,0 +1,426 @@
+                                                            [class^="swiper-button-"] {
+                                                                transition: all .3s ease;
+                                                            }
+                                                            
+                                                            .swiper-slide {
+                                                                backface-visibility: hidden;
+                                                                -webkit-backface-visibility: hidden;
+                                                            }
+                                                            
+                                                            *,
+                                                            *:before,
+                                                            *:after {
+                                                                box-sizing: border-box;
+                                                                margin: 0;
+                                                                padding: 0;
+                                                            }
+                                                            
+                                                            .swiper-container {
+                                                                width: 80%;
+                                                                height: 100vh;
+                                                                float: left;
+                                                                transition: opacity .6s ease, -webkit-transform .3s ease;
+                                                                transition: opacity .6s ease, transform .3s ease;
+                                                                transition: opacity .6s ease, transform .3s ease, -webkit-transform .3s ease;
+                                                            }
+                                                            
+                                                            .swiper-container.nav-slider {
+                                                                width: 20%;
+                                                                padding-left: 5px;
+                                                            }
+                                                            
+                                                            .swiper-container.nslider-art {
+                                                                width: 20%;
+                                                                padding-left: -5px;
+                                                                padding-right: 5px;
+                                                            }
+                                                            /* added */
+                                                            
+                                                            .nav-right {
+                                                                width: 20%;
+                                                                padding-left: 5px;
+                                                            }
+                                                            
+                                                            .caption {
+                                                                color: black;
+                                                            }
+                                                            
+                                                            .content .title {
+                                                                color: black;
+                                                            }
+                                                            
+                                                            .swiper-container.nav-slider .swiper-slide {
+                                                                cursor: pointer;
+                                                                opacity: .8;
+                                                                transition: opacity .3s ease;
+                                                            }
+                                                            
+                                                            .swiper-container.nslider-art .swiper-slide {
+                                                                cursor: pointer;
+                                                                opacity: .8;
+                                                                transition: opacity .3s ease;
+                                                            }
+                                                            /* .swiper-slide > .content > p {
+    opacity: 1;
+  } */
+                                                            
+                                                            .swiper-container.nav-slider .swiper-slide.swiper-slide-active {
+                                                                opacity: 1;
+                                                            }
+                                                            
+                                                            .swiper-container.nav-slider .swiper-slide .content {
+                                                                width: 100%;
+                                                                opacity: 1;
+                                                            }
+                                                            
+                                                            .swiper-container.nav-slider .swiper-slide .content .title {
+                                                                font-size: 20px;
+                                                            }
+                                                            
+                                                            .swiper-container.nslider-art .swiper-slide.swiper-slide-active {
+                                                                opacity: 1;
+                                                            }
+                                                            
+                                                            .swiper-container.nslider-art .swiper-slide .content {
+                                                                width: 100%;
+                                                                opacity: 1;
+                                                            }
+                                                            
+                                                            .swiper-container.nslider-art .swiper-slide .content .title {
+                                                                font-size: 20px;
+                                                            }
+                                                            
+                                                            .swiper-container:hover .swiper-button-prev,
+                                                            .swiper-container:hover .swiper-button-next {
+                                                                -webkit-transform: translateX(0);
+                                                                transform: translateX(0);
+                                                                opacity: 1;
+                                                                visibility: visible;
+                                                            }
+                                                            
+                                                            .swiper-container .swiper-button-prev,
+                                                            .swiper-container .swiper-button-next {
+                                                                -webkit-transform: translateX(0);
+                                                                transform: translateX(0);
+                                                                opacity: 1;
+                                                                visibility: visible;
+                                                            }
+                                                            
+                                                            .swiper-container.loading {
+                                                                opacity: 0;
+                                                                visibility: hidden;
+                                                            }
+                                                            
+                                                            .swiper-slide {
+                                                                overflow: hidden;
+                                                            }
+                                                            
+                                                            .swiper-slide .slide-bgimg {
+                                                                position: absolute;
+                                                                top: 0;
+                                                                left: 0;
+                                                                width: 100%;
+                                                                height: 100%;
+                                                                background-position: center;
+                                                                background-size: cover;
+                                                            }
+                                                            
+                                                            .swiper-slide .slide-bgimg-art {
+                                                                position: absolute;
+                                                                top: 0;
+                                                                left: 0;
+                                                                width: 100%;
+                                                                height: 100%;
+                                                                background-position: center;
+                                                                background-size: cover;
+                                                            }
+                                                            
+                                                            .swiper-slide .entity-img {
+                                                                display: none;
+                                                            }
+                                                            
+                                                            .swiper-slide .content {
+                                                                position: absolute;
+                                                                top: 40%;
+                                                                left: 0;
+                                                                width: 50%;
+                                                                padding-left: 0%;
+                                                                color: #fff;
+                                                            }
+                                                            
+                                                            .swiper-slide .content-me {
+                                                                position: absolute;
+                                                                top: 40%;
+                                                                left: 0;
+                                                                width: 50%;
+                                                                padding-left: 0%;
+                                                                color: #fff;
+                                                            }
+                                                            
+                                                            .swiper-slide .content-research {
+                                                                position: absolute;
+                                                                top: 40%;
+                                                                left: 0;
+                                                                width: 50%;
+                                                                padding-left: 0%;
+                                                                color: #fff;
+                                                            }
+                                                            
+                                                            .swiper-slide .content .title {
+                                                                font-size: 2.6em;
+                                                                font-weight: bold;
+                                                                margin-bottom: 30px;
+                                                            }
+                                                            
+                                                            .swiper-slide .content .caption {
+                                                                display: block;
+                                                                font-size: 13px;
+                                                                line-height: 1.4;
+                                                                /* -webkit-transform: translateX(50px); */
+                                                                /* transform: translateX(50px); */
+                                                                opacity: .5;
+                                                                transition: opacity .3s ease, -webkit-transform .7s ease;
+                                                                /*transition: opacity .3s ease, transform .7s ease;
+                                                        transition: opacity .3s ease, transform .7s ease, -webkit-transform .7s ease; */
+                                                            }
+                                                            
+                                                            .swiper-slide .content .caption.show {
+                                                                -webkit-transform: translateX(0);
+                                                                transform: translateX(0);
+                                                                opacity: 1;
+                                                            }
+                                                            
+                                                            .swiper-slide .content .caption-art {
+                                                                display: block;
+                                                                font-size: 13px;
+                                                                line-height: 1.4;
+                                                                -webkit-transform: translateX(50px);
+                                                                transform: translateX(50px);
+                                                                opacity: 0;
+                                                                transition: opacity .3s ease, -webkit-transform .7s ease;
+                                                                transition: opacity .3s ease, transform .7s ease;
+                                                                transition: opacity .3s ease, transform .7s ease, -webkit-transform .7s ease;
+                                                            }
+                                                            
+                                                            .swiper-slide .content .caption-art.show {
+                                                                -webkit-transform: translateX(0);
+                                                                transform: translateX(0);
+                                                                opacity: 1;
+                                                            }
+                                                            
+                                                            [class^="swiper-button-"] {
+                                                                width: 44px;
+                                                                opacity: 0;
+                                                                visibility: hidden;
+                                                            }
+                                                            
+                                                            .swiper-button-prev {
+                                                                -webkit-transform: translateX(50px);
+                                                                transform: translateX(50px);
+                                                            }
+                                                            
+                                                            .swiper-button-next {
+                                                                -webkit-transform: translateX(-50px);
+                                                                transform: translateX(-50px);
+                                                            }
+                                                            /* Added */
+                                                            
+                                                            .title-nav {
+                                                                color: #FF073A;
+                                                                /* font-size: 25px; */
+                                                                font-size: 1.65vw;
+                                                                opacity: 1;
+                                                                z-index: 1;
+                                                            }
+                                                            /* Added */
+                                                            
+                                                            .title-nav-art {
+                                                                /* color: #1111f4; */
+                                                                color: #0079FC;
+                                                                font-size: 1.65vw;
+                                                                opacity: 1;
+                                                                z-index: 1;
+                                                            }
+                                                            
+                                                            .iframe-container {
+                                                                overflow: hidden;
+                                                                padding-top: 56.25%;
+                                                                position: relative;
+                                                            }
+                                                            
+                                                            .iframe-container iframe {
+                                                                border: 0;
+                                                                height: 75%;
+                                                                left: 0;
+                                                                position: absolute;
+                                                                top: 0;
+                                                                width: 100%;
+                                                            }
+                                                            /* 4x3 Aspect Ratio */
+                                                            
+                                                            .iframe-container-4x3 {
+                                                                padding-top: 75%;
+                                                            }
+                                                            
+                                                            video {
+                                                                left: 50%;
+                                                                min-height: 100%;
+                                                                min-width: 100%;
+                                                                position: absolute;
+                                                                top: 50%;
+                                                                transform: translate(-50%, -50%);
+                                                            }
+                                                            
+                                                            .content {
+                                                                left: 50%;
+                                                                min-height: 100%;
+                                                                min-width: 100%;
+                                                                top: 50%;
+                                                                /* margin-top: 5%; */
+                                                                /* padding-top: 1%; */
+                                                                /* transform: translate(-50%, -50%); */
+                                                            }
+                                                            
+                                                            .content-body {
+                                                                left: 50%;
+                                                                top: 0%;
+                                                                min-height: 100%;
+                                                                min-width: 100%;
+                                                                margin-top: 17%;
+                                                            }
+                                                            
+                                                            .nav-text-t {
+                                                                background-color: #fcfcfc;
+                                                                opacity: 0.65;
+                                                                width: 100%;
+                                                                display: block;
+                                                                /* border-radius: 15px; */
+                                                                /* padding-left: -5%; */
+                                                            }
+                                                            
+                                                            .footTagNetwork {
+                                                                position: fixed;
+                                                                bottom: 0%;
+                                                                width: 100%;
+                                                                text-align: center;
+                                                                margin-top: 10vw;
+                                                                padding-bottom: 2vw;
+                                                                margin-left: -10vw;
+                                                                padding-left: 0;
+                                                                /* margin-top: 12px; */
+                                                                /* margin-bottom: 25px; */
+                                                            }
+                                                            
+                                                            .fa {
+                                                                padding: 15px;
+                                                                font-size: 22px;
+                                                                width: 50px;
+                                                                height: 50px;
+                                                                text-align: center;
+                                                                text-decoration: none !important;
+                                                                /* top bottom 7px left right 5 px*/
+                                                                margin: 7px 5px;
+                                                                border-radius: 50%;
+                                                            }
+                                                            
+                                                            .fa:hover {
+                                                                opacity: 0.7;
+                                                            }
+                                                            
+                                                            .fa-facebook {
+                                                                background: #3B5998;
+                                                                color: white;
+                                                            }
+                                                            
+                                                            .fa-envelope {
+                                                                background: #8b64ff;
+                                                                color: white;
+                                                            }
+                                                            
+                                                            .fa-twitter {
+                                                                background: #55ACEE;
+                                                                color: white;
+                                                            }
+                                                            
+                                                            .fa-linkedin {
+                                                                background: #007bb5;
+                                                                color: white;
+                                                                padding-left: auto;
+                                                                padding-right: auto;
+                                                                /* margin-bottom: 40%; */
+                                                            }
+                                                            
+                                                            .fa-medium {
+                                                                background: #01b875;
+                                                                color: white;
+                                                                padding-left: auto;
+                                                                padding-right: auto;
+                                                                /* margin-bottom: 40%; */
+                                                            }
+                                                            
+                                                            .fa-instagram {
+                                                                background: #125688;
+                                                                color: white;
+                                                            }
+                                                            
+                                                            .fa-snapchat-ghost {
+                                                                background: #fffc00;
+                                                                color: white;
+                                                                text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                                                            }
+                                                            /*.fa-reddit {*/
+                                                            /*background: #ff5700;*/
+                                                            /*color: white;*/
+                                                            /*}*/
+                                                            
+                                                            .fa-github {
+                                                                background: #34d058;
+                                                                color: white;
+                                                            }
+                                                            
+                                                            #tedxasu {
+                                                                width: 35%;
+                                                                height: 35%;
+                                                                position: absolute;
+                                                                top: 0;
+                                                                top: 0;
+                                                                margin-top: 0.3vw;
+                                                            }
+                                                            /* Smartphones (portrait and landscape) ----------- */
+                                                            
+                                                            @media only screen and (min-device-width: 375px) and (max-device-width: 400px) {
+                                                                #tedxasu {
+                                                                    width: 100%;
+                                                                    margin-top: 0;
+                                                                }
+                                                                .iframe-container {
+                                                                    overflow: hidden;
+                                                                    /* padding-top: 56.25%; */
+                                                                    position: relative;
+                                                                }
+                                                                .iframe-container iframe {
+                                                                    border: 0;
+                                                                    height: 100%;
+                                                                    left: 0;
+                                                                    position: absolute;
+                                                                    top: 0;
+                                                                    width: 100%;
+                                                                }
+                                                                /* 4x3 Aspect Ratio */
+                                                                .iframe-container-4x3 {
+                                                                    /* padding-top: 75%; */
+                                                                }
+                                                                .content {
+                                                                    left: 50%;
+                                                                    min-height: 100%;
+                                                                    min-width: 100%;
+                                                                    top: 100%;
+                                                                    height: 100%;
+                                                                }
+                                                                .content-body {
+                                                                    left: 50%;
+                                                                    min-height: 100%;
+                                                                    min-width: 100%;
+                                                                    margin-top: 17%;
+                                                                }
+                                                            }

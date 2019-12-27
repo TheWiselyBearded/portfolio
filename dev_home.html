@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Alireza Bahremand Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/dev_slider.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <script src="https://unpkg.com/swiper/js/swiper.js"></script> -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+        
+        body {
+            background: #fcfcfc;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .swiper-container-dev {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fcfcfc;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        
+        .swiper-slide-dev {
+            text-align: center;
+            font-size: 18px;
+            background: #fcfcfc;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        
+        .swiper-container-v {
+            background: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container-dev swiper-container-h">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <!-- <h2>Artwork</h2> -->
+                <div class="swiper-container nslider-art loading">
+                    <div class="swiper-wrapper" role="navigation">
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg-art" style="background-image:url(img/MacMiller.jpeg)">
+                                <img src="img/MacMiller.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <span class="nav-text-t ">
+                                    <p class="title-nav-art" style="opacity: 1;">Mac Miller</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg-art" style="background-image:url(img/PostMalone.jpeg)">
+                                <img src="img/PostMalone.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <span class="nav-text-t ">
+                                    <p class="title-nav-art">Post Malone</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg-art" style="background-image:url(img/KanyeWest.jpg)">
+                                <img src="img/KanyeWest.jpg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <span class="nav-text-t ">
+                                    <p class="title-nav-art">Kanye West</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg-art" style="background-image:url(img/LukeSkywalker.png)">
+                                <img src="img/LukeSkywalker.png" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <span class="nav-text-t ">
+                                    <p class="title-nav-art">Luke Skywalker</p>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-container mslider-art loading">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg-art" style="background-image:url(img/MacMiller.jpeg)">
+                                <img src="img/MacMiller.jpeg" class="entity-img" />
+                            </figure>
+                            <div class="content">
+                                <span class="caption-art">Lorem Ipsum has been the industry's standard dummy text ever
+                                    since
+                                    the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book.</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg-art" style="color:#fcfcfc;">
+                                <video loop preload autoplay muted style="text-align: center;">
+                                    <source src="img/PostMaloneAR.mp4" type="video/mp4">
+                                </video>
+                                <!-- <img src="img/PostMalone.jpeg" class="entity-img" /> -->
+                            </figure>
+                            <div class="content">
+                                <span class="caption-art">Lorem Ipsum has been the industry's standard dummy text ever
+                                    since
+                                    the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book.</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="slide-bgimg-art" style="background-image:url(img/KanyeWest.jpg)">
+                                <img src="img/KanyeWest.jpg " class="entity-img " style='height: 100%; width: 100%; object-fit: cover' />
+                            </figure>
+                            <div class="content ">
+                                <span class="caption-art ">Lorem Ipsum has been the industry's standard dummy text ever
+                                    since
+                                    the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book.</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <figure class="slide-bgimg-art " style="background-image:url(img/LukeSkywalker.png) ">
+                                <img src="img/LukeSkywalker.png " class="entity-img " />
+                            </figure>
+                            <div class="content ">
+                                <span class="caption-art ">Lorem Ipsum has been the industry's standard dummy text ever
+                                    since
+                                    the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-container">
+                    <div class="content" style="margin-top:2vw;">
+                        <p class="title" style="letter-spacing: 0.03em;margin-bottom: -0.3vw;">Alireza Bahremand</p>
+                        <h4 style="color: #404040; margin-bottom: 0.5vw;">PhD Student | Research & Development</h4>
+                        <a href="#" style="font-size: 15px;">Resume/CV</a>
+                    </div>
+                    <div class="footTagNetwork">
+                        <!--Email-->
+                        <a href="mailto:abahrema@asu.edu" rel="nofollow" target="_blank" title="Shoot me an email"><i
+                                class="fa fa-envelope" aria-hidden="true"></i></a>
+                        <!--Facebook-->
+                        <a href="https://www.facebook.com/alireza.bahrema" target="_blank" title="If we aren't friends on Facebook we aren't friends right?"><i class="fa fa-facebook"
+                                aria-hidden="true"></i></a>
+                        <!--Instagram-->
+                        <a href="https://www.instagram.com/bahremand/" rel="nofollow" target="_blank" title="Check out my journeys!"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <!--Linkedin-->
+                        <a href="https://www.linkedin.com/in/alirezabahremand/" rel="nofollow" target="_blank" title="Check out my credentials!"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <!--Twitter-->
+                        <a href="https://twitter.com/lirezaBahremand/" rel="nofollow" target="_blank" title="Tweet tweet me, I chirp back!"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <!-- Medium -->
+                        <a href="https://medium.com/@alirezabahremand" rel="nofollow" target="_blank" title="Check out my credentials!"><i class="fa fa-medium" aria-hidden="true"></i></a>
+                        <!--Github-->
+                        <a href="https://github.com/TheWiselyBearded" target="_blank" title="Check out my projects!"><i
+                                class="fa fa-github" aria-hidden="true"></i></a>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <iframe id="tedxasu" src="https://www.youtube.com/embed/xklHh1QOKV8" frameborder="0" allow="encrypted-media" allowfullscreen></iframe style="width: 50%;">
+                <!-- <div class="content">
+                </div> -->
+                <!-- Foot tag was here -->                
+            </div>
+            <div class="swiper-slide ">
+                <!-- <h2>Projects</h2> -->
+                <div class="swiper-container main-slider loading ">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide ">
+                            <figure class="slide-bgimg ">
+                                <div class="iframe-container ">
+                                    <!-- <iframe class="video-proj " width="560 " height="315 " src="https://www.youtube.com/embed/fK_BMXSNbeg?autoplay=1&&mute=1&enablejsapi=1&iv_load_policy=3&playlist=fK_BMXSNbeg" frameborder="0 " allow="accelerometer;"></iframe>                -->
+                <iframe class="video-proj " width="560 " height="315 " src="https://www.youtube.com/embed/fK_BMXSNbeg?mute=1&enablejsapi=1&iv_load_policy=3&playlist=fK_BMXSNbeg" frameborder="0 " allow="accelerometer;
+                                autoplay; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+            </div>
+            </figure>
+            <div class="content content-body ">
+                <p class="title ">NASA</p>
+                <span class="caption " style="color: black; ">Lorem Ipsum has been the industry's
+                                    standard
+                                    <br>dummy text ever since the 1500s, when an unknown printer took a
+                                    <br>galley of type and scrambled it to make a type specimen book.</span>
+            </div>
+        </div>
+        <div class="swiper-slide ">
+            <figure class="slide-bgimg ">
+                <img src="https://drive.google.com/uc?export=view&id=0B_koKn2rKOkLWTdaX3J5b1VueDg" class="entity-img" style="opacity: 0;" />
+                <div class="iframe-container ">
+                    <iframe class="video-proj " width="560 " height="315 " src="https://www.youtube.com/embed/fK_BMXSNbeg?mute=1&enablejsapi=1&iv_load_policy=3&playlist=fK_BMXSNbeg" frameborder="0 " allow="accelerometer;
+                                autoplay; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                </div>
+            </figure>
+            <div class="content content-body ">
+                <p class="title ">Planetary VR</p>
+                <span class="caption " style="color: black; ">Lorem Ipsum has been the industry's
+                                    standard
+                                    <br>dummy text ever since the 1500s, when an unknown printer took a
+                                    <br>galley of type and scrambled it to make a type specimen book.</span>
+            </div>
+        </div>
+        <div class="swiper-slide ">
+            <figure class="slide-bgimg ">
+                <div class="iframe-container ">
+                    <iframe class="video-proj " width="560 " height="315 " src="https://www.youtube.com/embed/-VhwGYJZiN4?mute=1&enablejsapi=1&iv_load_policy=3&playlist=-VhwGYJZiN4 " frameborder="0 " allow="accelerometer;
+                                encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                </div>
+            </figure>
+            <div class="content content-body ">
+                <p class="title ">GLEAM</p>
+                <span class="caption " style="color: black; ">Lorem Ipsum has been the industry's
+                                    standard
+                                    <br>dummy text ever since the 1500s, when an unknown printer took a
+                                    <br>galley of type and scrambled it to make a type specimen book.</span>
+            </div>
+        </div>
+        <div class="swiper-slide ">
+            <figure class="slide-bgimg ">
+                <div class="iframe-container ">
+                    <iframe class="video-proj " width="560 " height="315 " src="https://www.youtube.com/embed/dPoUY9YE1gQ?mute=1&enablejsapi=1&iv_load_policy=3&playlist=dPoUY9YE1gQ " frameborder="0 " allow="accelerometer;
+                                encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                </div>
+            </figure>
+            <div class="content content-body ">
+                <p class="title " style="color: black; ">SWISH</p>
+                <span class="caption " style="color: black; ">Lorem Ipsum has been the industry's
+                                    standard
+                                    <br>dummy text ever since the 1500s, when an unknown printer took a
+                                    <br>galley of type and scrambled it to make a type specimen book.</span>
+            </div>
+        </div>
+        <div class="swiper-slide ">
+            <figure class="slide-bgimg ">
+                <div class="iframe-container ">
+                    <iframe class="video-proj " width="560 " height="315 " src="https://www.youtube.com/embed/TXl80knPrhE?start=866&mute=1&enablejsapi=1&iv_load_policy=3&playlist=TXl80knPrhE " frameborder="0 " allow="accelerometer;
+                                encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                </div>
+            </figure>
+            <div class="content content-body ">
+                <p class="title ">HoloLucination/Explore Curiosity</p>
+                <span class="caption " style="color: black; ">Lorem Ipsum has been the industry's
+                                    standard
+                                    <br>dummy text ever since the 1500s, when an unknown printer took a
+                                    <br>galley of type and scrambled it to make a type specimen book.</span>
+            </div>
+        </div>
+        <div class="swiper-slide ">
+            <figure class="slide-bgimg ">
+                <div class="iframe-container ">
+                    <iframe class="video-proj " width="560 " height="315 " src="https://www.youtube.com/embed/FftMp_-CkPg?enablejsapi=1&iv_load_policy=3&playlist=FftMp_-CkPg " frameborder=" 0 " allow=" accelerometer;
+                                encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
+                </div>
+            </figure>
+            <div class=" content content-body ">
+                <p class=" title ">Stair Rails</p>
+                <span class="caption ">Lorem Ipsum has been the industry's standard dummy text ever
+                                    since
+                                    the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen
+                                    book.</span>
+            </div>
+        </div>
+    </div>
+    <!-- If we need navigation buttons -->
+    <!-- <div class=" swiper-button-prev swiper-button-white "></div> -->
+    <!-- <div class=" swiper-button-next swiper-button-white "></div> -->
+    </div>
+
+    <!-- Thumbnail navigation -->
+    <div class=" swiper-container nav-slider loading ">
+        <div class=" swiper-wrapper " role=" navigation ">
+            <div class=" swiper-slide ">
+                <figure class=" slide-bgimg " style=" background-image:url(img/nasa_t3.jpeg) ">
+                    <img src=" img/nasa_t3.jpeg " class=" entity-img " />
+                </figure>
+                <div class="content ">
+                    <p class=" title-nav ">
+                        <span class="nav-text-t ">
+                                        NASA
+                                    </span>
+                    </p>
+                </div>
+            </div>
+            <div class=" swiper-slide ">
+                <figure class=" slide-bgimg " style=" background-image:url(img/planetaryVR_t.jpeg) ">
+                    <img src=" img/planetaryVR_t.jpeg " class=" entity-img " />
+                </figure>
+                <div class=" content ">
+                    <p class=" title-nav ">
+                        <span class="nav-text-t ">
+                                        Planetary VR
+                                    </span>
+                    </p>
+                </div>
+            </div>
+            <div class=" swiper-slide ">
+                <figure class=" slide-bgimg " style=" background-image:url(img/gleam_t.jpeg) ">
+                    <img src=" img/gleam_t.jpeg " class=" entity-img " />
+                </figure>
+                <div class=" content ">
+                    <p class=" title-nav ">
+                        <span class="nav-text-t ">
+                                        GLEAM
+                                    </span>
+                    </p>
+                </div>
+            </div>
+            <div class=" swiper-slide ">
+                <figure class=" slide-bgimg " style=" background-image:url(img/swish_t.jpeg) ">
+                    <img src=" img/swish_t.jpeg " class=" entity-img " />
+                </figure>
+                <div class=" content ">
+                    <p class=" title-nav ">
+                        <span class="nav-text-t ">
+                                        SWISH
+                                    </span>
+                    </p>
+                </div>
+            </div>
+            <div class=" swiper-slide ">
+                <figure class=" slide-bgimg " style=" background-image:url(img/hololucination_t.jpeg) ">
+                    <img src=" img/hololucination_t.jpeg " class=" entity-img " />
+                </figure>
+                <div class=" content ">
+                    <p class=" title-nav ">
+                        <span class="nav-text-t ">
+                                        HoloLucination
+                                    </span>
+                    </p>
+                </div>
+            </div>
+            <div class=" swiper-slide ">
+                <figure class=" slide-bgimg " style=" background-image:url(img/istairs_t4.png) ">
+                    <img src=" img/istairs_t4.png " class=" entity-img " />
+                </figure>
+                <div class=" content ">
+                    <p class=" title-nav ">
+                        <span class="nav-text-t ">
+                                        Stair Rails</p>
+                                </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+    <!-- Add Scrollbar -->
+    <div class=" swiper-scrollbar "></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src=" https://unpkg.com/swiper/js/swiper.min.js "></script>
+    <script src="https://use.fontawesome.com/401e984262.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        // var swiperMe = new Swiper('.swiper-container', {
+        //     navigation: {
+        //         nextEl: '.swiper-button-next',
+        //         prevEl: '.swiper-button-prev',
+        //         hideOnClick: false
+        //     },
+        // });
+        var swiperH = new Swiper('.swiper-container-h', {
+            mousewheel: {
+                sensitivity: 0.1
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                hide: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            initialSlide: 1
+        });
+        var swiperV = new Swiper('.swiper-container-v', {
+            direction: 'vertical',
+            // mousewheel: true,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination-v',
+                clickable: true,
+                hideOnClick: false,
+            },
+        });
+
+        // Params
+        let mainSliderSelector = '.main-slider',
+            navSliderSelector = '.nav-slider',
+            interleaveOffset = 0.5;
+        // Main Slider
+        let mainSliderOptions = {
+            loop: true,
+            speed: 1000,
+            autoplay: {
+                delay: 3000
+            },
+            loopAdditionalSlides: 10,
+            grabCursor: false,
+            watchSlidesProgress: true,
+            on: {
+                init: function() {
+                    this.autoplay.stop();
+                },
+                imagesReady: function() {
+                    this.el.classList.remove('loading');
+                    this.autoplay.start();
+                },
+                slideChangeTransitionEnd: function() {
+                    let swiper = this,
+                        captions = swiper.el.querySelectorAll('.caption');
+                    for (let i = 0; i < captions.length; ++i) {
+                        captions[i].classList.remove('show');
+                    }
+                    swiper.slides[swiper.activeIndex].querySelector('.caption').classList.add('show');
+                },
+                progress: function() {
+                    let swiper = this;
+                    for (let i = 0; i < swiper.slides.length; i++) {
+                        let slideProgress = swiper.slides[i].progress,
+                            innerOffset = swiper.width * interleaveOffset,
+                            innerTranslate = slideProgress * innerOffset;
+
+                        swiper.slides[i].querySelector(" .slide-bgimg ").style.transform =
+                            " translateX( " + innerTranslate + " px) ";
+                    }
+                },
+                // touchStart: function () {
+                //     let swiper = this;
+                //     for (let i = 0; i < swiper.slides.length; i++) {
+                //         swiper.slides[i].style.transition = " ";
+                //     }
+                // },
+                setTransition: function(speed) {
+                    let swiper = this;
+                    for (let i = 0; i < swiper.slides.length; i++) {
+                        swiper.slides[i].style.transition = speed + " ms ";
+                        swiper.slides[i].querySelector(" .slide-bgimg ").style.transition =
+                            speed + " ms ";
+                    }
+                }
+            }
+        };
+        let mainSlider = new Swiper(mainSliderSelector, mainSliderOptions);
+        mainSlider.allowTouchMove = false;
+        // Navigation Slider
+        let navSliderOptions = {
+            loop: true,
+            loopAdditionalSlides: 10,
+            speed: 1000,
+            spaceBetween: 5,
+            slidesPerView: 5,
+            centeredSlides: true,
+            touchRatio: 0.2,
+            slideToClickedSlide: true,
+            direction: 'vertical',
+            on: {
+                imagesReady: function() {
+                    this.el.classList.remove('loading');
+                },
+                click: function() {
+                    mainSlider.autoplay.stop();
+                }
+            }
+        };
+        let navSlider = new Swiper(navSliderSelector, navSliderOptions);
+        // Matching sliders
+        mainSlider.controller.control = navSlider;
+        navSlider.controller.control = mainSlider;
+
+        // ART
+        // Params
+        let mainSliderSelectorArt = '.mslider-art',
+            navSliderSelectorArt = '.nslider-art',
+            interleaveOffsetArt = 0.5;
+
+        // Main Slider
+        let mainSliderOptionsArt = {
+            loop: true,
+            speed: 1000,
+            autoplay: {
+                delay: 3000
+            },
+            loopAdditionalSlides: 10,
+            grabCursor: false,
+            watchSlidesProgress: true,
+            on: {
+                init: function() {
+                    this.autoplay.stop();
+                },
+                imagesReady: function() {
+                    this.el.classList.remove('loading');
+                    this.autoplay.start();
+                },
+                slideChangeTransitionEnd: function() {
+                    let swiper = this,
+                        captions = swiper.el.querySelectorAll('.caption-art');
+                    for (let i = 0; i < captions.length; ++i) {
+                        captions[i].classList.remove('show');
+                    }
+                    swiper.slides[swiper.activeIndex].querySelector('.caption-art').classList.add('show');
+                },
+                progress: function() {
+                    let swiper = this;
+                    for (let i = 0; i < swiper.slides.length; i++) {
+                        let slideProgress = swiper.slides[i].progress,
+                            innerOffset = swiper.width * interleaveOffset,
+                            innerTranslate = slideProgress * innerOffset;
+
+                        swiper.slides[i].querySelector(" .slide-bgimg-art ").style.transform =
+                            " translateX( " + innerTranslate + " px) ";
+                    }
+                },
+                setTransition: function(speed) {
+                    let swiper = this;
+                    for (let i = 0; i < swiper.slides.length; i++) {
+                        swiper.slides[i].style.transition = speed + " ms ";
+                        swiper.slides[i].querySelector(" .slide-bgimg-art ").style.transition =
+                            speed + " ms ";
+                    }
+                }
+            }
+        };
+        let mainSliderArt = new Swiper(mainSliderSelectorArt, mainSliderOptionsArt);
+        mainSliderArt.allowTouchMove = false;
+        // Navigation Slider
+        let navSliderOptionsArt = {
+            loop: true,
+            loopAdditionalSlides: 10,
+            speed: 1000,
+            spaceBetween: 5,
+            slidesPerView: 5,
+            centeredSlides: true,
+            touchRatio: 0.2,
+            slideToClickedSlide: true,
+            direction: 'vertical',
+            on: {
+                imagesReady: function() {
+                    this.el.classList.remove('loading');
+                },
+                click: function() {
+                    mainSliderArt.autoplay.stop();
+                }
+            }
+        };
+        let navSliderArt = new Swiper(navSliderSelectorArt, navSliderOptionsArt);
+
+        // Matching sliders
+        mainSliderArt.controller.control = navSliderArt;
+        navSliderArt.controller.control = mainSliderArt;
+    </script>
+
+</body>
+
+</html>
