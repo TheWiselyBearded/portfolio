@@ -386,9 +386,33 @@
                                                                 top: 0;
                                                                 margin-top: 0.3vw;
                                                             }
+                                                            
+                                                            #alireza {
+                                                                font-size: 2.5em;
+                                                                letter-spacing: 0.03em;
+                                                                margin-bottom: -0.3vw;
+                                                            }
+                                                            
+                                                            #alireza-title {
+                                                                color: #404040;
+                                                                margin-bottom: 0.5vw;
+                                                            }
+                                                            
+                                                            .video-proj {
+                                                                width: 560px;
+                                                                height: 315px;
+                                                            }
+                                                            /* ipad */
+                                                            
+                                                            @media only screen and (min-device-width: 450px) and (max-device-width: 800px) {
+                                                                #tedxasu {
+                                                                    width: 100%;
+                                                                    margin-top: 0vw;
+                                                                }
+                                                            }
                                                             /* Smartphones (portrait and landscape) ----------- */
                                                             
-                                                            @media only screen and (min-device-width: 375px) and (max-device-width: 400px) {
+                                                            @media only screen and (min-device-width: 375px) and (max-device-width: 450px) {
                                                                 #tedxasu {
                                                                     width: 100%;
                                                                     margin-top: 0;
@@ -410,6 +434,18 @@
                                                                 .iframe-container-4x3 {
                                                                     /* padding-top: 75%; */
                                                                 }
+                                                                .footTagNetwork {
+                                                                    position: fixed;
+                                                                    bottom: 0%;
+                                                                    width: 100%;
+                                                                    text-align: center;
+                                                                    margin-top: 10vw;
+                                                                    padding-bottom: 2vw;
+                                                                    margin-left: 0vw;
+                                                                    padding-left: 0;
+                                                                    /* margin-top: 12px; */
+                                                                    /* margin-bottom: 25px; */
+                                                                }
                                                                 .content {
                                                                     left: 50%;
                                                                     min-height: 100%;
@@ -421,6 +457,33 @@
                                                                     left: 50%;
                                                                     min-height: 100%;
                                                                     min-width: 100%;
-                                                                    margin-top: 17%;
+                                                                    margin-top: 5%;
+                                                                }
+                                                                .swiper-container {
+                                                                    width: 100%;
+                                                                    height: 50vh;
+                                                                    float: none;
+                                                                    transition: opacity .6s ease, -webkit-transform .3s ease;
+                                                                    transition: opacity .6s ease, transform .3s ease;
+                                                                    transition: opacity .6s ease, transform .3s ease, -webkit-transform .3s ease;
+                                                                }
+                                                                .swiper-container.nav-slider {
+                                                                    width: 100%;
+                                                                    padding-left: 5px;
+                                                                }
+                                                                #alireza {
+                                                                    /* margin-top: -20vw; */
+                                                                    font-size: 1.5em;
+                                                                    letter-spacing: 0.03em;
+                                                                    margin-bottom: -0.3vw;
+                                                                }
+                                                                #alireza-title {
+                                                                    color: #404040;
+                                                                    margin-bottom: 0.5vw;
+                                                                    font-size: 0.8em;
+                                                                }
+                                                                .video-proj {
+                                                                    width: 100%;
+                                                                    height: 100%;
                                                                 }
                                                             }
