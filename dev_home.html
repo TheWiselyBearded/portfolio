@@ -211,6 +211,7 @@
                     </div>
                     <!-- Add Arrows -->
                     <div class="swiper-button-next"></div>
+                    <div class="swiper-button-next" style="margin-top: 1.5vw;padding-right: 5px; padding-left: 5px;">Work</div>
                     <div class="swiper-button-prev"></div>
                 </div>
                 <iframe id="tedxasu" src="https://www.youtube.com/embed/xklHh1QOKV8" frameborder="0" allow="encrypted-media" allowfullscreen></iframe style="width: 50%;">
@@ -515,10 +516,12 @@
                 }
             }
         };
-        if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        // if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        if (/Android|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             // some code..
             console.log("Swiper direction before", navSliderOptions);
             navSliderOptions.direction = 'horizontal';
+            navSliderOptions.slidesPerView = 3;
             // console.log("Mobile detected");
             console.log("Swiper direction after", navSliderOptions.direction);
         }
@@ -586,6 +589,7 @@
         let mainSliderArt = new Swiper(mainSliderSelectorArt, mainSliderOptionsArt);
         mainSliderArt.allowTouchMove = false;
         // Navigation Slider
+        // NOTE: Change this variable on mobile: slidesPerView, spaceBetween
         let navSliderOptionsArt = {
             loop: true,
             loopAdditionalSlides: 10,
