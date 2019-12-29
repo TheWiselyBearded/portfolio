@@ -141,7 +141,7 @@
                                                             
                                                             .swiper-slide .content {
                                                                 position: absolute;
-                                                                top: 40%;
+                                                                top: 45%;
                                                                 left: 0;
                                                                 width: 50%;
                                                                 padding-left: 0%;
@@ -378,7 +378,7 @@
                                                                 color: white;
                                                             }
                                                             
-                                                            #tedxasu {
+                                                            .tedxasu {
                                                                 width: 35%;
                                                                 height: 35%;
                                                                 position: absolute;
@@ -405,21 +405,21 @@
                                                             /* ipad */
                                                             
                                                             @media only screen and (min-device-width: 450px) and (max-device-width: 750px) {
-                                                                #tedxasu {
+                                                                .tedxasu {
                                                                     width: 100%;
                                                                     margin-top: 0vw;
                                                                 }
                                                             }
                                                             /* Smartphones (portrait and landscape) ----------- */
                                                             
-                                                            @media only screen and (min-device-width: 375px) and (max-device-width: 450px) {
-                                                                #tedxasu {
+                                                            @media only screen and (min-device-width: 300px) and (max-device-width: 450px) {
+                                                                .tedxasu {
                                                                     width: 100%;
                                                                     margin-top: 0;
                                                                 }
                                                                 .iframe-container {
                                                                     overflow: hidden;
-                                                                    /* padding-top: 56.25%; */
+                                                                    padding-top: 75%;
                                                                     position: relative;
                                                                 }
                                                                 .iframe-container iframe {
@@ -461,7 +461,7 @@
                                                                 }
                                                                 .swiper-container {
                                                                     width: 100%;
-                                                                    height: 50vh;
+                                                                    /* height: 50vh; */
                                                                     float: none;
                                                                     transition: opacity .6s ease, -webkit-transform .3s ease;
                                                                     transition: opacity .6s ease, transform .3s ease;
