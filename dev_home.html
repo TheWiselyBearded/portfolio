@@ -36,7 +36,7 @@
         .swiper-slide {
             text-align: center;
             font-size: 18px;
-            background: #fcfcfc;
+            /* background: #fcfcfc; */
             /* Center slide text vertically */
             display: -webkit-box;
             display: -ms-flexbox;
@@ -78,12 +78,12 @@
 </head>
 
 <body>
-    <!-- Swiper -->
+    <!-- Main swiper. -->
     <div class="swiper-container-dev swiper-container-h">
         <div class="swiper-wrapper">
+            <!-- 3 slides, art, about me, work -->
             <div class="swiper-slide">
-                <!-- <h2>Artwork</h2> -->
-                <div class="swiper-container nslider-art loading">
+                <div class="swiper-container nslider-art loading" id="footer-art">
                     <div class="swiper-wrapper" role="navigation">
                         <div class="swiper-slide">
                             <figure class="slide-bgimg-art" style="background-image:url(img/MacMiller.jpeg)">
@@ -127,7 +127,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-container mslider-art loading">
+                <div class="swiper-container mslider-art loading" id="art-nav-mobile">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <figure class="slide-bgimg-art" style="background-image:url(img/MacMiller.jpeg)">
@@ -213,7 +213,7 @@
                     </div>
                     <!-- Add Arrows -->
                     <div class="swiper-button-next"></div>
-                    <div class="swiper-button-next" style="margin-top: 1.5vw;padding-right: 5px; padding-left: 5px;">Work</div>
+                    <!-- <div class="swiper-button-next" style="margin-top: 1.5vw;padding-right: 5px; padding-left: 5px;">Work</div> -->
                     <div class="swiper-button-prev"></div>
                 </div>
                 <iframe class="tedxasu" src="https://www.youtube.com/embed/xklHh1QOKV8" frameborder="0" allow="encrypted-media" allowfullscreen></iframe style="width: 50%;">
