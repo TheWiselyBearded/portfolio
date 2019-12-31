@@ -402,6 +402,16 @@
                                                                 width: 560px;
                                                                 height: 315px;
                                                             }
+                                                            
+                                                            #swiper-button-research {
+                                                                top: 73vh;
+                                                                padding-left: 3vw;
+                                                            }
+                                                            
+                                                            #swiper-button-art {
+                                                                padding-right: 3vw;
+                                                                color: blue;
+                                                            }
                                                             /* #kanyewest {
                                                                 width: 80vh;
                                                             } */
@@ -577,5 +587,14 @@
                                                                 }
                                                                 #starwars {
                                                                     top: 60vh;
+                                                                }
+                                                                #swiper-button-research {
+                                                                    margin-left: -3vw;
+                                                                    top: 48vh;
+                                                                }
+                                                                #swiper-button-art {
+                                                                    margin-right: -3vw;
+                                                                    top: 65vh;
+                                                                    opacity: 0.7;
                                                                 }
                                                             }
