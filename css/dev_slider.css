@@ -402,6 +402,9 @@
                                                                 width: 560px;
                                                                 height: 315px;
                                                             }
+                                                            /* #kanyewest {
+                                                                width: 80vh;
+                                                            } */
                                                             /* ipad */
                                                             
                                                             @media only screen and (min-device-width: 450px) and (max-device-width: 780px) {
@@ -531,5 +534,48 @@
                                                                     position: absolute;
                                                                     top: 50%;
                                                                     transform: translate(-50%, -50%);
+                                                                }
+                                                                .title-nav-art {
+                                                                    /* color: #1111f4; */
+                                                                    color: #0079FC;
+                                                                    font-size: 4.65vw;
+                                                                    opacity: 1;
+                                                                    z-index: 1;
+                                                                }
+                                                                .title-nav {
+                                                                    color: #FF073A;
+                                                                    /* font-size: 25px; */
+                                                                    font-size: 4.65vw;
+                                                                    opacity: 1;
+                                                                    z-index: 1;
+                                                                }
+                                                                .caption {
+                                                                    text-align: left;
+                                                                    padding-left: 7.5vw;
+                                                                    padding-right: 7.5vw;
+                                                                }
+                                                                .swiper-slide .content .caption {
+                                                                    font-size: 1.5vh;
+                                                                }
+                                                                .swiper-slide .content .title {
+                                                                    /* margin-top: -18vw;
+                                                                    margin-bottom: 22px; */
+                                                                    font-size: 6.5vh;
+                                                                    margin-top: -3vh;
+                                                                    margin-bottom: 1vh;
+                                                                }
+                                                                #hololucination {
+                                                                    font-size: 6vh;
+                                                                }
+                                                                #macmiller {
+                                                                    height: 50vh;
+                                                                    top: 35vh;
+                                                                }
+                                                                #kanyewest {
+                                                                    height: 80vh;
+                                                                    top: 15vh;
+                                                                }
+                                                                #starwars {
+                                                                    top: 60vh;
                                                                 }
                                                             }
