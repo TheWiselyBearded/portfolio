@@ -688,6 +688,7 @@
             if (window.innerWidth > window.innerHeight) {
                 navSliderOptions.direction = 'horizontal';
                 navSliderOptionsArt.direction = 'horizontal';
+                navSliderOptionsArt.slidesPerView = 3;
                 navSlider.destroy(true, true);
                 navSliderArt.destroy(true, true);
                 navSlider = new Swiper(navSliderSelector, navSliderOptions);
@@ -699,6 +700,7 @@
             } else {
                 navSliderOptions.direction = 'vertical';
                 navSliderOptionsArt.direction = 'vertical';
+                navSliderOptionsArt.slidesPerView = 5;
                 navSlider.destroy(true, true);
                 navSliderArt.destroy(true, true);
                 navSlider = new Swiper(navSliderSelector, navSliderOptions);
