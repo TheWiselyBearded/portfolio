@@ -613,9 +613,15 @@
                                                                 }
                                                                 .swiper-slide .content .title {
                                                                     margin-bottom: 0;
-                                                                    font-size: 2em;
+                                                                    font-size: 1.5em;
+                                                                    margin-top: -1vh;
                                                                 }
                                                                 .swiper-slide .content .caption {
                                                                     font-size: 0.5em;
+                                                                }
+                                                                .caption {
+                                                                    text-align: left;
+                                                                    padding-left: 7.5vw;
+                                                                    padding-right: 7.5vw;
                                                                 }
                                                             }
