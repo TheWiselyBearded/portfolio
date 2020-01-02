@@ -520,7 +520,7 @@
                                                                 #alireza-title {
                                                                     color: #404040;
                                                                     margin-bottom: 0.5vw;
-                                                                    font-size: 0.8em;
+                                                                    font-size: 0.65em;
                                                                 }
                                                                 .video-proj {
                                                                     width: 100%;
@@ -620,13 +620,13 @@
                                                                     opacity: 0.6;
                                                                 }
                                                                 #swiper-button-art:after {
-                                                                    font-size: 3.5vh !important;
+                                                                    font-size: 4.5vh !important;
                                                                 }
                                                                 #leftNav {
                                                                     position: absolute;
                                                                     right: 0px;
-                                                                    /* top: 55%; */
-                                                                    top: 70vh;
+                                                                    top: 55%;
+                                                                    /* top: 70vh; */
                                                                     padding-right: 3vw;
                                                                 }
                                                                 #rightNav {
@@ -636,7 +636,19 @@
                                                                     padding-left: 3vw;
                                                                 }
                                                                 #home-nav-next {
-                                                                    top: 65vh;
+                                                                    top: 70vh;
+                                                                    padding-right: 7.5vw;
+                                                                }
+                                                                #home-nav-prev {
+                                                                    padding-left: 5.5vw;
+                                                                    top: 70vh;
+                                                                }
+                                                                #leftNav {
+                                                                    top: 74.5vh !important;
+                                                                }
+                                                                #rightNav {
+                                                                    top: 74.7vh !important;
+                                                                    margin-top: -0.5vh;
                                                                 }
                                                             }
                                                             
@@ -667,7 +679,7 @@
                                                                 }
                                                                 #swiper-button-research {
                                                                     margin-left: -3vw;
-                                                                    top: 68vh;
+                                                                    top: 62vh;
                                                                     opacity: 0.7;
                                                                 }
                                                                 #swiper-button-research:after {
@@ -684,5 +696,88 @@
                                                                 }
                                                                 #swiper-button-art:after {
                                                                     font-size: 7.5vh !important;
+                                                                }
+                                                                #home-nav-next {
+                                                                    top: 60vh !important;
+                                                                }
+                                                                #home-nav-next:after {
+                                                                    font-size: 10.5vh !important;
+                                                                }
+                                                                #home-nav-prev {
+                                                                    top: 60vh !important;
+                                                                }
+                                                                #home-nav-prev:after {
+                                                                    font-size: 10.5vh !important;
+                                                                }
+                                                                #leftNav {
+                                                                    padding-top: 1vh;
+                                                                    top: 65vh !important;
+                                                                }
+                                                                #rightNav {
+                                                                    top: 65vh !important;
+                                                                    padding-top: 0.5vh;
+                                                                }
+                                                            }
+                                                            
+                                                            @media only screen and (min-device-height: 300px) and (max-device-height: 380px) and (min-device-width: 800px) and (max-device-width: 830px) {
+                                                                #swiper-button-research {
+                                                                    top: 70vh;
+                                                                    margin-left: -1vw;
+                                                                }
+                                                            }
+                                                            
+                                                            @media only screen and (min-device-width: 300px) and (max-device-width: 400px) and (min-device-height: 800px) and (max-device-height: 830px) {
+                                                                #home-nav-next {
+                                                                    top: 71vh !important;
+                                                                    padding-right: 7.5vw;
+                                                                }
+                                                                #home-nav-prev {
+                                                                    top: 71vh !important;
+                                                                    padding-left: 5.5vw;
+                                                                }
+                                                                #leftNav {
+                                                                    top: 74.5vh !important;
+                                                                }
+                                                                #rightNav {
+                                                                    top: 74.7vh !important;
+                                                                    margin-top: -0.5vh;
+                                                                }
+                                                                #swiper-button-research {
+                                                                    top: 47.5vh;
+                                                                }
+                                                                #swiper-button-art:after {
+                                                                    font-size: 5.5vh !important;
+                                                                }
+                                                                #swiper-button-art {
+                                                                    top: 63vh;
+                                                                    opacity: 0.44;
+                                                                }
+                                                                #home-nav-next:after {
+                                                                    font-size: 5.5vh !important;
+                                                                }
+                                                                #home-nav-prev:after {
+                                                                    font-size: 5.5vh !important;
+                                                                }
+                                                                #credentials {
+                                                                    top: 52.5%;
+                                                                }
+                                                                .tedxasu {
+                                                                    height: 45%;
+                                                                }
+                                                                .iframe-container {
+                                                                    padding-top: 85% !important;
+                                                                }
+                                                                .swiper-slide .content .title {
+                                                                    font-size: 5vh;
+                                                                }
+                                                            }
+                                                            
+                                                            @media only screen and (min-device-width: 300px) and (max-device-width: 325px) and (min-device-height: 500px) and (max-device-height: 570px) {
+                                                                .fa {
+                                                                    width: 45px;
+                                                                    height: 45px;
+                                                                }
+                                                                .fa-envelope {
+                                                                    font-size: 15px !important;
                                                                 }
                                                             }
