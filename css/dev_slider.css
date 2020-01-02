@@ -433,15 +433,73 @@
                                                             /* #kanyewest {
                                                                 width: 80vh;
                                                             } */
-                                                            /* ipad */
+                                                            /* ipad portrait */
                                                             
-                                                            @media only screen and (min-device-width: 450px) and (max-device-width: 780px) {
+                                                            @media only screen and (min-device-width: 450px) and (max-device-width: 1028px) and (min-device-height: 1024px) {
                                                                 .tedxasu {
                                                                     width: 100%;
                                                                     margin-top: 0vw;
                                                                 }
+                                                                .iframe-container {
+                                                                    padding-top: 70vh;
+                                                                }
+                                                                #swiper-button-research {
+                                                                    top: 58vh;
+                                                                }
+                                                                .caption {
+                                                                    text-align: left;
+                                                                    padding-left: 7.5vw;
+                                                                    padding-right: 7.5vw;
+                                                                }
                                                             }
-                                                            /* Smartphones (portrait and landscape) ----------- */
+                                                            /* ipad landscape */
+                                                            
+                                                            @media only screen and (min-device-width: 750px) and (max-device-width: 1400px) {
+                                                                .tedxasu {
+                                                                    width: 100%;
+                                                                    margin-top: 0vw;
+                                                                }
+                                                                .iframe-container {
+                                                                    padding-top: 70vh;
+                                                                }
+                                                                #swiper-button-research {
+                                                                    top: 66vh;
+                                                                }
+                                                                .caption {
+                                                                    text-align: left;
+                                                                    padding-left: 7.5vw;
+                                                                    padding-right: 7.5vw;
+                                                                }
+                                                                #leftNav {
+                                                                    position: absolute;
+                                                                    right: 0px;
+                                                                }
+                                                                #rightNav {
+                                                                    position: absolute;
+                                                                    left: 0px;
+                                                                }
+                                                                #home-nav-next {
+                                                                    top: 70vh;
+                                                                }
+                                                                #home-nav-prev {
+                                                                    top: 70vh;
+                                                                }
+                                                                #leftNav {
+                                                                    top: 72.5vh !important;
+                                                                    margin-top: 0.25vh;
+                                                                }
+                                                                #rightNav {
+                                                                    top: 72.7vh !important;
+                                                                    margin-top: 0.4vh;
+                                                                }
+                                                            }
+                                                            
+                                                            @media only screen and (min-device-width: 760px) and (max-device-width: 1028px) and (min-device-height: 1024px) and (max-device-height: 1366px) {
+                                                                #swiper-button-research {
+                                                                    top: 58vh;
+                                                                }
+                                                            }
+                                                            /* Smartphones portrait */
                                                             
                                                             @media only screen and (min-device-width: 300px) and (max-device-width: 450px) {
                                                                 .tedxasu {
@@ -651,6 +709,7 @@
                                                                     margin-top: -0.5vh;
                                                                 }
                                                             }
+                                                            /* landscape mode mobile */
                                                             
                                                             @media only screen and (min-device-height: 300px) and (max-device-height: 450px) {
                                                                 .iframe-container iframe {
@@ -718,6 +777,7 @@
                                                                     padding-top: 0.5vh;
                                                                 }
                                                             }
+                                                            /* iphone 6/7/8 */
                                                             
                                                             @media only screen and (min-device-height: 300px) and (max-device-height: 380px) and (min-device-width: 800px) and (max-device-width: 830px) {
                                                                 #swiper-button-research {
@@ -725,6 +785,7 @@
                                                                     margin-left: -1vw;
                                                                 }
                                                             }
+                                                            /* iphone x */
                                                             
                                                             @media only screen and (min-device-width: 300px) and (max-device-width: 400px) and (min-device-height: 800px) and (max-device-height: 830px) {
                                                                 #home-nav-next {
@@ -771,6 +832,7 @@
                                                                     font-size: 5vh;
                                                                 }
                                                             }
+                                                            /* iphone SE */
                                                             
                                                             @media only screen and (min-device-width: 300px) and (max-device-width: 325px) and (min-device-height: 500px) and (max-device-height: 570px) {
                                                                 .fa {

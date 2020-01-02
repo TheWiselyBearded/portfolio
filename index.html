@@ -693,6 +693,9 @@
         // }
 
         screen.orientation.onchange = function() {
+            if (/iPad/i.test(navigator.userAgent)) {
+                return;
+            }
             // if (window.innerWidth > window.innerHeight) {
             if (screen.orientation.type.match(/\w+/)[0] == 'portrait') {
                 navSlider.destroy(true, true);
