@@ -402,9 +402,9 @@ video {
 #home-nav-prev {
     top: 73vh;
 }
-#credentials {
+/* #credentials {
     top: 65%;
-}
+} */
 #rightNav {
     position: absolute;
     left: 0px;
