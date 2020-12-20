@@ -5,6 +5,8 @@
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden; }
 
+  ::-webkit-scrollbar { display: none; }
+
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;

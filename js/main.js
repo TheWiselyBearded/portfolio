@@ -6,10 +6,10 @@ var swiperH = new Swiper('.swiper-container-h', {
     mousewheel: {
         sensitivity: 0.1
     },
-    scrollbar: {
-        el: '.swiper-scrollbar',
-        hide: false,
-    },
+    // scrollbar: {
+    //     el: '.swiper-scrollbar',
+    //     hide: false,
+    // },
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
