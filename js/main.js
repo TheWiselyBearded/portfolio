@@ -180,7 +180,7 @@ var mainSliderArt = new Swiper(mainSliderSelectorArt, mainSliderOptionsArt);
 mainSliderArt.allowTouchMove = false;
 // Navigation Slider
 let navSliderOptionsArt = {
-    loop: true,
+    loop: false,
     loopAdditionalSlides: 3,
     speed: 1000,
     spaceBetween: 5,
