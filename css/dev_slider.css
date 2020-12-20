@@ -470,7 +470,7 @@ video {
 }
 
 #credentials {
-    top: 65vh;
+    top: 65%;
 }
 
 #rightNav {
@@ -504,9 +504,9 @@ video {
         padding-left: 7.5vw;
         padding-right: 7.5vw;
     }
-    #header-picture {
+    /* .header-picture {
         margin:auto; width:50%;display:block
-    }
+    } */
 }
 
 
@@ -520,9 +520,9 @@ video {
     .iframe-container {
         padding-top: 70vh;
     }
-    #header-picture {
+    /* .header-picture {
         margin:auto; width:50%;display:block
-    }
+    } */
     /* #swiper-button-research {
         top: 66vh;
     } */
@@ -571,9 +571,9 @@ video {
         padding-top: 75%;
         position: relative;
     }
-    #header-picture {
+    /* #header-picture {
         margin:auto; width:50%;display:block
-    }
+    } */
     .iframe-container iframe {
         border: 0;
         height: 100%;
@@ -786,9 +786,9 @@ video {
         top: 100%;
         left: 0;
     }
-    #header-picture {
+    /* #header-picture {
         margin:auto; width:50%;display:block
-    }
+    } */
     /* .iframe-container iframe {
         border: 0;
         height: 65%;
@@ -877,9 +877,9 @@ video {
         top: 71vh !important;
         padding-left: 5.5vw;
     }
-    #header-picture {
+    /* #header-picture {
         margin:auto; width:50%;display:block
-    }
+    } */
     #leftNav {
         top: 74.5vh !important;
     }
@@ -904,7 +904,7 @@ video {
         font-size: 5.5vh !important;
     }
     #credentials {
-        top: 52.5%;
+        top: 65%;
     }
     .tedxasu {
         height: 45%;
