@@ -497,7 +497,7 @@ video {
         padding-right: 7.5vw;
     }
     #header-picture {
-        margin:auto; width:100%;display:block
+        margin:auto; width:50%;display:block
     }
 }
 
@@ -513,7 +513,7 @@ video {
         padding-top: 70vh;
     }
     #header-picture {
-        margin:auto; width:100%;display:block
+        margin:auto; width:50%;display:block
     }
     /* #swiper-button-research {
         top: 66vh;
@@ -564,7 +564,7 @@ video {
         position: relative;
     }
     #header-picture {
-        margin:auto; width:100%;display:block
+        margin:auto; width:50%;display:block
     }
     .iframe-container iframe {
         border: 0;
@@ -779,7 +779,7 @@ video {
         left: 0;
     }
     #header-picture {
-        margin:auto; width:100%;display:block
+        margin:auto; width:50%;display:block
     }
     /* .iframe-container iframe {
         border: 0;
@@ -870,7 +870,7 @@ video {
         padding-left: 5.5vw;
     }
     #header-picture {
-        margin:auto; width:100%;display:block
+        margin:auto; width:50%;display:block
     }
     #leftNav {
         top: 74.5vh !important;
