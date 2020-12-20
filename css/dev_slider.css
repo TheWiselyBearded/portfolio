@@ -72,12 +72,12 @@
 }
 
 
-#header-picture {    
+.header-picture {    
     width: 100%;
     margin: 0 auto;    
 }
 
-#header-picture img {
+.header-picture img {
     display: block;
     margin-left: auto;
     margin-right: auto;
