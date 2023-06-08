@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Window with Carousel in Materialize</title>
+    <!-- Import Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Import Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+    <!-- Custom CSS -->
+    <style>
+        /* Custom CSS to style the carousel items */
+        .carousel-item {
+            background-color: #fff;
+            height: auto;
+            padding: 10px;
+        }
+
+        .carousel-item h4 {
+            margin-top: 0;
+        }
+
+        .carousel-item .video-container {
+            margin-bottom: 10px;
+        }
+
+        /* Hide the prev/next buttons on small screens */
+        @media only screen and (max-width: 600px) {
+            .carousel .carousel-item .col {
+                display: block !important;
+            }
+
+            .carousel .carousel-item .row {
+                display: flex !important;
+                flex-direction: column !important;
+            }
+        }
+
+        /* Rounded square button */
+        .rounded-square {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, #ff5252, #f48fb1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Trigger the modal with a button -->
+    <a class="waves-effect waves-light btn modal-trigger rounded-square" href="#video-modal"><i
+            class="material-icons">open_in_new</i></a>
+
+    <!-- Modal Trigger -->
+    <!-- <a class="waves-effect waves-light btn modal-trigger" href="#video-modal">Open Modal</a> -->
+
+    <!-- Modal Structure -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content">
+            <div class="carousel">
+                <a class="carousel-item" href="#one!">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2lw7tuwLhdA" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h4>Video 1</h4>
+                    <p>Some text describing video 1.</p>
+                </a>
+                <a class="carousel-item" href="#two!">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2lw7tuwLhdA" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h4>Video 2</h4>
+                    <p>Some text describing video 2.</p>
+                </a>
+                <a class="carousel-item" href="#three!">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2lw7tuwLhdA" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <h4>Video 3</h4>
+                    <p>Some text describing video 3.</p>
+                </a>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems);
+        });
+
+
+        // Scale modal window on mobile devices
+        $(window).on("resize", function () {
+            $(".modal").css("max-height", $(window).height() * 0.7);
+        }).resize();
+
+    </script>
+</body>
+
+</html>
