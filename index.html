@@ -22,6 +22,90 @@
     .card-row {
       margin-bottom: 20px; /* Adjust the value as per your desired vertical space */
     }
+
+    .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+  }
+
+  .card-text {
+    margin-bottom: 1.5rem;
+  }
+
+  /* .btn {
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+  } */
+  .btn {
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    color: #333;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .btn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-link {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .modal-content {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .modal-header {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .modal-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .modal-body {
+    text-align: justify;
+    padding: 1.5rem;
+  }
+
+  .modal-body iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .modal-body p {
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  
   </style>
 
   <div class="container-fluid">
@@ -29,7 +113,7 @@
       <div class="col-12 text-center">
         <h1 class="display-4 display-sm-3 display-md-2 display-lg-1">Alireza Bahremand</h1>
         <p class="lead">Research Engineer</p>
-        <hr class="my-4" style="border-color: grey;">
+        <!-- <hr class="my-4" style="border-color: grey;"> -->
       </div>
     </div>
   </div>
@@ -66,11 +150,12 @@
         <div class="card" data-year="2023" style="width: 18rem;">
           <img class="card-img-top" src="img/download.svg" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Volumetric Streaming</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
-              Open Modal
+              More
+              <!-- <i class="fas fa-expand-arrows-alt"></i> -->            
             </button>
           </div>
         </div>
@@ -78,13 +163,13 @@
 
       <div class="col-sm-12 col-md-6 d-flex justify-content-center">
         <div class="card" data-year="2023" style="width: 18rem;">
-          <img class="card-img-top" src="img/download.svg" alt="Card image cap">
+          <img class="card-img-top" src="img/npcThumbnail.gif" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">AI NPC</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
-              Open Modal
+              More
             </button>
           </div>
         </div>
@@ -96,11 +181,11 @@
         <div class="card" data-year="2023" style="width: 18rem;">
           <img class="card-img-top" src="img/download.svg" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">WebRTC Tools</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
-              Open Modal
+              More
             </button>
           </div>
         </div>
@@ -110,18 +195,193 @@
     <div class="row card-row">
       <div class="col-sm-12 col-md-6 d-flex justify-content-center">
         <div class="card" data-year="2022" style="width: 18rem;">
-          <img class="card-img-top" src="img/download.svg" alt="Card image cap">
+          <img class="card-img-top" src="img/SEThumbnailSmall.gif" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Card title2022</h5>
+            <h5 class="card-title">The Smell Engine</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
-              Open Modal
+              More
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+        <div class="card" data-year="2022" style="width: 18rem;">
+          <img class="card-img-top" src="img/download.svg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Dreamscape Immersive</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+              More
             </button>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="row card-row">
+      <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+        <div class="card" data-year="2021" style="width: 18rem;">
+          <img class="card-img-top" src="img/download.svg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Baltu Super Doc</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+              More
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+        <div class="card" data-year="2021" style="width: 18rem;">
+          <img class="card-img-top" src="img/download.svg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Dreamscape Mobile</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+              More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row card-row">
+      <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+        <div class="card" data-year="2021" style="width: 18rem;">
+          <img class="card-img-top" src="img/memoriesThumbnail.gif" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Memories</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#memoriesModal">
+              More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+        <div class="card" data-year="2021" style="width: 18rem;">
+          <img class="card-img-top" src="https://news.asu.edu/sites/default/files/styles/asu_news_article_hero/public/dreamscape_hero.jpg?itok=QcN9aZBZ" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Designing for Dreamscape</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#designingForDreamscapeModal">
+              More
+            </button>
+          </div>
+        </div>
+      </div>    
+    </div>
+
+    <div class="row card-row">
+      <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+        <div class="card" data-year="2020" style="width: 18rem;">
+          <img class="card-img-top" src="img/asucampusThumbnail.gif" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">ASU Campus Tours</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#campusToursModal">
+              More
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+        <div class="card" data-year="2020" style="width: 18rem;">
+          <img class="card-img-top" src="img/download.svg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">BSI Training Simulation</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+              More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row card-row">
+      <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+        <div class="card" data-year="2020" style="width: 18rem;">
+          <img class="card-img-top" src="img/download.svg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Mars Data Viz</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+              More
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+        <div class="card" data-year="2020" style="width: 18rem;">
+          <img class="card-img-top" src="img/download.svg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">ASU Commencement</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+              More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row card-row">
+      <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+        <div class="card" data-year="2020" style="width: 18rem;">
+          <img class="card-img-top" src="img/staircaseThumbnail.gif" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Staircase</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staircaseModal">
+              More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row card-row">
+      <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+        <div class="card" data-year="2019" style="width: 18rem;">
+          <img class="card-img-top" src="img/download.svg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">NASA MSFC Sim Tool</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+              More
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+        <div class="card" data-year="2019" style="width: 18rem;">
+          <img class="card-img-top" src="img/download.svg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">NASA MSFC Mars Hab</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
+              More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
   </div>
 
@@ -163,6 +423,121 @@
         <div class="modal-body d-flex flex-column align-items-center">
           <div>
             <iframe width="100%" height="250" src="https://www.youtube.com/embed/vV36-LQbsOU" allowfullscreen></iframe>
+          </div>
+          <p>The Smell Engine is a design framework and software/hardware system that presents users with a real-time
+            physical odor synthesis of virtual smells. Using our Smell Composer design framework with the Unity Game
+            Engine, developers can configure odor sources in virtual space. At runtime, the Smell Engine system presents
+            users with physical odors that match what they would sense in the virtual environment. To do this, our Smell
+            Mixer component integrates with the Unity Game Engine to dynamically estimate the odor mix that the user
+            would smell. Our Smell Controller runtime then coordinates an olfactometer to physically present an
+            approximation of the odor mix to the user's mask. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DESIGNING FOR DREAMSCAPE -->
+  <div class="modal fade" id="designingForDreamscapeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center">
+          <div>
+            <iframe width="100%" height="250" src="https://www.youtube.com/embed/LzyutpwYc9M" allowfullscreen></iframe>
+          </div>
+          <p>The Smell Engine is a design framework and software/hardware system that presents users with a real-time
+            physical odor synthesis of virtual smells. Using our Smell Composer design framework with the Unity Game
+            Engine, developers can configure odor sources in virtual space. At runtime, the Smell Engine system presents
+            users with physical odors that match what they would sense in the virtual environment. To do this, our Smell
+            Mixer component integrates with the Unity Game Engine to dynamically estimate the odor mix that the user
+            would smell. Our Smell Controller runtime then coordinates an olfactometer to physically present an
+            approximation of the odor mix to the user's mask. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MIXED REALITY MEMORIES -->
+  <div class="modal fade" id="memoriesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Mixed Reality Memories</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center">
+          <div>
+            <iframe width="100%" height="250" src="https://www.youtube.com/embed/2lw7tuwLhdA" allowfullscreen></iframe>
+          </div>
+          <p>The Smell Engine is a design framework and software/hardware system that presents users with a real-time
+            physical odor synthesis of virtual smells. Using our Smell Composer design framework with the Unity Game
+            Engine, developers can configure odor sources in virtual space. At runtime, the Smell Engine system presents
+            users with physical odors that match what they would sense in the virtual environment. To do this, our Smell
+            Mixer component integrates with the Unity Game Engine to dynamically estimate the odor mix that the user
+            would smell. Our Smell Controller runtime then coordinates an olfactometer to physically present an
+            approximation of the odor mix to the user's mask. Through a three-part user study, we found that the Smell
+            Engine can produce odors at granularities finer than our subjects’ olfactory detection sensitivity. We also
+            find that the Smell Engine improves users’ ability to precisely localize odors in the virtual environment
+            over state-of-the-art trigger-based olfactory systems</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ASU CAMPUS TOURS -->  
+  <div class="modal fade" id="campusToursModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Mixed Reality Memories</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center">
+          <div>
+            <iframe width="100%" height="250" src="https://www.youtube.com/embed/paHgnlLAFoo" allowfullscreen></iframe>
+          </div>
+          <p>The Smell Engine is a design framework and software/hardware system that presents users with a real-time
+            physical odor synthesis of virtual smells. Using our Smell Composer design framework with the Unity Game
+            Engine, developers can configure odor sources in virtual space. At runtime, the Smell Engine system presents
+            users with physical odors that match what they would sense in the virtual environment. To do this, our Smell
+            Mixer component integrates with the Unity Game Engine to dynamically estimate the odor mix that the user
+            would smell. Our Smell Controller runtime then coordinates an olfactometer to physically present an
+            approximation of the odor mix to the user's mask. Through a three-part user study, we found that the Smell
+            Engine can produce odors at granularities finer than our subjects’ olfactory detection sensitivity. We also
+            find that the Smell Engine improves users’ ability to precisely localize odors in the virtual environment
+            over state-of-the-art trigger-based olfactory systems</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STAIRCASE -->  
+  <div class="modal fade" id="staircaseModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">STAIRCASE</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center">
+          <div>            
+            <iframe width="100%" height="250" src="https://www.youtube.com/embed/FftMp_-CkPg" allowfullscreen></iframe>
           </div>
           <p>The Smell Engine is a design framework and software/hardware system that presents users with a real-time
             physical odor synthesis of virtual smells. Using our Smell Composer design framework with the Unity Game
