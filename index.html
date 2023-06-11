@@ -34,7 +34,8 @@
     }
 
     #year-display {
-      font-size: 24px;
+      font-size: 28px;
+      color: #333;
       /* Adjust the font size to the desired value */
     }
 
@@ -196,6 +197,18 @@
       color: #333;
       font-size: 24px;
     }
+
+    .arrow-btn i {
+      font-size: 30px;
+      /* color: #007BFF; */
+      /* Bootstrap primary color, change as needed */
+      transition: color 0.3s ease;
+    }
+
+    .arrow-btn:hover i {
+      /* color: #0056b3; */
+      /* Bootstrap primary darker color for hover effect, change as needed */
+    }
   </style>
 
   <div class="container-fluid">
@@ -203,7 +216,7 @@
       <div class="col-12 text-center">
         <h1 class="display-4 display-sm-3 display-md-2 display-lg-1">Alireza Bahremand</h1>
         <p class="lead">Research Engineer</p>
-        <p class="summary">I specialize in multi-sensory digital embodiment, having worked on
+        <p class="summary">I specialize in multi-sensory digital embodiment. I've worked on
           frameworks for olfactory and tactile experiences in XR, multi-sensory storytelling, and AI-assisted volumetric
           streaming.
           Outside of work, I enjoy drawing, reading, rock climbing, and discussing gaming classics.</p>
@@ -218,30 +231,31 @@
       </div>
     </div>
   </div>
-
+  <hr class="my-4" style="border-color: grey; width: 60%">
   <div class="container">
-    <div class="row justify-content-center">
+    <!-- <div class="row justify-content-center">
       <div class="col-12 text-center">
-        <button id="up-button" class="btn btn-link">
+        <button id="up-button" class="btn btn-link" style="width: 30%;">
           <i class="fas fa-caret-up text-secondary"></i>
         </button>
       </div>
       <div id="year-display" class="col-12 text-center my-2 lead">2023</div>
       <div class="col-12 text-center">
-        <button id="down-button" class="btn btn-link">
+        <button id="down-button" class="btn btn-link" style="width: 30%;">
           <i class="fas fa-caret-down text-secondary"></i>
         </button>
       </div>
+    </div> -->
+    <div class="col-12 text-center" style="padding-top: 10px;">
+      <button id="up-button" class="btn btn-link arrow-btn" >
+        <i class="fas fa-caret-left text-secondary" style="color: #333 !important;"></i>
+      </button>
+      <span id="year-display" class="text-center mx-2 lead">2023</span>
+      <!-- <div id="year-display" class="col-12 text-center my-2 lead">2023</div> -->
+      <button id="down-button" class="btn btn-link arrow-btn">
+        <i class="fas fa-caret-right text-secondary" style="color: #333 !important;"></i>
+      </button>
     </div>
-    <!-- <div class="col-12 text-center">
-        <button id="left-button" class="btn btn-link">
-          <i class="fas fa-caret-left text-secondary"></i>
-        </button>
-        <span class="mx-2">Projects</span>
-        <button id="right-button" class="btn btn-link">
-          <i class="fas fa-caret-right text-secondary"></i>
-        </button>
-      </div> -->
   </div>
 
 
@@ -344,7 +358,7 @@
       </div>
       <div class="col-sm-12 col-md-6 d-flex justify-content-center">
         <div class="card" data-year="2022" style="width: 18rem;">
-          <img class="card-img-top" src="img/download.svg" alt="Card image cap">
+          <img class="card-img-top" src="img/dsThumbnail.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Dreamscape Immersive</h5>
             <p class="card-text">I worked on experimental applications (interactive movie poster), tools (dev debugging
@@ -354,9 +368,6 @@
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dsModal">
                 <i class="fas fa-expand-arrows-alt icon-color"></i>
               </button>
-              <a href="#" class="btn btn-primary">
-                <i class="fas fa-code icon-color"></i>
-              </a>
               <!-- <a href="#" class="btn btn-primary">
                   <i class="fas fa-file"></i>
                 </a> -->
@@ -396,7 +407,7 @@
       </div>
       <div class="col-sm-12 col-md-6 d-flex justify-content-center">
         <div class="card" data-year="2021" style="width: 18rem;">
-          <img class="card-img-top" src="img/download.svg" alt="Card image cap">
+          <img class="card-img-top" src="img/dsMobileThumbnail.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Dreamscape Mobile</h5>
             <p class="card-text">Tested by 100+ students in introductory biology courses, an ASU AR-based application
@@ -405,9 +416,9 @@
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dsMobileModal">
                 <i class="fas fa-expand-arrows-alt icon-color"></i>
               </button>
-              <a href="#" class="btn btn-primary">
+              <!-- <a href="#" class="btn btn-primary">
                 <i class="fas fa-code icon-color"></i>
-              </a>
+              </a> -->
               <!-- <a href="#" class="btn btn-primary">
                   <i class="fas fa-file"></i>
                 </a> -->
@@ -514,9 +525,6 @@
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#BSIModal">
                 <i class="fas fa-expand-arrows-alt icon-color"></i>
               </button>
-              <a href="#" class="btn btn-primary">
-                <i class="fas fa-code icon-color"></i>
-              </a>
               <!-- <a href="#" class="btn btn-primary">
                     <i class="fas fa-file"></i>
                   </a> -->
@@ -566,13 +574,14 @@
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#commencementModal">
                 <i class="fas fa-expand-arrows-alt icon-color"></i>
               </button>
-              <a href="#" class="btn btn-primary">
+              <a href="https://xr.asu.edu/commencement/" class="btn btn-primary">
                 <i class="fas fa-code icon-color"></i>
               </a>
-              <!-- <a href="#" class="btn btn-primary">
-                    <i class="fas fa-file"></i>
-                  </a> -->
-              <a href="#" class="btn btn-primary">
+              <a href="https://news.asu.edu/20201214-sun-devil-life-asu-commencement-app-offers-grads-augmented-reality-experience"
+                class="btn btn-primary">
+                <i class="fas fa-newspaper icon-color"></i>
+              </a>
+              <a href="https://www.youtube.com/watch?v=5QccM3EG9jM" class="btn btn-primary">
                 <i class="fas fa-video icon-color"></i>
               </a>
             </div>
@@ -644,9 +653,9 @@
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#hololucinationModal">
                 <i class="fas fa-expand-arrows-alt icon-color"></i>
               </button>
-              <a href="#" class="btn btn-primary">
+              <!-- <a href="#" class="btn btn-primary">
                 <i class="fas fa-code icon-color"></i>
-              </a>
+              </a> -->
               <a href="#" class="btn btn-primary">
                 <i class="fas fa-file"></i>
               </a>
@@ -667,9 +676,6 @@
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staircaseModal">
                 <i class="fas fa-expand-arrows-alt icon-color"></i>
               </button>
-              <a href="#" class="btn btn-primary">
-                <i class="fas fa-code icon-color"></i>
-              </a>
               <!-- <a href="#" class="btn btn-primary">
                     <i class="fas fa-file"></i>
                   </a> -->
@@ -728,6 +734,18 @@
           <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
             <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/Wz3Nzo09qko"
               allowfullscreen></iframe>
+          </div>
+          <div class="button-group">
+            <a href="https://github.com/LaurenGold/Planetary-Visor" class="btn btn-secondary" role="button">
+              <i class="fas fa-code"></i>
+            </a>
+            <a href="https://ieeexplore.ieee.org/abstract/document/9417645" class="btn btn-primary">
+              <i class="fas fa-file icon-color"></i>
+            </a>
+            <a href="https://www.youtube.com/watch?t=19974&v=vU1ooD8uu3A&embeds_referring_euri=https%3A%2F%2Fmeteor.ame.asu.edu%2F&feature=emb_imp_woyt"
+              class="btn btn-secondary" role="button">
+              <i class="fas fa-video icon-color"></i>
+            </a>
           </div>
           <p>In this work, we build Planetary Visor, a virtual reality tool to visualize orbital and ground data around
             NASA's Mars Science Laboratory Curiosity rover's ongoing traverse in Gale Crater. </p>
@@ -797,16 +815,22 @@
             <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/LzyutpwYc9M"
               allowfullscreen></iframe>
           </div>
+          <div class="button-group">
+            <a href="https://news.asu.edu/20211203-creativity-asu-students-create-time-travel-experience-dreamscape-learn"
+              class="btn btn-secondary" role="button">
+              <i class="fas fa-newspaper icon-color"></i>
+            </a>
+          </div>
           <p>
             As the lead developer of the Designing for Dreamscape project, I focused on coordinating integrations across
             different teams, including working closely with Unity Timeline developers for narrative construction,
             collaborating with modelers for asset updates, and collaborating with programmers for event and interaction
-            creation. 
-            </p>
+            creation.
+          </p>
           </br>
           <img class="modal-image" src="img/walter.JPG" alt="Walter">
-            <p>The article showcases the 15-minute final project presented by a class of Arizona State University
-            students, who were the first to use the Dreamscape Learn virtual reality platform. The project involved
+          <p>Our class was one of the first groups to use the Dreamscape Learn virtual reality platform. The project
+            involved
             creating a time-traveling climate-change scenario, and it received praise from industry professionals,
             including Walter Parkes, CEO of Dreamscape Immersive. </p>
         </div>
@@ -829,6 +853,17 @@
           <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
             <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/5QccM3EG9jM"
               allowfullscreen></iframe>
+          </div>
+          <div class="button-group">
+            <a href="https://github.com/TheWiselyBearded/ChatbotAvatarAI" class="btn btn-secondary" role="button">
+              <i class="fas fa-code"></i>
+            </a>
+            <a href="#" class="btn btn-primary">
+              <i class="fas fa-file icon-color"></i>
+            </a>
+            <a href="https://www.youtube.com/watch?v=FftMp_-CkPg" class="btn btn-secondary" role="button">
+              <i class="fas fa-video icon-color"></i>
+            </a>
           </div>
           <p>
             We developed a mobile AR Commencement experience for ASU Fall 2020 Commencement. Working alongside designers
@@ -864,8 +899,14 @@
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
           <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
-            <iframe style="width: 100%; height: 100%;"
-              src="https://meteor.ame.asu.edu/projects/holoLucination/images/reMARS.webm" allowfullscreen></iframe>
+            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/TXl80knPrhE"
+              allowfullscreen></iframe>
+          </div>
+          <div class="button-group">
+            <a href="https://ieeexplore-ieee-org.ezproxy1.lib.asu.edu/document/8942234/metrics#metrics"
+              class="btn btn-primary">
+              <i class="fas fa-file icon-color"></i>
+            </a>
           </div>
           <p>Our framework allows users to prepare a sequential state of animations. At the time of presentation,
             presenters can invoke the animations to simultaneously occur on HMDs and mobile devices. </p>
@@ -906,8 +947,8 @@
             (e.g., Apple World Anchor, Azure Spatial Anchors, Oculus Anchors).
           </p>
           </br>
-          <img src="https://meteor.ame.asu.edu/projects/holoLucination/images/diagram.png"
-            alt="HoloLucination System Design">
+          <img class="modal-image" src="https://baltutech.com/wp-content/uploads/2023/04/IMG_443F24C38B95-1.jpeg"
+            alt="Baltu SuperDoc Interface">
           <p>I worked primarily in Unity, merging multiple SDKs to build a coherent experience allowing users to upload
             and retrieve any form of multimedia (i.e., 2D, 3D, image, video, audio) that is then rendered within the
             application.</p>
@@ -915,6 +956,39 @@
       </div>
     </div>
   </div>
+
+  <!-- Dreamscape Immersive -->
+  <div class="modal fade" id="dsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Dreamscape Immersive</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center">
+          <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
+            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/TXl80knPrhE"
+              allowfullscreen></iframe>
+          </div>
+          <p>
+            At Dreamscape Immersive, I worked on ...
+          </p>
+          </br>
+          <img class="modal-image" src="img/dsReflection.gif" alt="Reflection Debugging Application">
+          <p>For one application, I added ability to debug experiences in real-time, invoking code using Reflection
+            Library.</p>
+          </br>
+          <img class="modal-image" src="img/dsActorRecording.gif" alt="Reflection Debugging Application">
+          <p>Then I worked on actor recording tools, mapping tracked facial geoemetry between mobile devices and VR
+            devices (e.g., Apple iPhone, Meta Quest Pro).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- MIXED REALITY MEMORIES -->
   <div class="modal fade" id="memoriesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
@@ -968,6 +1042,17 @@
             <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/dGoqvKuwW34"
               allowfullscreen></iframe>
           </div>
+          <div class="button-group">
+            <a href="https://github.com/Shahab-VT/SWISH" class="btn btn-secondary" role="button">
+              <i class="fas fa-code"></i>
+            </a>
+            <a href="https://meteor.ame.asu.edu/publications/p751-sagheb.pdf" class="btn btn-primary">
+              <i class="fas fa-file icon-color"></i>
+            </a>
+            <a href="https://www.youtube.com/watch?v=dGoqvKuwW34" class="btn btn-secondary" role="button">
+              <i class="fas fa-video icon-color"></i>
+            </a>
+          </div>
           <p>SWISH, a Shifting-Weight Interface of Simulated Hydrodynamics, bridges the gap between visual and haptic
             experiences in virtual environments by providing a realistic sense of fluid motion in handheld vessels. </p>
           </br>
@@ -999,16 +1084,16 @@
             <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/paHgnlLAFoo"
               allowfullscreen></iframe>
           </div>
+          <div class="button-group">
+            <a href="https://xr.asu.edu/campus/" class="btn btn-secondary" role="button">
+              <i class="fas fa-code"></i>
+            </a>
+          </div>
           <p>The ASU 360 Virtual Campus application is a comprehensive web-based desktop and VR platform that enables
             users to explore various ASU campuses. As the developer, I created an internal tool that empowers us to
             curate customized campus tours for each location. This tool includes a user-friendly web interface, allowing
             instructors to seamlessly upload 360-degree pictures and assign specific campus locations to each image.
           </p>
-          </br>
-          <img src="https://meteor.ame.asu.edu/projects/smell-engine/images/Smell_Engine_Diagram.png"
-            alt="Smell Engine System Design">
-          <img src="https://meteor.ame.asu.edu/projects/smell-engine/images/OdorMixSmellController.jpg"
-            alt="Smell Engine System Design">
           <p>Additionally, I collaborated closely with a team of designers to ensure a seamless and visually appealing
             front-end interface. Lastly, I meticulously documented the project, providing comprehensive documentation to
             facilitate a smooth transition for a newly assigned team taking over the project.</p>
@@ -1069,6 +1154,8 @@
             To solve this, we took existing LED strips, a microphone, PIR motion sensors, and a Arduino Uno to build a
             responsive
             lighting system for our staircase.
+          </p>
+          <p>
             The 'illuminated stairs' respond to music (dynamically changing light pattern) and motion. We built
             everything from scratch, including any casings used.
           </p>
@@ -1096,9 +1183,6 @@
           <div class="button-group">
             <a href="https://github.com/TheWiselyBearded/ChatbotAvatarAI" class="btn btn-secondary" role="button">
               <i class="fas fa-code"></i>
-            </a>
-            <a href="https://www.youtube.com/watch?v=FftMp_-CkPg" class="btn btn-secondary" role="button">
-              <i class="fas fa-video icon-color"></i>
             </a>
           </div>
           <p>ChatbotAvatarAI is a dynamic Unity project that merges state-of-the-art technologies like OpenAI API, Azure
@@ -1135,14 +1219,15 @@
               allowfullscreen></iframe>
           </div>
           <div class="button-group">
-            <a href="https://github.com/TheWiselyBearded/ChatbotAvatarAI" class="btn btn-secondary" role="button">
+            <a href="https://github.com/asu-meteor/The-Smell-Engine" class="btn btn-secondary" role="button">
               <i class="fas fa-code"></i>
             </a>
-            <a href="#" class="btn btn-primary">
+            <a href="https://meteor.ame.asu.edu/publications/SmellEngineIEEEVRR22.pdf" class="btn btn-primary">
               <i class="fas fa-file icon-color"></i>
             </a>
-            <a href="https://www.youtube.com/watch?v=FftMp_-CkPg" class="btn btn-secondary" role="button">
-              <i class="fas fa-video icon-color"></i>
+            <a href="https://news.asu.edu/20220909-smelling-strawberries-smoke-and-space-virtual-reality"
+              class="btn btn-secondary" role="button">
+              <i class="fas fa-newspaper icon-color"></i>
             </a>
           </div>
           <p>The Smell Engine is a design framework and software/hardware system that presents users with a real-time
