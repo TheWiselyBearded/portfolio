@@ -201,13 +201,40 @@
     .arrow-btn i {
       font-size: 30px;
       /* color: #007BFF; */
-      /* Bootstrap primary color, change as needed */
-      transition: color 0.3s ease;
+      /* transition: color 0.3s ease; */
+      /* border-radius: 25%; */
+      /* Make the buttons curved */
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+      transition: box-shadow 0.3s ease;
     }
 
     .arrow-btn:hover i {
       /* color: #0056b3; */
+      /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); */
       /* Bootstrap primary darker color for hover effect, change as needed */
+    }
+
+    /* Regular Button */
+    .btn-custom {
+      /* background-color: #666; */
+      /* Blue */
+      /* border-radius: 25%; */
+      /* color: #666; */
+      color: #f5f5f5;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      /* padding-bottom: 10px; */
+    }
+
+    /* Hover Over the Button */
+    .btn-custom:hover {
+      /* background-color: #666; */
+      /* Darker blue */
+      color: #f5f5f5;
     }
   </style>
 
@@ -226,14 +253,25 @@
           <a href="https://twitter.com/lirezaBahremand/" target="_blank"><i class="fab fa-twitter"></i></a>
           <a href="https://www.instagram.com/bahremand/" target="_blank"><i class="fab fa-instagram"></i></a>
           <a href="https://www.linkedin.com/in/alirezabahremand/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="your-resume-link" target="_blank"><i class="fas fa-file-alt"></i></a>
+          <a href="img/AlirezaBahremandCV.pdf" target="_blank"><i class="fas fa-file-alt"></i></a>
         </div>
       </div>
     </div>
   </div>
   <hr class="my-4" style="border-color: grey; width: 60%">
-  <div class="container">
-    <!-- <div class="row justify-content-center">
+  <div class="container" style="padding-bottom: 15px;">
+    <div class="col-12 text-center d-flex justify-content-center" style="padding-bottom: 10px;">
+      <button id="up-button" class="btn btn-link arrow-btn btn-custom">
+        <i class="fas fa-caret-left text-secondary" style="color: #333 !important;"></i>
+      </button>
+      <span id="year-display" class="text-center mx-2 lead">2023</span>
+      <!-- <div id="year-display" class="col-12 text-center my-2 lead">2023</div> -->
+      <button id="down-button" class="btn btn-link arrow-btn btn-custom">
+        <i class="fas fa-caret-right text-secondary" style="color: #333 !important;"></i>
+      </button>
+    </div>
+  </div>
+  <!-- <div class="row justify-content-center">
       <div class="col-12 text-center">
         <button id="up-button" class="btn btn-link" style="width: 30%;">
           <i class="fas fa-caret-up text-secondary"></i>
@@ -246,28 +284,18 @@
         </button>
       </div>
     </div> -->
-    <div class="col-12 text-center" style="padding-top: 10px;">
-      <button id="up-button" class="btn btn-link arrow-btn" >
-        <i class="fas fa-caret-left text-secondary" style="color: #333 !important;"></i>
-      </button>
-      <span id="year-display" class="text-center mx-2 lead">2023</span>
-      <!-- <div id="year-display" class="col-12 text-center my-2 lead">2023</div> -->
-      <button id="down-button" class="btn btn-link arrow-btn">
-        <i class="fas fa-caret-right text-secondary" style="color: #333 !important;"></i>
-      </button>
-    </div>
-  </div>
 
 
   <div class="container">
     <div class="row card-row">
       <div class="col-sm-12 col-md-6 d-flex justify-content-center">
         <div class="card" data-year="2023" style="width: 18rem;">
-          <img class="card-img-top" src="img/download.svg" alt="Card image cap">
+          <img class="card-img-top" src="img/vssThumbnail.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Volumetric Streaming</h5>
-            <p class="card-text">A 3D volumetric streaming system (VSS) that includes a
-              volumetric video player, schedulable streaming tasks, AI task filters, and advanced web streaming
+            <p class="card-text">A volumetric streaming system (VSS) that includes a
+              volumetric video player, schedulable data operation tasks, AI task filters (e.g., filter, style), and
+              state-of-the-art web streaming
               technologies.</p>
             <div class="d-flex justify-content-end gap-4">
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#vssModal">
@@ -276,12 +304,13 @@
               <!-- <a href="#" class="btn btn-primary">
                   <i class="fas fa-code"></i>
                 </a> -->
-              <a href="#" class="btn btn-primary">
+              <a href="https://meteor.ame.asu.edu/publications/characterizing-point-clouds.pdf" class="btn btn-primary"
+                target="_blank">
                 <i class="fas fa-file icon-color"></i>
               </a>
-              <a href="#" class="btn btn-primary">
+              <!-- <a href="#" class="btn btn-primary">
                 <i class="fas fa-video icon-color"></i>
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
@@ -291,7 +320,7 @@
         <div class="card" data-year="2023" style="width: 18rem;">
           <img class="card-img-top" src="img/npcThumbnail.gif" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">AI NPC</h5>
+            <h5 class="card-title">Chatbot NPC</h5>
             <p class="card-text">A Unity project for an AI-driven chatbot NPC with voice and vision capabilities,
               leveraging OpenAI, Azure, Google Cloud, Oculus Lip Sync, and YOLO-NAS for a rich, interactive user
               experience.</p>
@@ -299,13 +328,13 @@
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ainpcModal">
                 <i class="fas fa-expand-arrows-alt icon-color"></i>
               </button>
-              <a href="#" class="btn btn-primary">
+              <a href="https://github.com/TheWiselyBearded/ChatbotAvatarAI" class="btn btn-primary" target="_blank">
                 <i class="fas fa-code icon-color"></i>
               </a>
               <!-- <a href="#" class="btn btn-primary">
                   <i class="fas fa-file"></i>
                 </a> -->
-              <a href="#" class="btn btn-primary">
+              <a href="https://www.youtube.com/watch?v=CyCedEBO_oA" class="btn btn-primary" target="_blank">
                 <i class="fas fa-video icon-color"></i>
               </a>
             </div>
@@ -343,13 +372,14 @@
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#smellEngineModal">
                 <i class="fas fa-expand-arrows-alt icon-color"></i>
               </button>
-              <a href="#" class="btn btn-primary">
+              <a href="https://github.com/asu-meteor/The-Smell-Engine" class="btn btn-primary" target="_blank">
                 <i class="fas fa-code icon-color"></i>
               </a>
-              <a href="#" class="btn btn-primary">
+              <a href="https://meteor.ame.asu.edu/publications/SmellEngineIEEEVRR22.pdf" class="btn btn-primary"
+                target="_blank">
                 <i class="fas fa-file icon-color"></i>
               </a>
-              <a href="#" class="btn btn-primary">
+              <a href="https://www.youtube.com/watch?v=vV36-LQbsOU" class="btn btn-primary" target="_blank">
                 <i class="fas fa-video icon-color"></i>
               </a>
             </div>
@@ -371,65 +401,15 @@
               <!-- <a href="#" class="btn btn-primary">
                   <i class="fas fa-file"></i>
                 </a> -->
-              <a href="#" class="btn btn-primary">
+              <!-- <a href="#" class="btn btn-primary">
                 <i class="fas fa-video icon-color"></i>
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="row card-row">
-      <div class="col-sm-12 col-md-6 d-flex justify-content-center">
-        <div class="card" data-year="2021" style="width: 18rem;">
-          <img class="card-img-top" src="img/baltuThumbnail.gif" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Baltu Technologies</h5>
-            <p class="card-text">At Baltu, I was a lead developer on SuperDoc, an On-The-Job training platform used to
-              quickly capture and deliver the specialized skills and knowledge of any organization.</p>
-            <div class="d-flex justify-content-end gap-4">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#baltuModal">
-                <i class="fas fa-expand-arrows-alt icon-color"></i>
-              </button>
-              <!-- <a href="#" class="btn btn-primary">
-                  <i class="fas fa-code"></i>
-                </a> -->
-              <!-- <a href="#" class="btn btn-primary">
-                  <i class="fas fa-file"></i>
-                </a> -->
-              <a href="#" class="btn btn-primary">
-                <i class="fas fa-video icon-color"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-6 d-flex justify-content-center">
-        <div class="card" data-year="2021" style="width: 18rem;">
-          <img class="card-img-top" src="img/dsMobileThumbnail.gif" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Dreamscape Mobile</h5>
-            <p class="card-text">Tested by 100+ students in introductory biology courses, an ASU AR-based application
-              allowing students to explore content collected in ASU Dreamscape Learn experiences.</p>
-            <div class="d-flex justify-content-end gap-4">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dsMobileModal">
-                <i class="fas fa-expand-arrows-alt icon-color"></i>
-              </button>
-              <!-- <a href="#" class="btn btn-primary">
-                <i class="fas fa-code icon-color"></i>
-              </a> -->
-              <!-- <a href="#" class="btn btn-primary">
-                  <i class="fas fa-file"></i>
-                </a> -->
-              <a href="#" class="btn btn-primary">
-                <i class="fas fa-video icon-color"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <div class="row card-row">
       <div class="col-sm-12 col-md-6 d-flex justify-content-center">
         <div class="card" data-year="2021" style="width: 18rem;">
@@ -448,9 +428,62 @@
               <!-- <a href="#" class="btn btn-primary">
                 <i class="fas fa-file"></i>
               </a> -->
-              <a href="#" class="btn btn-primary">
+              <a href="https://www.youtube.com/watch?v=2lw7tuwLhdA" class="btn btn-primary" target="_blank">
                 <i class="fas fa-video icon-color"></i>
               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+        <div class="card" data-year="2021" style="width: 18rem;">
+          <img class="card-img-top" src="img/baltuThumbnail.gif" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Baltu Technologies</h5>
+            <p class="card-text">At Baltu, I was a lead developer on SuperDoc, an On-The-Job training platform used to
+              quickly capture and deliver the specialized skills and knowledge of any organization.</p>
+            <div class="d-flex justify-content-end gap-4">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#baltuModal">
+                <i class="fas fa-expand-arrows-alt icon-color"></i>
+              </button>
+              <!-- <a href="#" class="btn btn-primary">
+                  <i class="fas fa-code"></i>
+                </a> -->
+              <!-- <a href="#" class="btn btn-primary">
+                  <i class="fas fa-file"></i>
+                </a> -->
+              <!-- <a href="https://baltutech.com/" class="btn btn-primary">
+                <i class="fas fa-video icon-color"></i>
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="row card-row">
+      <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+        <div class="card" data-year="2021" style="width: 18rem;">
+          <img class="card-img-top" src="img/dsMobileThumbnail.gif" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Dreamscape Mobile</h5>
+            <p class="card-text">An ASU AR-based application
+              allowing students to explore content collected in ASU Dreamscape Learn experiences. Tested by 100+
+              students in introductory biology courses.</p>
+            <div class="d-flex justify-content-end gap-4">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dsMobileModal">
+                <i class="fas fa-expand-arrows-alt icon-color"></i>
+              </button>
+              <!-- <a href="#" class="btn btn-primary">
+                <i class="fas fa-code icon-color"></i>
+              </a> -->
+              <!-- <a href="#" class="btn btn-primary">
+                  <i class="fas fa-file"></i>
+                </a> -->
+              <!-- <a href="#" class="btn btn-primary">
+                <i class="fas fa-video icon-color"></i>
+              </a> -->
             </div>
           </div>
         </div>
@@ -471,13 +504,17 @@
                 data-target="#designingForDreamscapeModal">
                 <i class="fas fa-expand-arrows-alt icon-color"></i>
               </button>
+              <a href="https://news.asu.edu/20211203-creativity-asu-students-create-time-travel-experience-dreamscape-learn"
+                class="btn btn-primary" target="_blank">
+                <i class="fas fa-newspaper icon-color"></i>
+              </a>
               <!-- <a href="#" class="btn btn-primary">
                   <i class="fas fa-code"></i>
                 </a> -->
               <!-- <a href="#" class="btn btn-primary">
                   <i class="fas fa-file"></i>
                 </a> -->
-              <a href="#" class="btn btn-primary">
+              <a href="https://www.youtube.com/watch?v=LzyutpwYc9M" class="btn btn-primary" target="_blank">
                 <i class="fas fa-video icon-color"></i>
               </a>
             </div>
@@ -489,24 +526,23 @@
     <div class="row card-row">
       <div class="col-sm-12 col-md-6 d-flex justify-content-center">
         <div class="card" data-year="2020" style="width: 18rem;">
-          <img class="card-img-top" src="img/asucampusThumbnail.gif" alt="Card image cap">
+          <img class="card-img-top" src="img/visorThumbnail.gif" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">ASU Campus Tours</h5>
-            <p class="card-text">Students can virtually explore ASU by teleporting into various 360-degree portals,
-              switching between campuses, and free form navigation,
-              supporting WebXR and desktop.
-            </p>
+            <h5 class="card-title">Planetary Visor</h5>
+            <p class="card-text">An immersive visualization tool that provides geologic and geographic context of the
+              Martian terrain, by localizing it with spectroscopy data from the orbiting satellite.</p>
             <div class="d-flex justify-content-end gap-4">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#campusToursModal">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#visorModal">
                 <i class="fas fa-expand-arrows-alt icon-color"></i>
               </button>
-              <a href="https://xr.asu.edu/exp/campus/" class="btn btn-primary">
+              <a href="https://github.com/LaurenGold/Planetary-Visor" class="btn btn-primary" target="_blank">
                 <i class="fas fa-code icon-color"></i>
               </a>
-              <!-- <a href="#" class="btn btn-primary">
-                      <i class="fas fa-file"></i>
-                    </a> -->
-              <a href="#" class="btn btn-primary">
+              <a href="https://ieeexplore.ieee.org/abstract/document/9417645" class="btn btn-primary" target="_blank">
+                <i class="fas fa-file"></i>
+              </a>
+              <a href="https://www.youtube.com/live/vU1ooD8uu3A?feature=share&t=19974" class="btn btn-primary"
+                target="_blank">
                 <i class="fas fa-video icon-color"></i>
               </a>
             </div>
@@ -528,7 +564,7 @@
               <!-- <a href="#" class="btn btn-primary">
                     <i class="fas fa-file"></i>
                   </a> -->
-              <a href="#" class="btn btn-primary">
+              <a href="https://www.youtube.com/watch?v=DW8ljqdMYrI" class="btn btn-primary" target="_blank">
                 <i class="fas fa-video icon-color"></i>
               </a>
             </div>
@@ -539,22 +575,24 @@
     <div class="row card-row">
       <div class="col-sm-12 col-md-6 d-flex justify-content-center">
         <div class="card" data-year="2020" style="width: 18rem;">
-          <img class="card-img-top" src="img/visorThumbnail.gif" alt="Card image cap">
+          <img class="card-img-top" src="img/asucampusThumbnail.gif" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Planetary Visor</h5>
-            <p class="card-text">An immersive visualization tool that provides geologic and geographic context of the
-              Martian terrain, by localizing it with spectroscopy data from the orbiting satellite.</p>
+            <h5 class="card-title">ASU Campus Tours</h5>
+            <p class="card-text">Students can virtually explore ASU by teleporting into various 360-degree portals,
+              switching between campuses, and free form navigation,
+              supporting WebXR and desktop.
+            </p>
             <div class="d-flex justify-content-end gap-4">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#visorModal">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#campusToursModal">
                 <i class="fas fa-expand-arrows-alt icon-color"></i>
               </button>
-              <a href="#" class="btn btn-primary">
+              <a href="https://xr.asu.edu/exp/campus/" class="btn btn-primary" target="_blank">
                 <i class="fas fa-code icon-color"></i>
               </a>
-              <a href="#" class="btn btn-primary">
-                <i class="fas fa-file"></i>
-              </a>
-              <a href="#" class="btn btn-primary">
+              <!-- <a href="#" class="btn btn-primary">
+                      <i class="fas fa-file"></i>
+                    </a> -->
+              <a href="https://www.youtube.com/watch?v=paHgnlLAFoo" class="btn btn-primary" target="_blank">
                 <i class="fas fa-video icon-color"></i>
               </a>
             </div>
@@ -574,14 +612,14 @@
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#commencementModal">
                 <i class="fas fa-expand-arrows-alt icon-color"></i>
               </button>
-              <a href="https://xr.asu.edu/commencement/" class="btn btn-primary">
+              <a href="https://xr.asu.edu/commencement/" class="btn btn-primary" target="_blank">
                 <i class="fas fa-code icon-color"></i>
               </a>
               <a href="https://news.asu.edu/20201214-sun-devil-life-asu-commencement-app-offers-grads-augmented-reality-experience"
-                class="btn btn-primary">
+                class="btn btn-primary" target="_blank">
                 <i class="fas fa-newspaper icon-color"></i>
               </a>
-              <a href="https://www.youtube.com/watch?v=5QccM3EG9jM" class="btn btn-primary">
+              <a href="https://www.youtube.com/watch?v=5QccM3EG9jM" class="btn btn-primary" target="_blank">
                 <i class="fas fa-video icon-color"></i>
               </a>
             </div>
@@ -609,7 +647,7 @@
               <!-- <a href="#" class="btn btn-primary">
                     <i class="fas fa-file"></i>
                   </a> -->
-              <a href="#" class="btn btn-primary">
+              <a href="https://www.youtube.com/watch?v=fK_BMXSNbeg" class="btn btn-primary" target="_blank">
                 <i class="fas fa-video icon-color"></i>
               </a>
             </div>
@@ -627,13 +665,13 @@
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#swishModal">
                 <i class="fas fa-expand-arrows-alt icon-color"></i>
               </button>
-              <a href="#" class="btn btn-primary">
+              <a href="https://github.com/Shahab-VT/SWISH" class="btn btn-primary" target="_blank">
                 <i class="fas fa-code icon-color"></i>
               </a>
-              <a href="#" class="btn btn-primary">
+              <a href="https://meteor.ame.asu.edu/publications/p751-sagheb.pdf" class="btn btn-primary" target="_blank">
                 <i class="fas fa-file"></i>
               </a>
-              <a href="#" class="btn btn-primary">
+              <a href="https://www.youtube.com/watch?v=dGoqvKuwW34" class="btn btn-primary" target="_blank">
                 <i class="fas fa-video icon-color"></i>
               </a>
             </div>
@@ -656,10 +694,10 @@
               <!-- <a href="#" class="btn btn-primary">
                 <i class="fas fa-code icon-color"></i>
               </a> -->
-              <a href="#" class="btn btn-primary">
+              <a href="https://ieeexplore.ieee.org/document/8942234/" class="btn btn-primary" target="_blank">
                 <i class="fas fa-file"></i>
               </a>
-              <a href="#" class="btn btn-primary">
+              <a href="https://www.youtube.com/watch?v=TXl80knPrhE" class="btn btn-primary" target="_blank">
                 <i class="fas fa-video icon-color"></i>
               </a>
             </div>
@@ -679,7 +717,7 @@
               <!-- <a href="#" class="btn btn-primary">
                     <i class="fas fa-file"></i>
                   </a> -->
-              <a href="#" class="btn btn-primary">
+              <a href="https://www.youtube.com/watch?v=FftMp_-CkPg" class="btn btn-primary" target="_blank">
                 <i class="fas fa-video icon-color"></i>
               </a>
             </div>
@@ -736,14 +774,15 @@
               allowfullscreen></iframe>
           </div>
           <div class="button-group">
-            <a href="https://github.com/LaurenGold/Planetary-Visor" class="btn btn-secondary" role="button">
+            <a href="https://github.com/LaurenGold/Planetary-Visor" class="btn btn-secondary" role="button"
+              target="_blank">
               <i class="fas fa-code"></i>
             </a>
-            <a href="https://ieeexplore.ieee.org/abstract/document/9417645" class="btn btn-primary">
+            <a href="https://ieeexplore.ieee.org/abstract/document/9417645" class="btn btn-primary" target="_blank">
               <i class="fas fa-file icon-color"></i>
             </a>
-            <a href="https://www.youtube.com/watch?t=19974&v=vU1ooD8uu3A&embeds_referring_euri=https%3A%2F%2Fmeteor.ame.asu.edu%2F&feature=emb_imp_woyt"
-              class="btn btn-secondary" role="button">
+            <a href="https://www.youtube.com/live/vU1ooD8uu3A?feature=share&t=19974" class="btn btn-secondary"
+              role="button" target="_blank">
               <i class="fas fa-video icon-color"></i>
             </a>
           </div>
@@ -817,7 +856,7 @@
           </div>
           <div class="button-group">
             <a href="https://news.asu.edu/20211203-creativity-asu-students-create-time-travel-experience-dreamscape-learn"
-              class="btn btn-secondary" role="button">
+              class="btn btn-secondary" role="button" target="_blank">
               <i class="fas fa-newspaper icon-color"></i>
             </a>
           </div>
@@ -855,13 +894,15 @@
               allowfullscreen></iframe>
           </div>
           <div class="button-group">
-            <a href="https://github.com/TheWiselyBearded/ChatbotAvatarAI" class="btn btn-secondary" role="button">
+            <a href="https://github.com/TheWiselyBearded/ChatbotAvatarAI" class="btn btn-secondary" role="button"
+              target="_blank">
               <i class="fas fa-code"></i>
             </a>
-            <a href="#" class="btn btn-primary">
+            <!-- <a href="#" class="btn btn-primary">
               <i class="fas fa-file icon-color"></i>
-            </a>
-            <a href="https://www.youtube.com/watch?v=FftMp_-CkPg" class="btn btn-secondary" role="button">
+            </a> -->
+            <a href="https://www.youtube.com/watch?v=FftMp_-CkPg" class="btn btn-secondary" role="button"
+              target="_blank">
               <i class="fas fa-video icon-color"></i>
             </a>
           </div>
@@ -903,8 +944,7 @@
               allowfullscreen></iframe>
           </div>
           <div class="button-group">
-            <a href="https://ieeexplore-ieee-org.ezproxy1.lib.asu.edu/document/8942234/metrics#metrics"
-              class="btn btn-primary">
+            <a href="https://ieeexplore.ieee.org/document/8942234/" class="btn btn-primary" target="_blank">
               <i class="fas fa-file icon-color"></i>
             </a>
           </div>
@@ -937,7 +977,8 @@
         <div class="modal-body d-flex flex-column align-items-center">
           <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
             <iframe style="width: 100%; height: 100%;"
-              src="https://meteor.ame.asu.edu/projects/holoLucination/images/reMARS.webm" allowfullscreen></iframe>
+              src="https://baltutech.com/wp-content/uploads/2022/03/SuperDoc_Teaser_Video_Workforce_Development__Worker_Upskilling_Training.mp4"
+              allowfullscreen></iframe>
           </div>
           <p>SuperDoc -- designed for hands on employees -- is a software application to capture and share the
             specialized skills and knowledge of an organization.
@@ -970,25 +1011,70 @@
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
           <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
-            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/TXl80knPrhE"
-              allowfullscreen></iframe>
+            <!-- <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/TXl80knPrhE"
+              allowfullscreen></iframe> -->
+            <img class="modal-image" src="img/dsHeader.gif" alt="Reflection Debugging Application">
           </div>
           <p>
-            At Dreamscape Immersive, I worked on ...
+            At Dreamscape Immersive, I helped develop experimental cinematic VR experiences, a hand- and body-tracking
+            multi-user interactive movie poster system, and a set of internal tools.
+            During my time with Dreamscape, I collaborated with various teams (e.g., professors, art team, sound design
+            team, narrative team, and programming team),
+            working on multi-sensory educational and entertainment VR experiences to be deployed for use by 1000+ ASU
+            students and across 3+ store fronts.
           </p>
           </br>
           <img class="modal-image" src="img/dsReflection.gif" alt="Reflection Debugging Application">
-          <p>For one application, I added ability to debug experiences in real-time, invoking code using Reflection
-            Library.</p>
+          <p>For one of my projects, I proposed and developed a runtime debugging tool to dramatically reduce downtime,
+            allowing developers to
+            inspect the code for virtual objects, invoke methods dynamically, and view/edit variables in real-time.</p>
           </br>
           <img class="modal-image" src="img/dsActorRecording.gif" alt="Reflection Debugging Application">
           <p>Then I worked on actor recording tools, mapping tracked facial geoemetry between mobile devices and VR
-            devices (e.g., Apple iPhone, Meta Quest Pro).</p>
+            devices (e.g., Apple iPhone, Meta Quest Pro) and incorporating IK Rigs using Unity's latest open solutions.
+          </p>
+
         </div>
       </div>
     </div>
   </div>
 
+
+  <!-- Dreamscape Immersive -->
+  <div class="modal fade" id="dsMobileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Dreamscape Mobile</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center">
+          <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
+            <!-- <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/TXl80knPrhE"
+              allowfullscreen></iframe> -->
+            <img src="img/dsmobile.gif" alt="Dreamscape Mobile">
+          </div>
+          <p>
+            As a project lead and lead programmer for the Dreamscape Mobile application, I had the privilege of working
+            with a dedicated team of students to develop a cross-platform mobile AR app using Unity. Embracing a sprint
+            methodology, we made weekly check-ins to ensure progress and collaborated closely with students.
+          </p>
+          </br>
+          <img class="modal-image" src="img/studentsDSMobile.jpg" alt="Students DS Mobile" style="width:60%;">
+          <p>
+            The app empowered students to engage in interactive classroom assignments and seamlessly review data from
+            their VR
+            experiences. Leveraging AWS server integration, Unity asset bundles, and Oauth2 authentication, we strived
+            to provide a robust technical foundation. Through collaboration with various teams across ASU, the app aims
+            to enhance the learning journey of over 150 students per semester in introductory ASU Biology courses.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- MIXED REALITY MEMORIES -->
   <div class="modal fade" id="memoriesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
@@ -1043,13 +1129,14 @@
               allowfullscreen></iframe>
           </div>
           <div class="button-group">
-            <a href="https://github.com/Shahab-VT/SWISH" class="btn btn-secondary" role="button">
+            <a href="https://github.com/Shahab-VT/SWISH" class="btn btn-secondary" role="button" target="_blank">
               <i class="fas fa-code"></i>
             </a>
-            <a href="https://meteor.ame.asu.edu/publications/p751-sagheb.pdf" class="btn btn-primary">
+            <a href="https://meteor.ame.asu.edu/publications/p751-sagheb.pdf" class="btn btn-primary" target="_blank">
               <i class="fas fa-file icon-color"></i>
             </a>
-            <a href="https://www.youtube.com/watch?v=dGoqvKuwW34" class="btn btn-secondary" role="button">
+            <a href="https://www.youtube.com/watch?v=dGoqvKuwW34" class="btn btn-secondary" role="button"
+              target="_blank">
               <i class="fas fa-video icon-color"></i>
             </a>
           </div>
@@ -1085,7 +1172,7 @@
               allowfullscreen></iframe>
           </div>
           <div class="button-group">
-            <a href="https://xr.asu.edu/campus/" class="btn btn-secondary" role="button">
+            <a href="https://xr.asu.edu/campus/" class="btn btn-secondary" role="button" target="_blank">
               <i class="fas fa-code"></i>
             </a>
           </div>
@@ -1177,11 +1264,12 @@
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
           <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
-            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/FftMp_-CkPg"
+            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/CyCedEBO_oA"
               allowfullscreen></iframe>
           </div>
           <div class="button-group">
-            <a href="https://github.com/TheWiselyBearded/ChatbotAvatarAI" class="btn btn-secondary" role="button">
+            <a href="https://github.com/TheWiselyBearded/ChatbotAvatarAI" class="btn btn-secondary" role="button"
+              target="_blank">
               <i class="fas fa-code"></i>
             </a>
           </div>
@@ -1219,14 +1307,16 @@
               allowfullscreen></iframe>
           </div>
           <div class="button-group">
-            <a href="https://github.com/asu-meteor/The-Smell-Engine" class="btn btn-secondary" role="button">
+            <a href="https://github.com/asu-meteor/The-Smell-Engine" class="btn btn-secondary" role="button"
+              target="_blank">
               <i class="fas fa-code"></i>
             </a>
-            <a href="https://meteor.ame.asu.edu/publications/SmellEngineIEEEVRR22.pdf" class="btn btn-primary">
+            <a href="https://meteor.ame.asu.edu/publications/SmellEngineIEEEVRR22.pdf" class="btn btn-primary"
+              target="_blank">
               <i class="fas fa-file icon-color"></i>
             </a>
             <a href="https://news.asu.edu/20220909-smelling-strawberries-smoke-and-space-virtual-reality"
-              class="btn btn-secondary" role="button">
+              class="btn btn-secondary" role="button" target="_blank">
               <i class="fas fa-newspaper icon-color"></i>
             </a>
           </div>
@@ -1254,6 +1344,55 @@
     </div>
   </div>
 
+  <!-- SMELL ENGINE -->
+  <div class="modal fade" id="vssModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Volumetric Streaming Systems</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center">
+          <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
+            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/a137i1YR2Os"
+              allowfullscreen></iframe>
+          </div>
+          <div class="button-group">
+            <a href="https://dl.acm.org/doi/abs/10.1145/3498361.3538660" class="btn btn-primary" target="_blank">
+              <i class="fas fa-file icon-color"></i>
+            </a>
+          </div>
+          <p>
+            We introduce an AI- and edge-assisted Volumetric Streaming System (VSS) designed to distribute high-quality
+            volumetric data between two endpoints efficiently. This research project focuses on creating an intelligent,
+            multi-process,
+            scheduling system that streamlines data filters and processes across multiple data streams.
+          </p>
+          </br>
+          <img src="img/vss-system.jpg" alt="Smell Engine System Design">
+          <p>
+            VSS supports reconfigurable network architecture (e.g., p2p, server/client), and streams volumetric data from
+            clients to a recipient client via WebRTC for Python and SipSorcery for .NET. The receiver, built in Unity,
+            processes and visualizes the incoming volumetric data, supporting the use of the Kinect device in both
+            Python and .NET settings for the streaming of high-definition volumetric data. 
+          </p>
+          </br>
+          <img class="modal-image" src="img/vssStyle.gif" alt="Smell Engine System Design">
+          <p>
+            As a starting prototype, we built a pipeline that incorporated body tracking models to single out human subjects within the RGBD frames, allowing us to
+            discard non-essential pixels and prioritize regions of interest, thereby optimizing subsequent processing steps.
+            Additionally, style transfer models are used to enhance the visual aesthetics of the RGB frames (and also showing the bottlenecks with such filter combinations).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
   <script>
     // Get today's year
     let currentYear = new Date().getFullYear();
@@ -1265,7 +1404,8 @@
 
     // Initial display
     yearDisplay.textContent = currentYear;
-    filterCards(currentYear)
+    filterCards(currentYear);
+    checkButtonStatus();
 
     function filterCards(year) {
       var cards = document.getElementsByClassName('card');
@@ -1279,12 +1419,19 @@
       }
     }
 
+    // Check and update button status based on current year
+    function checkButtonStatus() {
+      upButton.disabled = (currentYear >= 2023);
+      downButton.disabled = (currentYear <= 2019);
+    }
+
     upButton.addEventListener('click', function () {
-      if (currentYear < new Date().getFullYear()) {
+      if (currentYear < 2023) {
         currentYear++;
         yearDisplay.textContent = currentYear;
         filterCards(currentYear);
       }
+      checkButtonStatus();
     });
 
     downButton.addEventListener('click', function () {
@@ -1293,7 +1440,9 @@
         yearDisplay.textContent = currentYear;
         filterCards(currentYear);
       }
+      checkButtonStatus();
     });
+
 
 
   </script>
