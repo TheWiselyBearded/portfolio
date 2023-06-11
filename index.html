@@ -290,7 +290,7 @@
     <div class="row card-row">
       <div class="col-sm-12 col-md-6 d-flex justify-content-center">
         <div class="card" data-year="2023" style="width: 18rem;">
-          <img class="card-img-top" src="img/download.svg" alt="Card image cap">
+          <img class="card-img-top" src="img/vssThumbnail.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Volumetric Streaming</h5>
             <p class="card-text">A volumetric streaming system (VSS) that includes a
@@ -1343,6 +1343,55 @@
       </div>
     </div>
   </div>
+
+  <!-- SMELL ENGINE -->
+  <div class="modal fade" id="vssModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Volumetric Streaming Systems</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center">
+          <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
+            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/a137i1YR2Os"
+              allowfullscreen></iframe>
+          </div>
+          <div class="button-group">
+            <a href="https://dl.acm.org/doi/abs/10.1145/3498361.3538660" class="btn btn-primary" target="_blank">
+              <i class="fas fa-file icon-color"></i>
+            </a>
+          </div>
+          <p>
+            We introduce an AI- and edge-assisted Volumetric Streaming System (VSS) designed to distribute high-quality
+            volumetric data between two endpoints efficiently. This research project focuses on creating an intelligent,
+            multi-process,
+            scheduling system that streamlines data filters and processes across multiple data streams.
+          </p>
+          </br>
+          <img src="img/vss-system.jpg" alt="Smell Engine System Design">
+          <p>
+            VSS supports reconfigurable network architecture (e.g., p2p, server/client), and streams volumetric data from
+            clients to a recipient client via WebRTC for Python and SipSorcery for .NET. The receiver, built in Unity,
+            processes and visualizes the incoming volumetric data, supporting the use of the Kinect device in both
+            Python and .NET settings for the streaming of high-definition volumetric data. 
+          </p>
+          </br>
+          <img class="modal-image" src="img/vssStyle.gif" alt="Smell Engine System Design">
+          <p>
+            As a starting prototype, we built a pipeline that incorporated body tracking models to single out human subjects within the RGBD frames, allowing us to
+            discard non-essential pixels and prioritize regions of interest, thereby optimizing subsequent processing steps.
+            Additionally, style transfer models are used to enhance the visual aesthetics of the RGB frames (and also showing the bottlenecks with such filter combinations).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
   <script>
     // Get today's year
