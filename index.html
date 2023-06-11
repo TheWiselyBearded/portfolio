@@ -29,6 +29,35 @@
       /* Adjust the value as per your desired vertical space */
     }
 
+    .icon-color {
+      color: #555555;
+    }
+
+    #year-display {
+      font-size: 24px;
+      /* Adjust the font size to the desired value */
+    }
+
+    .modal-body img {
+      width: 80%;
+      height: auto;
+      /* box-shadow: none; */
+      /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    }
+
+    .modal-image {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .modal-body .button-group .btn {
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .button-group {
+      padding-top: 10px;
+      /* Adjust the value as per your desired padding */
+    }
+
     .card {
       border: none;
       border-radius: 8px;
@@ -84,7 +113,7 @@
       color: #333;
       font-weight: 500;
       text-transform: uppercase;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.0);
       transition: box-shadow 0.3s ease;
     }
 
@@ -144,6 +173,28 @@
       margin-top: 1rem;
       margin-bottom: 0;
       color: #666;
+      width: 92%;
+    }
+
+    .summary {
+      max-width: 650px;
+      font-size: 15px;
+      /* Adjust the value as per your desired width */
+      margin: 0 auto;
+      /* Centers the text horizontally within the constrained width */
+    }
+
+    .social-icons {
+      margin-top: 20px;
+      /* Adjust the value as per your desired spacing */
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 10px;
+      /* Adjust the value as per your desired spacing between icons */
+      color: #333;
+      font-size: 24px;
     }
   </style>
 
@@ -152,7 +203,18 @@
       <div class="col-12 text-center">
         <h1 class="display-4 display-sm-3 display-md-2 display-lg-1">Alireza Bahremand</h1>
         <p class="lead">Research Engineer</p>
+        <p class="summary">I specialize in multi-sensory digital embodiment, having worked on
+          frameworks for olfactory and tactile experiences in XR, multi-sensory storytelling, and AI-assisted volumetric
+          streaming.
+          Outside of work, I enjoy drawing, reading, rock climbing, and discussing gaming classics.</p>
         <!-- <hr class="my-4" style="border-color: grey;"> -->
+        <div class="social-icons">
+          <a href="mailto:alireza.bahremand@outlook.com" target="_blank"><i class="fas fa-envelope"></i></a>
+          <a href="https://twitter.com/lirezaBahremand/" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/bahremand/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/alirezabahremand/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="your-resume-link" target="_blank"><i class="fas fa-file-alt"></i></a>
+        </div>
       </div>
     </div>
   </div>
@@ -190,12 +252,23 @@
           <img class="card-img-top" src="img/download.svg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Volumetric Streaming</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
-              <!-- More -->
-              <i class="fas fa-expand-arrows-alt"></i>
-            </button>
+            <p class="card-text">A 3D volumetric streaming system (VSS) that includes a
+              volumetric video player, schedulable streaming tasks, AI task filters, and advanced web streaming
+              technologies.</p>
+            <div class="d-flex justify-content-end gap-4">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#vssModal">
+                <i class="fas fa-expand-arrows-alt icon-color"></i>
+              </button>
+              <!-- <a href="#" class="btn btn-primary">
+                  <i class="fas fa-code"></i>
+                </a> -->
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-file icon-color"></i>
+              </a>
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-video icon-color"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -208,9 +281,20 @@
             <p class="card-text">A Unity project for an AI-driven chatbot NPC with voice and vision capabilities,
               leveraging OpenAI, Azure, Google Cloud, Oculus Lip Sync, and YOLO-NAS for a rich, interactive user
               experience.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ainpcModal">
-              <i class="fas fa-expand-arrows-alt"></i>
-            </button>
+            <div class="d-flex justify-content-end gap-4">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ainpcModal">
+                <i class="fas fa-expand-arrows-alt icon-color"></i>
+              </button>
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-code icon-color"></i>
+              </a>
+              <!-- <a href="#" class="btn btn-primary">
+                  <i class="fas fa-file"></i>
+                </a> -->
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-video icon-color"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -241,9 +325,20 @@
             <p class="card-text">A framework and system that integrates real-time, physical odor synthesis into virtual
               environments, thereby enhancing user immersion by providing a more granular and localized olfactory
               experience than traditional systems.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#smellEngineModal">
-              <i class="fas fa-expand-arrows-alt"></i>
-            </button>
+            <div class="d-flex justify-content-end gap-4">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#smellEngineModal">
+                <i class="fas fa-expand-arrows-alt icon-color"></i>
+              </button>
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-code icon-color"></i>
+              </a>
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-file icon-color"></i>
+              </a>
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-video icon-color"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -252,11 +347,23 @@
           <img class="card-img-top" src="img/download.svg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Dreamscape Immersive</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
-              <i class="fas fa-expand-arrows-alt"></i>
-            </button>
+            <p class="card-text">I worked on experimental applications (interactive movie poster), tools (dev debugging
+              tools), and experiences (VR-film). At Dreamscape, I worked with various teams (e.g., sound, designers,
+              programmers, story).</p>
+            <div class="d-flex justify-content-end gap-4">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dsModal">
+                <i class="fas fa-expand-arrows-alt icon-color"></i>
+              </button>
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-code icon-color"></i>
+              </a>
+              <!-- <a href="#" class="btn btn-primary">
+                  <i class="fas fa-file"></i>
+                </a> -->
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-video icon-color"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -267,12 +374,23 @@
         <div class="card" data-year="2021" style="width: 18rem;">
           <img class="card-img-top" src="img/baltuThumbnail.gif" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Baltu Super Doc</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
-              <i class="fas fa-expand-arrows-alt"></i>
-            </button>
+            <h5 class="card-title">Baltu Technologies</h5>
+            <p class="card-text">At Baltu, I was a lead developer on SuperDoc, an On-The-Job training platform used to
+              quickly capture and deliver the specialized skills and knowledge of any organization.</p>
+            <div class="d-flex justify-content-end gap-4">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#baltuModal">
+                <i class="fas fa-expand-arrows-alt icon-color"></i>
+              </button>
+              <!-- <a href="#" class="btn btn-primary">
+                  <i class="fas fa-code"></i>
+                </a> -->
+              <!-- <a href="#" class="btn btn-primary">
+                  <i class="fas fa-file"></i>
+                </a> -->
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-video icon-color"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -281,11 +399,22 @@
           <img class="card-img-top" src="img/download.svg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Dreamscape Mobile</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">
-              <i class="fas fa-expand-arrows-alt"></i>
-            </button>
+            <p class="card-text">Tested by 100+ students in introductory biology courses, an ASU AR-based application
+              allowing students to explore content collected in ASU Dreamscape Learn experiences.</p>
+            <div class="d-flex justify-content-end gap-4">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dsMobileModal">
+                <i class="fas fa-expand-arrows-alt icon-color"></i>
+              </button>
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-code icon-color"></i>
+              </a>
+              <!-- <a href="#" class="btn btn-primary">
+                  <i class="fas fa-file"></i>
+                </a> -->
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-video icon-color"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -296,10 +425,22 @@
           <img class="card-img-top" src="img/memoriesThumbnail.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Memories</h5>
-            <p class="card-text">This project uses Azure Anchors, Azure Cosmos DB, and RGBD sensor data to enable location-anchored, volumetric playback of events in any environment.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#memoriesModal">
-              <i class="fas fa-expand-arrows-alt"></i>
-            </button>
+            <p class="card-text">This project uses Azure Anchors, Azure Cosmos DB, and RGBD sensor data to enable
+              location-anchored, volumetric playback of events in any environment.</p>
+            <div class="d-flex justify-content-end gap-4">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#memoriesModal">
+                <i class="fas fa-expand-arrows-alt icon-color"></i>
+              </button>
+              <!-- <a href="#" class="btn btn-primary">
+                <i class="fas fa-code"></i>
+              </a> -->
+              <!-- <a href="#" class="btn btn-primary">
+                <i class="fas fa-file"></i>
+              </a> -->
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-video icon-color"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -311,12 +452,24 @@
             alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Designing for Dreamscape</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal"
-              data-target="#designingForDreamscapeModal">
-              <i class="fas fa-expand-arrows-alt"></i>
-            </button>
+            <p class="card-text"> Using Dreamscape Immersive technology, we built a VR-based cinematic story on climate
+              change. As lead developer, I focused on coordinating a majority of the experience with
+              different teams.</p>
+            <div class="d-flex justify-content-end gap-4">
+              <button type="button" class="btn btn-primary" data-toggle="modal"
+                data-target="#designingForDreamscapeModal">
+                <i class="fas fa-expand-arrows-alt icon-color"></i>
+              </button>
+              <!-- <a href="#" class="btn btn-primary">
+                  <i class="fas fa-code"></i>
+                </a> -->
+              <!-- <a href="#" class="btn btn-primary">
+                  <i class="fas fa-file"></i>
+                </a> -->
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-video icon-color"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -328,11 +481,24 @@
           <img class="card-img-top" src="img/asucampusThumbnail.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">ASU Campus Tours</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#campusToursModal">
-              <i class="fas fa-expand-arrows-alt"></i>
-            </button>
+            <p class="card-text">Students can virtually explore ASU by teleporting into various 360-degree portals,
+              switching between campuses, and free form navigation,
+              supporting WebXR and desktop.
+            </p>
+            <div class="d-flex justify-content-end gap-4">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#campusToursModal">
+                <i class="fas fa-expand-arrows-alt icon-color"></i>
+              </button>
+              <a href="https://xr.asu.edu/exp/campus/" class="btn btn-primary">
+                <i class="fas fa-code icon-color"></i>
+              </a>
+              <!-- <a href="#" class="btn btn-primary">
+                      <i class="fas fa-file"></i>
+                    </a> -->
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-video icon-color"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -341,11 +507,23 @@
           <img class="card-img-top" src="img/bsiThumbnail.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">BSI Training Simulation</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#BSIModal">
-              <i class="fas fa-expand-arrows-alt"></i>
-            </button>
+            <p class="card-text">A VR training app teaching users how to perform tasks and grades their
+              performance. We built a task-based training sim, allowing devs to build more
+              experiences.</p>
+            <div class="d-flex justify-content-end gap-4">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#BSIModal">
+                <i class="fas fa-expand-arrows-alt icon-color"></i>
+              </button>
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-code icon-color"></i>
+              </a>
+              <!-- <a href="#" class="btn btn-primary">
+                    <i class="fas fa-file"></i>
+                  </a> -->
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-video icon-color"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -356,11 +534,22 @@
           <img class="card-img-top" src="img/visorThumbnail.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Planetary Visor</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#visorModal">
-              <i class="fas fa-expand-arrows-alt"></i>
-            </button>
+            <p class="card-text">An immersive visualization tool that provides geologic and geographic context of the
+              Martian terrain, by localizing it with spectroscopy data from the orbiting satellite.</p>
+            <div class="d-flex justify-content-end gap-4">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#visorModal">
+                <i class="fas fa-expand-arrows-alt icon-color"></i>
+              </button>
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-code icon-color"></i>
+              </a>
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-file"></i>
+              </a>
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-video icon-color"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -370,15 +559,27 @@
           <img class="card-img-top" src="img/commencementThumbnail.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">ASU Commencement</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#commencementModal">
-              <i class="fas fa-expand-arrows-alt"></i>
-            </button>
+            <p class="card-text">An AR-based interactive ASU commencement experience including 3D recordings of
+              speakers,
+              resulted in 5K virtual attendees experiencing Commencement in their personal space.</p>
+            <div class="d-flex justify-content-end gap-4">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#commencementModal">
+                <i class="fas fa-expand-arrows-alt icon-color"></i>
+              </button>
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-code icon-color"></i>
+              </a>
+              <!-- <a href="#" class="btn btn-primary">
+                    <i class="fas fa-file"></i>
+                  </a> -->
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-video icon-color"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>    
+    </div>
 
     <div class="row card-row">
       <div class="col-sm-12 col-md-6 d-flex justify-content-center">
@@ -386,11 +587,23 @@
           <img class="card-img-top" src="img/nasaTSThumbnail.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">NASA Astronaut Training</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#nasaTSModal">
-              <i class="fas fa-expand-arrows-alt"></i>
-            </button>
+            <p class="card-text">Developed a system to import CAD models into VR
+              applications. Presented work to MSFC board of directors as a means of reducing costs for designing
+              and testing ISS system components.</p>
+            <div class="d-flex justify-content-end gap-4">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#nasaTSModal">
+                <i class="fas fa-expand-arrows-alt icon-color"></i>
+              </button>
+              <!-- <a href="#" class="btn btn-primary">
+                <i class="fas fa-code icon-color"></i>
+              </a> -->
+              <!-- <a href="#" class="btn btn-primary">
+                    <i class="fas fa-file"></i>
+                  </a> -->
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-video icon-color"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -399,11 +612,22 @@
           <img class="card-img-top" src="img/swishThumbnail.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">SWISH</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#swishModal">
-              <i class="fas fa-expand-arrows-alt"></i>
-            </button>
+            <p class="card-text">SWISH is a mixed-reality interface that provides realistic haptic feedback simulating
+              the behavior of fluid in vessels, thus enhancing the immersive experience in virtual environments.</p>
+            <div class="d-flex justify-content-end gap-4">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#swishModal">
+                <i class="fas fa-expand-arrows-alt icon-color"></i>
+              </button>
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-code icon-color"></i>
+              </a>
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-file"></i>
+              </a>
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-video icon-color"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -414,11 +638,22 @@
           <img class="card-img-top" src="img/hololucinationThumbnail.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">HoloLucination</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#hololucinationModal">
-              <i class="fas fa-expand-arrows-alt"></i>
-            </button>
+            <p class="card-text">A framework allowing presenters to invoke animations simultaneously on HMDs and mobile
+              devices in AR.</p>
+            <div class="d-flex justify-content-end gap-4">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#hololucinationModal">
+                <i class="fas fa-expand-arrows-alt icon-color"></i>
+              </button>
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-code icon-color"></i>
+              </a>
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-file"></i>
+              </a>
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-video icon-color"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -427,11 +662,21 @@
           <img class="card-img-top" src="img/staircaseThumbnail.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Staircase</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staircaseModal">
-              <i class="fas fa-expand-arrows-alt"></i>
-            </button>
+            <p class="card-text">A home project, we enabled our staircase rail to be responsive to music and motion.</p>
+            <div class="d-flex justify-content-end gap-4">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staircaseModal">
+                <i class="fas fa-expand-arrows-alt icon-color"></i>
+              </button>
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-code icon-color"></i>
+              </a>
+              <!-- <a href="#" class="btn btn-primary">
+                    <i class="fas fa-file"></i>
+                  </a> -->
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-video icon-color"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -466,33 +711,7 @@
     </div>
   </div>
 
-  <!-- SMELL ENGINE -->
-  <div class="modal fade" id="smellEngineModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">The Smell Engine</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body d-flex flex-column align-items-center">
-          <div>
-            <iframe width="100%" height="250" src="https://www.youtube.com/embed/vV36-LQbsOU" allowfullscreen></iframe>
-          </div>
-          <p>The Smell Engine is a software/hardware framework and system that facilitates the synthesis of physical
-            odors in real-time, simulating what a user would experience in a virtual environment infused with smells.
-            This is achieved through the Smell Composer design framework that integrates with the Unity Game Engine,
-            allowing developers to program and configure odor sources. The system's Smell Mixer and Smell Controller
-            components estimate the odor mix and coordinate an olfactometer to present the synthesized smell to the
-            user. Tested through a series of PID system studies and user studies, the Smell Engine demonstrated the
-            capability to produce odors at granularities finer than human olfactory detection sensitivity and
-            significantly improved users' ability to accurately localize odors. </p>
-        </div>
-      </div>
-    </div>
-  </div>
+
 
   <!-- PLANETARY VISOR -->
   <div class="modal fade" id="visorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
@@ -506,17 +725,22 @@
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
-          <div>
-            <iframe width="100%" height="250" src="https://www.youtube.com/embed/Wz3Nzo09qko" allowfullscreen></iframe>
+          <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
+            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/Wz3Nzo09qko"
+              allowfullscreen></iframe>
           </div>
-          <p>The Smell Engine is a software/hardware framework and system that facilitates the synthesis of physical
-            odors in real-time, simulating what a user would experience in a virtual environment infused with smells.
-            This is achieved through the Smell Composer design framework that integrates with the Unity Game Engine,
-            allowing developers to program and configure odor sources. The system's Smell Mixer and Smell Controller
-            components estimate the odor mix and coordinate an olfactometer to present the synthesized smell to the
-            user. Tested through a series of PID system studies and user studies, the Smell Engine demonstrated the
-            capability to produce odors at granularities finer than human olfactory detection sensitivity and
-            significantly improved users' ability to accurately localize odors. </p>
+          <p>In this work, we build Planetary Visor, a virtual reality tool to visualize orbital and ground data around
+            NASA's Mars Science Laboratory Curiosity rover's ongoing traverse in Gale Crater. </p>
+          </br>
+          <img class="modal-image" src="https://meteor.ame.asu.edu/projects/planetary-visor/planetaryVisor.png"
+            alt="Visor Experience">
+          <p>We have built a 3D terrain
+            along Curiosity's traverse using rover images, and within it we visualize satellite data as polyhedrons,
+            superimposed on that terrain. This system provides perspectives of VNIR spectroscopic data from a satellite
+            aligned with ground images from the rover, allowing the user to explore both the physical aspects of the
+            terrain and their relation to the mineral composition. The result is a system that provides seamless
+            rendering of datasets at vastly different scales. We conduct a user study with subject matter experts to
+            evaluate the success and potential of our tool. </p>
         </div>
       </div>
     </div>
@@ -534,17 +758,24 @@
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
-          <div>
-            <iframe width="100%" height="250" src="https://www.youtube.com/embed/fK_BMXSNbeg" allowfullscreen></iframe>
+          <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
+            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/fK_BMXSNbeg"
+              allowfullscreen></iframe>
           </div>
-          <p>The Smell Engine is a software/hardware framework and system that facilitates the synthesis of physical
-            odors in real-time, simulating what a user would experience in a virtual environment infused with smells.
-            This is achieved through the Smell Composer design framework that integrates with the Unity Game Engine,
-            allowing developers to program and configure odor sources. The system's Smell Mixer and Smell Controller
-            components estimate the odor mix and coordinate an olfactometer to present the synthesized smell to the
-            user. Tested through a series of PID system studies and user studies, the Smell Engine demonstrated the
-            capability to produce odors at granularities finer than human olfactory detection sensitivity and
-            significantly improved users' ability to accurately localize odors. </p>
+          <p>During my internship at NASA MSFC, I developed a framework and application to create VR-based training
+            applications.
+            As we constructed training simulations, routinely consulting and testing with several teams (e.g.,
+            Designers, Mechanical Engineering, System Engineers), I observed that the downtime for incoporating changes
+            to a training procedure added weeks of development.
+          </p>
+          </br>
+          <img class="modal-image" src="img/nasaThumbnail.gif" alt="NASA Sim Tool">
+          <p>
+            Thus, we built a tool to uniquely tag objects and the operations associated with them (e.g., movement,
+            combining) into a sequence of proccesses and tasks, saved into JSON.
+            Additionally, using PiXYZ Studio SDK, we created then integrated a pipeline for importing complex cad models
+            from a server into the Unity application at runtime.
+          </p>
         </div>
       </div>
     </div>
@@ -562,24 +793,30 @@
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
-          <div>
-            <iframe width="100%" height="250" src="https://www.youtube.com/embed/LzyutpwYc9M" allowfullscreen></iframe>
+          <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
+            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/LzyutpwYc9M"
+              allowfullscreen></iframe>
           </div>
-          <p>The Smell Engine is a design framework and software/hardware system that presents users with a real-time
-            physical odor synthesis of virtual smells. Using our Smell Composer design framework with the Unity Game
-            Engine, developers can configure odor sources in virtual space. At runtime, the Smell Engine system presents
-            users with physical odors that match what they would sense in the virtual environment. To do this, our Smell
-            Mixer component integrates with the Unity Game Engine to dynamically estimate the odor mix that the user
-            would smell. Our Smell Controller runtime then coordinates an olfactometer to physically present an
-            approximation of the odor mix to the user's mask. </p>
+          <p>
+            As the lead developer of the Designing for Dreamscape project, I focused on coordinating integrations across
+            different teams, including working closely with Unity Timeline developers for narrative construction,
+            collaborating with modelers for asset updates, and collaborating with programmers for event and interaction
+            creation. 
+            </p>
+          </br>
+          <img class="modal-image" src="img/walter.JPG" alt="Walter">
+            <p>The article showcases the 15-minute final project presented by a class of Arizona State University
+            students, who were the first to use the Dreamscape Learn virtual reality platform. The project involved
+            creating a time-traveling climate-change scenario, and it received praise from industry professionals,
+            including Walter Parkes, CEO of Dreamscape Immersive. </p>
         </div>
       </div>
     </div>
   </div>
 
   <!-- ASU Commencement -->
-  <div class="modal fade" id="commencementModal" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal fade" id="commencementModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -589,24 +826,34 @@
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
-          <div>
-            <iframe width="100%" height="250" src="https://www.youtube.com/embed/5QccM3EG9jM" allowfullscreen></iframe>
+          <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
+            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/5QccM3EG9jM"
+              allowfullscreen></iframe>
           </div>
-          <p>The Smell Engine is a design framework and software/hardware system that presents users with a real-time
-            physical odor synthesis of virtual smells. Using our Smell Composer design framework with the Unity Game
-            Engine, developers can configure odor sources in virtual space. At runtime, the Smell Engine system presents
-            users with physical odors that match what they would sense in the virtual environment. To do this, our Smell
-            Mixer component integrates with the Unity Game Engine to dynamically estimate the odor mix that the user
-            would smell. Our Smell Controller runtime then coordinates an olfactometer to physically present an
-            approximation of the odor mix to the user's mask. </p>
+          <p>
+            We developed a mobile AR Commencement experience for ASU Fall 2020 Commencement. Working alongside designers
+            and programmers, I played a key role in backend engineering, creating scripted timelines, and leading the
+            volumetric capturing of the speakers.
+            The ASU Commencement app utilizes augmented reality (AR) technologies, allowing users to virtually
+            participate in the ceremony through their devices' cameras.
+          </p>
+          </br>
+          <img class="modal-image" src="https://tech.asu.edu/sites/default/files/president_crow_commencement_app_1.jpg"
+            alt="Commencement">
+          <p>
+            Graduates can join key moments, such as standing on stage with President Crow and singing the Alma Mater
+            with the ASU Chamber
+            Singers. Built with Unity's Game Engine and supported by Google ARCore and Apple ARKit, the app features
+            iconic ASU locations and immersive 360-degree footage of the Sun Devil Football Stadium
+          </p>
         </div>
       </div>
     </div>
   </div>
 
   <!-- HOLOLUCINATION -->
-  <div class="modal fade" id="hololucinationModal" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal fade" id="hololucinationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -616,16 +863,54 @@
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
-          <div>
-            <iframe width="100%" height="250" src="https://meteor.ame.asu.edu/projects/holoLucination/images/reMARS.webm" allowfullscreen></iframe>
+          <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
+            <iframe style="width: 100%; height: 100%;"
+              src="https://meteor.ame.asu.edu/projects/holoLucination/images/reMARS.webm" allowfullscreen></iframe>
           </div>
-          <p>The Smell Engine is a design framework and software/hardware system that presents users with a real-time
-            physical odor synthesis of virtual smells. Using our Smell Composer design framework with the Unity Game
-            Engine, developers can configure odor sources in virtual space. At runtime, the Smell Engine system presents
-            users with physical odors that match what they would sense in the virtual environment. To do this, our Smell
-            Mixer component integrates with the Unity Game Engine to dynamically estimate the odor mix that the user
-            would smell. Our Smell Controller runtime then coordinates an olfactometer to physically present an
-            approximation of the odor mix to the user's mask. </p>
+          <p>Our framework allows users to prepare a sequential state of animations. At the time of presentation,
+            presenters can invoke the animations to simultaneously occur on HMDs and mobile devices. </p>
+          </br>
+          <img src="https://meteor.ame.asu.edu/projects/holoLucination/images/diagram.png"
+            alt="HoloLucination System Design">
+          <p>For a communication
+            backbone, HoloLucination uses client- server HTTP requests for simplicity and scalability. As shown in the
+            Figure above, every device that connects in session retrieves updates from the web server to switch its
+            animation state index. Presenter and client devices continually poll the server through web requests to
+            receive animation updates.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BALTU TECHNOLOGIES -->
+  <div class="modal fade" id="baltuModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Baltu Technologies</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center">
+          <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
+            <iframe style="width: 100%; height: 100%;"
+              src="https://meteor.ame.asu.edu/projects/holoLucination/images/reMARS.webm" allowfullscreen></iframe>
+          </div>
+          <p>SuperDoc -- designed for hands on employees -- is a software application to capture and share the
+            specialized skills and knowledge of an organization.
+            As a lead developer at Baltu, I focused on building the core backend system, servicing the front end with a
+            backend database.
+            Further, I explored experimental features involving mapping knowledge tips and multimedia to AR anchors
+            (e.g., Apple World Anchor, Azure Spatial Anchors, Oculus Anchors).
+          </p>
+          </br>
+          <img src="https://meteor.ame.asu.edu/projects/holoLucination/images/diagram.png"
+            alt="HoloLucination System Design">
+          <p>I worked primarily in Unity, merging multiple SDKs to build a coherent experience allowing users to upload
+            and retrieve any form of multimedia (i.e., 2D, 3D, image, video, audio) that is then rendered within the
+            application.</p>
         </div>
       </div>
     </div>
@@ -643,13 +928,22 @@
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
-          <div>
-            <iframe width="100%" height="250" src="https://www.youtube.com/embed/2lw7tuwLhdA" allowfullscreen></iframe>
+          <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
+            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/2lw7tuwLhdA"
+              allowfullscreen></iframe>
           </div>
           <p>This project is an amalgamation of technology and creativity, using RGBD sensors to capture
-            volumetric footage of real-world events. The captured footage is then anchored to the location of the event
-            using Azure Anchors, which enables users to experience the event in its original context. In addition, the
-            project offers the flexibility to replay the event in any environment. The backend of the system uses a
+            volumetric footage of real-world events. </p>
+          </br>
+          <img class="modal-image" src="img/memoriesBG.jpg" alt="Memories Tool">
+          <p>The captured footage is then anchored to the location of the event
+            using Azure Anchors, which -- using Cosmos DB to sync world coordinates to volumetric capture footage --
+            enables users to experience the event in its original context.
+          </p>
+          </br>
+          <img class="modal-image" src="img/memoriesToolThumbnail.gif" alt="Memories Tool">
+          <p>In addition, the project offers the flexibility to replay the event in any environment. The backend of the
+            system uses a
             database to map Azure Anchors to the volumetric capture files, which are then loaded onto a device for
             playback. This approach allows for a unique and immersive way to relive events, bridging the gap between
             digital and physical space.</p>
@@ -670,16 +964,19 @@
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
-          <div>
-            <iframe width="100%" height="250" src="https://www.youtube.com/embed/dGoqvKuwW34" allowfullscreen></iframe>
+          <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
+            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/dGoqvKuwW34"
+              allowfullscreen></iframe>
           </div>
-          <p>This project is an amalgamation of technology and creativity, using RGBD sensors to capture
-            volumetric footage of real-world events. The captured footage is then anchored to the location of the event
-            using Azure Anchors, which enables users to experience the event in its original context. In addition, the
-            project offers the flexibility to replay the event in any environment. The backend of the system uses a
-            database to map Azure Anchors to the volumetric capture files, which are then loaded onto a device for
-            playback. This approach allows for a unique and immersive way to relive events, bridging the gap between
-            digital and physical space.</p>
+          <p>SWISH, a Shifting-Weight Interface of Simulated Hydrodynamics, bridges the gap between visual and haptic
+            experiences in virtual environments by providing a realistic sense of fluid motion in handheld vessels. </p>
+          </br>
+          <img src="https://meteor.ame.asu.edu/projects/swish/images/image1.png" alt="SWISH System Design">
+          <p>This is achieved by utilizing virtual reality tracking and motor actuation to actively shift the center of
+            gravity of the handheld device, emulating the dynamic nature of fluid motion. Coupled with Nvidia Flex's
+            Unity integration for virtual fluid dynamics and a 3D printed augmented vessel containing a motorized
+            mechanical actuation system, SWISH has shown potential in various applications such as chemistry education,
+            worker training, and immersive entertainment, as demonstrated by user studies​.​</p>
         </div>
       </div>
     </div>
@@ -698,19 +995,23 @@
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
-          <div>
-            <iframe width="100%" height="250" src="https://www.youtube.com/embed/paHgnlLAFoo" allowfullscreen></iframe>
+          <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
+            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/paHgnlLAFoo"
+              allowfullscreen></iframe>
           </div>
-          <p>The Smell Engine is a design framework and software/hardware system that presents users with a real-time
-            physical odor synthesis of virtual smells. Using our Smell Composer design framework with the Unity Game
-            Engine, developers can configure odor sources in virtual space. At runtime, the Smell Engine system presents
-            users with physical odors that match what they would sense in the virtual environment. To do this, our Smell
-            Mixer component integrates with the Unity Game Engine to dynamically estimate the odor mix that the user
-            would smell. Our Smell Controller runtime then coordinates an olfactometer to physically present an
-            approximation of the odor mix to the user's mask. Through a three-part user study, we found that the Smell
-            Engine can produce odors at granularities finer than our subjects’ olfactory detection sensitivity. We also
-            find that the Smell Engine improves users’ ability to precisely localize odors in the virtual environment
-            over state-of-the-art trigger-based olfactory systems</p>
+          <p>The ASU 360 Virtual Campus application is a comprehensive web-based desktop and VR platform that enables
+            users to explore various ASU campuses. As the developer, I created an internal tool that empowers us to
+            curate customized campus tours for each location. This tool includes a user-friendly web interface, allowing
+            instructors to seamlessly upload 360-degree pictures and assign specific campus locations to each image.
+          </p>
+          </br>
+          <img src="https://meteor.ame.asu.edu/projects/smell-engine/images/Smell_Engine_Diagram.png"
+            alt="Smell Engine System Design">
+          <img src="https://meteor.ame.asu.edu/projects/smell-engine/images/OdorMixSmellController.jpg"
+            alt="Smell Engine System Design">
+          <p>Additionally, I collaborated closely with a team of designers to ensure a seamless and visually appealing
+            front-end interface. Lastly, I meticulously documented the project, providing comprehensive documentation to
+            facilitate a smooth transition for a newly assigned team taking over the project.</p>
         </div>
       </div>
     </div>
@@ -728,19 +1029,21 @@
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
-          <div>
-            <iframe width="100%" height="250" src="https://www.youtube.com/embed/DW8ljqdMYrI" allowfullscreen></iframe>
+          <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
+            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/DW8ljqdMYrI"
+              allowfullscreen></iframe>
           </div>
-          <p>The Smell Engine is a design framework and software/hardware system that presents users with a real-time
-            physical odor synthesis of virtual smells. Using our Smell Composer design framework with the Unity Game
-            Engine, developers can configure odor sources in virtual space. At runtime, the Smell Engine system presents
-            users with physical odors that match what they would sense in the virtual environment. To do this, our Smell
-            Mixer component integrates with the Unity Game Engine to dynamically estimate the odor mix that the user
-            would smell. Our Smell Controller runtime then coordinates an olfactometer to physically present an
-            approximation of the odor mix to the user's mask. Through a three-part user study, we found that the Smell
-            Engine can produce odors at granularities finer than our subjects’ olfactory detection sensitivity. We also
-            find that the Smell Engine improves users’ ability to precisely localize odors in the virtual environment
-            over state-of-the-art trigger-based olfactory systems</p>
+          <p>BSI (British Standards Institute) wanted to experiment with a training application to explore remote
+            working options.
+            We built a tool to construct asynchronous task-based training applications, allowing us to rapidly prototype
+            with different experiences and environments.
+            Further, we implemented the ability to collect user performance metrics, allowing the team to collect new
+            kinds of data on employee performance.
+          </p>
+          </br>
+          <img src="img/bsi.png" alt="SWISH System Design">
+          <p>To build this application, we rigorously followed a sprint methodology. Further, we interviewed with
+            various teams to identify key performance metrics for an example use-case (crate inpsections).</p>
         </div>
       </div>
     </div>
@@ -758,19 +1061,17 @@
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
-          <div>
-            <iframe width="100%" height="250" src="https://www.youtube.com/embed/FftMp_-CkPg" allowfullscreen></iframe>
+          <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
+            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/FftMp_-CkPg"
+              allowfullscreen></iframe>
           </div>
-          <p>The Smell Engine is a design framework and software/hardware system that presents users with a real-time
-            physical odor synthesis of virtual smells. Using our Smell Composer design framework with the Unity Game
-            Engine, developers can configure odor sources in virtual space. At runtime, the Smell Engine system presents
-            users with physical odors that match what they would sense in the virtual environment. To do this, our Smell
-            Mixer component integrates with the Unity Game Engine to dynamically estimate the odor mix that the user
-            would smell. Our Smell Controller runtime then coordinates an olfactometer to physically present an
-            approximation of the odor mix to the user's mask. Through a three-part user study, we found that the Smell
-            Engine can produce odors at granularities finer than our subjects’ olfactory detection sensitivity. We also
-            find that the Smell Engine improves users’ ability to precisely localize odors in the virtual environment
-            over state-of-the-art trigger-based olfactory systems</p>
+          <p>At my old house, our staircase had no installed lighting, making it difficult at night to use the stairs.
+            To solve this, we took existing LED strips, a microphone, PIR motion sensors, and a Arduino Uno to build a
+            responsive
+            lighting system for our staircase.
+            The 'illuminated stairs' respond to music (dynamically changing light pattern) and motion. We built
+            everything from scratch, including any casings used.
+          </p>
         </div>
       </div>
     </div>
@@ -788,12 +1089,26 @@
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
-          <div>
-            <iframe width="100%" height="250" src="https://www.youtube.com/embed/FftMp_-CkPg" allowfullscreen></iframe>
+          <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
+            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/FftMp_-CkPg"
+              allowfullscreen></iframe>
+          </div>
+          <div class="button-group">
+            <a href="https://github.com/TheWiselyBearded/ChatbotAvatarAI" class="btn btn-secondary" role="button">
+              <i class="fas fa-code"></i>
+            </a>
+            <a href="https://www.youtube.com/watch?v=FftMp_-CkPg" class="btn btn-secondary" role="button">
+              <i class="fas fa-video icon-color"></i>
+            </a>
           </div>
           <p>ChatbotAvatarAI is a dynamic Unity project that merges state-of-the-art technologies like OpenAI API, Azure
             Voice API, Google Cloud Speech to Text, and Oculus Lip Sync to craft an interactive AI-based chatbot
-            interface. This framework facilitates seamless integration with YOLO-NAS, allowing the NPC to stream virtual
+            interface.</p>
+          </br>
+          <img class="modal-image"
+            src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDQwZGQ5MzQ5NTczOWQwZGQ2NDc2YTYzODEwNTE5ODc1MjhiZTc4ZCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/9uZml4jP9psLdumJG9/giphy.gif"
+            alt="AI NPC GIF">
+          <p>This framework facilitates seamless integration with YOLO-NAS, allowing the NPC to stream virtual
             camera frames and receive responses from a YOLO-NAS server instance, creating an immersive experience. Users
             can engage in a conversation with the NPC, receiving near-instantaneous responses in an Azure-generated
             voice, while the NPC can also be configured to visually perceive its environment with YOLO-NAS.​</p>
@@ -803,8 +1118,56 @@
   </div>
 
 
-
-
+  <!-- SMELL ENGINE -->
+  <div class="modal fade" id="smellEngineModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">The Smell Engine</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center">
+          <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
+            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/vV36-LQbsOU"
+              allowfullscreen></iframe>
+          </div>
+          <div class="button-group">
+            <a href="https://github.com/TheWiselyBearded/ChatbotAvatarAI" class="btn btn-secondary" role="button">
+              <i class="fas fa-code"></i>
+            </a>
+            <a href="#" class="btn btn-primary">
+              <i class="fas fa-file icon-color"></i>
+            </a>
+            <a href="https://www.youtube.com/watch?v=FftMp_-CkPg" class="btn btn-secondary" role="button">
+              <i class="fas fa-video icon-color"></i>
+            </a>
+          </div>
+          <p>The Smell Engine is a design framework and software/hardware system that presents users with a real-time
+            physical odor synthesis of virtual smells. </p>
+          </br>
+          <img src="https://meteor.ame.asu.edu/projects/smell-engine/images/Smell_Engine_Diagram.png"
+            alt="Smell Engine System Design">
+          <p>
+            Using our Smell Composer design framework with the Unity Game
+            Engine, developers can configure odor sources in virtual space. At runtime, the Smell Engine system presents
+            users with physical odors that match what they would sense in the virtual environment.
+          </p>
+          <img src="https://meteor.ame.asu.edu/projects/smell-engine/images/OdorMixSmellController.jpg"
+            alt="Smell Engine System Design">
+          <p>To do this, our Smell Mixer component integrates with the Unity Game Engine to dynamically estimate the
+            odor mix that the user
+            would smell. Our Smell Controller runtime then coordinates an olfactometer to physically present an
+            approximation of the odor mix to the user's mask. Through a three-part user study, we found that the Smell
+            Engine can produce odors at granularities finer than our subjects’ olfactory detection sensitivity. We also
+            find that the Smell Engine improves users’ ability to precisely localize odors in the virtual environment
+            over state-of-the-art trigger-based olfactory systems</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script>
     // Get today's year
@@ -840,7 +1203,7 @@
     });
 
     downButton.addEventListener('click', function () {
-      if (currentYear > 2018) {
+      if (currentYear > 2019) {
         currentYear--;
         yearDisplay.textContent = currentYear;
         filterCards(currentYear);
