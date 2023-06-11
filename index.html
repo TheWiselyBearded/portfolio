@@ -197,6 +197,18 @@
       color: #333;
       font-size: 24px;
     }
+
+    .arrow-btn i {
+      font-size: 30px;
+      /* color: #007BFF; */
+      /* Bootstrap primary color, change as needed */
+      transition: color 0.3s ease;
+    }
+
+    .arrow-btn:hover i {
+      /* color: #0056b3; */
+      /* Bootstrap primary darker color for hover effect, change as needed */
+    }
   </style>
 
   <div class="container-fluid">
@@ -235,16 +247,16 @@
       </div>
     </div> -->
     <div class="col-12 text-center" style="padding-top: 10px;">
-      <button id="up-button" class="btn btn-link" style="width: 30px;">
-        <i class="fas fa-caret-left text-secondary"></i>
+      <button id="up-button" class="btn btn-link arrow-btn" >
+        <i class="fas fa-caret-left text-secondary" style="color: #333 !important;"></i>
       </button>
       <span id="year-display" class="text-center mx-2 lead">2023</span>
       <!-- <div id="year-display" class="col-12 text-center my-2 lead">2023</div> -->
-      <button id="down-button" class="btn btn-link"style="width: 30px;">
-        <i class="fas fa-caret-right text-secondary"></i>
+      <button id="down-button" class="btn btn-link arrow-btn">
+        <i class="fas fa-caret-right text-secondary" style="color: #333 !important;"></i>
       </button>
     </div>
-  </div>  
+  </div>
 
 
   <div class="container">
@@ -565,7 +577,8 @@
               <a href="https://xr.asu.edu/commencement/" class="btn btn-primary">
                 <i class="fas fa-code icon-color"></i>
               </a>
-              <a href="https://news.asu.edu/20201214-sun-devil-life-asu-commencement-app-offers-grads-augmented-reality-experience" class="btn btn-primary">
+              <a href="https://news.asu.edu/20201214-sun-devil-life-asu-commencement-app-offers-grads-augmented-reality-experience"
+                class="btn btn-primary">
                 <i class="fas fa-newspaper icon-color"></i>
               </a>
               <a href="https://www.youtube.com/watch?v=5QccM3EG9jM" class="btn btn-primary">
@@ -729,7 +742,8 @@
             <a href="https://ieeexplore.ieee.org/abstract/document/9417645" class="btn btn-primary">
               <i class="fas fa-file icon-color"></i>
             </a>
-            <a href="https://www.youtube.com/watch?t=19974&v=vU1ooD8uu3A&embeds_referring_euri=https%3A%2F%2Fmeteor.ame.asu.edu%2F&feature=emb_imp_woyt" class="btn btn-secondary" role="button">
+            <a href="https://www.youtube.com/watch?t=19974&v=vU1ooD8uu3A&embeds_referring_euri=https%3A%2F%2Fmeteor.ame.asu.edu%2F&feature=emb_imp_woyt"
+              class="btn btn-secondary" role="button">
               <i class="fas fa-video icon-color"></i>
             </a>
           </div>
@@ -802,7 +816,8 @@
               allowfullscreen></iframe>
           </div>
           <div class="button-group">
-            <a href="https://news.asu.edu/20211203-creativity-asu-students-create-time-travel-experience-dreamscape-learn" class="btn btn-secondary" role="button">
+            <a href="https://news.asu.edu/20211203-creativity-asu-students-create-time-travel-experience-dreamscape-learn"
+              class="btn btn-secondary" role="button">
               <i class="fas fa-newspaper icon-color"></i>
             </a>
           </div>
@@ -814,7 +829,8 @@
           </p>
           </br>
           <img class="modal-image" src="img/walter.JPG" alt="Walter">
-          <p>Our class was one of the first groups to use the Dreamscape Learn virtual reality platform. The project involved
+          <p>Our class was one of the first groups to use the Dreamscape Learn virtual reality platform. The project
+            involved
             creating a time-traveling climate-change scenario, and it received praise from industry professionals,
             including Walter Parkes, CEO of Dreamscape Immersive. </p>
         </div>
@@ -883,11 +899,12 @@
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
           <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
-            <iframe style="width: 100%; height: 100%;"
-              src="https://www.youtube.com/embed/TXl80knPrhE" allowfullscreen></iframe>
+            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/TXl80knPrhE"
+              allowfullscreen></iframe>
           </div>
           <div class="button-group">
-            <a href="https://ieeexplore-ieee-org.ezproxy1.lib.asu.edu/document/8942234/metrics#metrics" class="btn btn-primary">
+            <a href="https://ieeexplore-ieee-org.ezproxy1.lib.asu.edu/document/8942234/metrics#metrics"
+              class="btn btn-primary">
               <i class="fas fa-file icon-color"></i>
             </a>
           </div>
@@ -940,37 +957,37 @@
     </div>
   </div>
 
-<!-- Dreamscape Immersive -->
-<div class="modal fade" id="dsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered" role="document">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalLongTitle">Dreamscape Immersive</h5>
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body d-flex flex-column align-items-center">
-      <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
-        <iframe style="width: 100%; height: 100%;"
-          src="https://www.youtube.com/embed/TXl80knPrhE" allowfullscreen></iframe>
+  <!-- Dreamscape Immersive -->
+  <div class="modal fade" id="dsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Dreamscape Immersive</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center">
+          <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
+            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/TXl80knPrhE"
+              allowfullscreen></iframe>
+          </div>
+          <p>
+            At Dreamscape Immersive, I worked on ...
+          </p>
+          </br>
+          <img class="modal-image" src="img/dsReflection.gif" alt="Reflection Debugging Application">
+          <p>For one application, I added ability to debug experiences in real-time, invoking code using Reflection
+            Library.</p>
+          </br>
+          <img class="modal-image" src="img/dsActorRecording.gif" alt="Reflection Debugging Application">
+          <p>Then I worked on actor recording tools, mapping tracked facial geoemetry between mobile devices and VR
+            devices (e.g., Apple iPhone, Meta Quest Pro).</p>
+        </div>
       </div>
-      <p>
-        At Dreamscape Immersive, I worked on ...
-      </p>      
-      </br>
-      <img class="modal-image" src="img/dsReflection.gif"
-        alt="Reflection Debugging Application">
-      <p>For one application, I added ability to debug experiences in real-time, invoking code using Reflection Library.</p>
-    </br>
-      <img class="modal-image" src="img/dsActorRecording.gif"
-        alt="Reflection Debugging Application">
-        <p>Then I worked on actor recording tools, mapping tracked facial geoemetry between mobile devices and VR devices (e.g., Apple iPhone, Meta Quest Pro).</p>
     </div>
   </div>
-</div>
-</div>
 
 
   <!-- MIXED REALITY MEMORIES -->
@@ -1070,7 +1087,7 @@ aria-hidden="true">
           <div class="button-group">
             <a href="https://xr.asu.edu/campus/" class="btn btn-secondary" role="button">
               <i class="fas fa-code"></i>
-            </a>            
+            </a>
           </div>
           <p>The ASU 360 Virtual Campus application is a comprehensive web-based desktop and VR platform that enables
             users to explore various ASU campuses. As the developer, I created an internal tool that empowers us to
@@ -1137,8 +1154,8 @@ aria-hidden="true">
             To solve this, we took existing LED strips, a microphone, PIR motion sensors, and a Arduino Uno to build a
             responsive
             lighting system for our staircase.
-            </p>
-            <p>
+          </p>
+          <p>
             The 'illuminated stairs' respond to music (dynamically changing light pattern) and motion. We built
             everything from scratch, including any casings used.
           </p>
@@ -1208,7 +1225,8 @@ aria-hidden="true">
             <a href="https://meteor.ame.asu.edu/publications/SmellEngineIEEEVRR22.pdf" class="btn btn-primary">
               <i class="fas fa-file icon-color"></i>
             </a>
-            <a href="https://news.asu.edu/20220909-smelling-strawberries-smoke-and-space-virtual-reality" class="btn btn-secondary" role="button">
+            <a href="https://news.asu.edu/20220909-smelling-strawberries-smoke-and-space-virtual-reality"
+              class="btn btn-secondary" role="button">
               <i class="fas fa-newspaper icon-color"></i>
             </a>
           </div>
