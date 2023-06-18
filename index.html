@@ -294,7 +294,8 @@
           <div class="card-body">
             <h5 class="card-title">Volumetric Streaming</h5>
             <p class="card-text">A volumetric streaming system (VSS) that includes a
-              volumetric video player, schedulable data operation tasks, AI task filters (e.g., filter, style), and
+              volumetric video player, playback support, schedulable data operations and AI tasks (e.g., filter, style),
+              and
               state-of-the-art web streaming
               technologies.</p>
             <div class="d-flex justify-content-end gap-4">
@@ -391,8 +392,9 @@
           <img class="card-img-top" src="img/dsThumbnail.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Dreamscape Immersive</h5>
-            <p class="card-text">I worked on experimental applications (interactive movie poster), tools (dev debugging
-              tools), and experiences (VR-film). At Dreamscape, I worked with various teams (e.g., sound, designers,
+            <p class="card-text">I worked on experimental applications (interactive movie poster), developer tooling
+              (runtime debugging tools using classpath scanning libraries), and cinematic VR experiences (VR-film). At
+              Dreamscape, I worked with various teams (e.g., sound, designers,
               programmers, story).</p>
             <div class="d-flex justify-content-end gap-4">
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#dsModal">
@@ -415,9 +417,11 @@
         <div class="card" data-year="2021" style="width: 18rem;">
           <img class="card-img-top" src="img/memoriesThumbnail.gif" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Memories</h5>
-            <p class="card-text">This project uses Azure Anchors, Azure Cosmos DB, and RGBD sensor data to enable
-              location-anchored, volumetric playback of events in any environment.</p>
+            <h5 class="card-title">XR Memories</h5>
+            <p class="card-text">
+              A prototype that meticulously replays memories as captured, this project uses Azure Anchors, Cosmos DB,
+              and RGBD data to enable
+              location-anchored, volumetric playback of recorded events.</p>
             <div class="d-flex justify-content-end gap-4">
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#memoriesModal">
                 <i class="fas fa-expand-arrows-alt icon-color"></i>
@@ -441,7 +445,8 @@
           <div class="card-body">
             <h5 class="card-title">Baltu Technologies</h5>
             <p class="card-text">At Baltu, I was a lead developer on SuperDoc, an On-The-Job training platform used to
-              quickly capture and deliver the specialized skills and knowledge of any organization.</p>
+              quickly capture and deliver the specialized skills and knowledge of any organization. One of my core
+              focuses was building the REST API and seamlessly integrating it into the application.</p>
             <div class="d-flex justify-content-end gap-4">
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#baltuModal">
                 <i class="fas fa-expand-arrows-alt icon-color"></i>
@@ -468,7 +473,7 @@
           <img class="card-img-top" src="img/dsMobileThumbnail.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Dreamscape Mobile</h5>
-            <p class="card-text">An ASU AR-based application
+            <p class="card-text">I was project lead for an ASU AR-based application
               allowing students to explore content collected in ASU Dreamscape Learn experiences. Tested by 100+
               students in introductory biology courses.</p>
             <div class="d-flex justify-content-end gap-4">
@@ -497,8 +502,8 @@
           <div class="card-body">
             <h5 class="card-title">Designing for Dreamscape</h5>
             <p class="card-text"> Using Dreamscape Immersive technology, we built a VR-based cinematic story on climate
-              change. As lead developer, I focused on coordinating a majority of the experience with
-              different teams.</p>
+              change. As lead developer, I met with various teams (Design, Narrative, Programming, Audio) and helped put
+              the experience together.</p>
             <div class="d-flex justify-content-end gap-4">
               <button type="button" class="btn btn-primary" data-toggle="modal"
                 data-target="#designingForDreamscapeModal">
@@ -554,8 +559,9 @@
           <img class="card-img-top" src="img/bsiThumbnail.gif" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">BSI Training Simulation</h5>
-            <p class="card-text">A VR training app teaching users how to perform tasks and grades their
-              performance. We built a task-based training sim, allowing devs to build more
+            <p class="card-text">A VR training app teaching users how to perform tasks then grades their
+              performance. We built a lightweight Unity-based framework out of this task-based training sim, allowing
+              devs to build more
               experiences.</p>
             <div class="d-flex justify-content-end gap-4">
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#BSIModal">
@@ -731,31 +737,6 @@
   </div>
 
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body text-center">
-          <img src="img/download.svg" alt="Image description" class="mb-3">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
 
   <!-- PLANETARY VISOR -->
   <div class="modal fade" id="visorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
@@ -764,14 +745,15 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">Planetary Visor</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
           <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
-            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/Wz3Nzo09qko"
-              allowfullscreen></iframe>
+            <iframe class="youtubeIframe" style="width: 100%; height: 100%;"
+              src="https://www.youtube.com/embed/Wz3Nzo09qko" allowfullscreen="true"
+              allowscriptaccess="always"></iframe>
           </div>
           <div class="button-group">
             <a href="https://github.com/LaurenGold/Planetary-Visor" class="btn btn-secondary" role="button"
@@ -787,7 +769,9 @@
             </a>
           </div>
           <p>In this work, we build Planetary Visor, a virtual reality tool to visualize orbital and ground data around
-            NASA's Mars Science Laboratory Curiosity rover's ongoing traverse in Gale Crater. </p>
+            NASA's Mars Science Laboratory Curiosity rover's ongoing traverse in Gale Crater. For this project, I served
+            as lead developer, building the early foundation of the project for future students to take over and conduct
+            research on top of.</p>
           </br>
           <img class="modal-image" src="https://meteor.ame.asu.edu/projects/planetary-visor/planetaryVisor.png"
             alt="Visor Experience">
@@ -810,14 +794,15 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">NASA Training Simulator</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
           <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
-            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/fK_BMXSNbeg"
-              allowfullscreen></iframe>
+            <iframe class="youtubeIframe" style="width: 100%; height: 100%;"
+              src="https://www.youtube.com/embed/fK_BMXSNbeg" allowfullscreen="true"
+              allowscriptaccess="always"></iframe>
           </div>
           <p>During my internship at NASA MSFC, I developed a framework and application to create VR-based training
             applications.
@@ -845,14 +830,15 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">Designing for Dreamscape</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
           <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
-            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/LzyutpwYc9M"
-              allowfullscreen></iframe>
+            <iframe class="youtubeIframe" style="width: 100%; height: 100%;"
+              src="https://www.youtube.com/embed/LzyutpwYc9M" allowfullscreen="true"
+              allowscriptaccess="always"></iframe>
           </div>
           <div class="button-group">
             <a href="https://news.asu.edu/20211203-creativity-asu-students-create-time-travel-experience-dreamscape-learn"
@@ -884,14 +870,15 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">ASU Commencement</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
           <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
-            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/5QccM3EG9jM"
-              allowfullscreen></iframe>
+            <iframe class="youtubeIframe" style="width: 100%; height: 100%;"
+              src="https://www.youtube.com/embed/5QccM3EG9jM" allowfullscreen="true"
+              allowscriptaccess="always"></iframe>
           </div>
           <div class="button-group">
             <a href="https://github.com/TheWiselyBearded/ChatbotAvatarAI" class="btn btn-secondary" role="button"
@@ -934,14 +921,15 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">HoloLucination</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
           <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
-            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/TXl80knPrhE"
-              allowfullscreen></iframe>
+            <iframe class="youtubeIframe" style="width: 100%; height: 100%;"
+              src="https://www.youtube.com/embed/TXl80knPrhE" allowfullscreen="true"
+              allowscriptaccess="always"></iframe>
           </div>
           <div class="button-group">
             <a href="https://ieeexplore.ieee.org/document/8942234/" class="btn btn-primary" target="_blank">
@@ -949,7 +937,9 @@
             </a>
           </div>
           <p>Our framework allows users to prepare a sequential state of animations. At the time of presentation,
-            presenters can invoke the animations to simultaneously occur on HMDs and mobile devices. </p>
+            presenters can invoke the animations to simultaneously occur on HMDs and mobile devices. As lead developer,
+            I worked on building this system then testing its capabilities with Dr. Tanya Harrisson at Amazon re:MARs
+            2019. </p>
           </br>
           <img src="https://meteor.ame.asu.edu/projects/holoLucination/images/diagram.png"
             alt="HoloLucination System Design">
@@ -970,29 +960,29 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">Baltu Technologies</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
           <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
-            <iframe style="width: 100%; height: 100%;"
+            <iframe class="youtubeIframe" style="width: 100%; height: 100%;"
               src="https://baltutech.com/wp-content/uploads/2022/03/SuperDoc_Teaser_Video_Workforce_Development__Worker_Upskilling_Training.mp4"
-              allowfullscreen></iframe>
+              allowfullscreen="true" allowscriptaccess="always"></iframe>
           </div>
           <p>SuperDoc -- designed for hands on employees -- is a software application to capture and share the
             specialized skills and knowledge of an organization.
             As a lead developer at Baltu, I focused on building the core backend system, servicing the front end with a
             backend database.
-            Further, I explored experimental features involving mapping knowledge tips and multimedia to AR anchors
-            (e.g., Apple World Anchor, Azure Spatial Anchors, Oculus Anchors).
           </p>
           </br>
           <img class="modal-image" src="https://baltutech.com/wp-content/uploads/2023/04/IMG_443F24C38B95-1.jpeg"
             alt="Baltu SuperDoc Interface">
           <p>I worked primarily in Unity, merging multiple SDKs to build a coherent experience allowing users to upload
             and retrieve any form of multimedia (i.e., 2D, 3D, image, video, audio) that is then rendered within the
-            application.</p>
+            application. Further, I explored experimental features involving mapping knowledge tips and multimedia to AR
+            anchors
+            (e.g., Apple World Anchor, Azure Spatial Anchors, Oculus Anchors).</p>
         </div>
       </div>
     </div>
@@ -1005,14 +995,14 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">Dreamscape Immersive</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
           <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
-            <!-- <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/TXl80knPrhE"
-              allowfullscreen></iframe> -->
+            <!-- <iframe class="youtubeIframe" style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/TXl80knPrhE"
+              allowfullscreen="true" allowscriptaccess="always"></iframe> -->
             <img class="modal-image" src="img/dsHeader.gif" alt="Reflection Debugging Application">
           </div>
           <p>
@@ -1025,9 +1015,11 @@
           </p>
           </br>
           <img class="modal-image" src="img/dsReflection.gif" alt="Reflection Debugging Application">
-          <p>For one of my projects, I proposed and developed a runtime debugging tool to dramatically reduce downtime,
+          <p>For one of my projects, I proposed and developed a runtime debugging tool using the Reflection library to
+            dramatically reduce downtime,
             allowing developers to
-            inspect the code for virtual objects, invoke methods dynamically, and view/edit variables in real-time.</p>
+            inspect the code for virtual objects, invoke methods dynamically, and view/edit variables during runtime.
+          </p>
           </br>
           <img class="modal-image" src="img/dsActorRecording.gif" alt="Reflection Debugging Application">
           <p>Then I worked on actor recording tools, mapping tracked facial geoemetry between mobile devices and VR
@@ -1047,14 +1039,14 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">Dreamscape Mobile</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
           <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
-            <!-- <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/TXl80knPrhE"
-              allowfullscreen></iframe> -->
+            <!-- <iframe class="youtubeIframe" style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/TXl80knPrhE"
+              allowfullscreen="true" allowscriptaccess="always"></iframe> -->
             <img src="img/dsmobile.gif" alt="Dreamscape Mobile">
           </div>
           <p>
@@ -1083,20 +1075,24 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">Mixed Reality Memories</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
           <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
-            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/2lw7tuwLhdA"
-              allowfullscreen></iframe>
+            <iframe class="youtubeIframe" style="width: 100%; height: 100%;"
+              src="https://www.youtube.com/embed/2lw7tuwLhdA" allowfullscreen="true"
+              allowscriptaccess="always"></iframe>
           </div>
-          <p>This project is an amalgamation of technology and creativity, using RGBD sensors to capture
-            volumetric footage of real-world events. </p>
+          <p>This project is an amalgamation of technology and creativity. I was lead developer and my friends were the
+            creative artists I
+            worked with. The goal was to built the tools they needed to tell a personable story of how such technology
+            can connect with users.</p>
           </br>
           <img class="modal-image" src="img/memoriesBG.jpg" alt="Memories Tool">
-          <p>The captured footage is then anchored to the location of the event
+          <p>Using RGBD sensors to capture volumetric footage of real-world events, the captured footage is then
+            anchored to the location of the event
             using Azure Anchors, which -- using Cosmos DB to sync world coordinates to volumetric capture footage --
             enables users to experience the event in its original context.
           </p>
@@ -1119,14 +1115,15 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">SWISH</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
           <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
-            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/dGoqvKuwW34"
-              allowfullscreen></iframe>
+            <iframe class="youtubeIframe" style="width: 100%; height: 100%;"
+              src="https://www.youtube.com/embed/dGoqvKuwW34" allowfullscreen="true"
+              allowscriptaccess="always"></iframe>
           </div>
           <div class="button-group">
             <a href="https://github.com/Shahab-VT/SWISH" class="btn btn-secondary" role="button" target="_blank">
@@ -1141,14 +1138,16 @@
             </a>
           </div>
           <p>SWISH, a Shifting-Weight Interface of Simulated Hydrodynamics, bridges the gap between visual and haptic
-            experiences in virtual environments by providing a realistic sense of fluid motion in handheld vessels. </p>
+            experiences in virtual environments by providing a realistic sense of fluid motion in handheld vessels. This
+            is achieved by utilizing virtual reality tracking and motor actuation to actively shift the center of
+            gravity of the handheld device, emulating the dynamic nature of fluid motion. SWISH has shown potential in
+            various applications such as chemistry education,
+            worker training, and immersive entertainment, as demonstrated by user studies​.</p>
           </br>
           <img src="https://meteor.ame.asu.edu/projects/swish/images/image1.png" alt="SWISH System Design">
-          <p>This is achieved by utilizing virtual reality tracking and motor actuation to actively shift the center of
-            gravity of the handheld device, emulating the dynamic nature of fluid motion. Coupled with Nvidia Flex's
-            Unity integration for virtual fluid dynamics and a 3D printed augmented vessel containing a motorized
-            mechanical actuation system, SWISH has shown potential in various applications such as chemistry education,
-            worker training, and immersive entertainment, as demonstrated by user studies​.​</p>
+          <p> For this project, I worked on integrating the Nvidia Flex (fluid simulation) library with Unreal Engine
+            and Unity. Additionally, I worked on mapping CoM movement to stepper motor commands.
+            ​</p>
         </div>
       </div>
     </div>
@@ -1162,14 +1161,15 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">ASU Campus Tours</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
           <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
-            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/paHgnlLAFoo"
-              allowfullscreen></iframe>
+            <iframe class="youtubeIframe" style="width: 100%; height: 100%;"
+              src="https://www.youtube.com/embed/paHgnlLAFoo" allowfullscreen="true"
+              allowscriptaccess="always"></iframe>
           </div>
           <div class="button-group">
             <a href="https://xr.asu.edu/campus/" class="btn btn-secondary" role="button" target="_blank">
@@ -1177,12 +1177,13 @@
             </a>
           </div>
           <p>The ASU 360 Virtual Campus application is a comprehensive web-based desktop and VR platform that enables
-            users to explore various ASU campuses. As the developer, I created an internal tool that empowers us to
-            curate customized campus tours for each location. This tool includes a user-friendly web interface, allowing
+            users to explore various ASU campuses. As lead developer, I created an internal tool that empowers us to
+            curate customized campus tours for each location using a custom JSON schema. This tool includes a
+            user-friendly web interface, allowing
             instructors to seamlessly upload 360-degree pictures and assign specific campus locations to each image.
           </p>
           <p>Additionally, I collaborated closely with a team of designers to ensure a seamless and visually appealing
-            front-end interface. Lastly, I meticulously documented the project, providing comprehensive documentation to
+            front-end interface. Lastly, I documented the project to
             facilitate a smooth transition for a newly assigned team taking over the project.</p>
         </div>
       </div>
@@ -1196,26 +1197,31 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">BSI Training Simulator</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
           <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
-            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/DW8ljqdMYrI"
-              allowfullscreen></iframe>
+            <iframe class="youtubeIframe" style="width: 100%; height: 100%;"
+              src="https://www.youtube.com/embed/DW8ljqdMYrI" allowfullscreen="true"
+              allowscriptaccess="always"></iframe>
           </div>
           <p>BSI (British Standards Institute) wanted to experiment with a training application to explore remote
             working options.
-            We built a tool to construct asynchronous task-based training applications, allowing us to rapidly prototype
-            with different experiences and environments.
-            Further, we implemented the ability to collect user performance metrics, allowing the team to collect new
-            kinds of data on employee performance.
+            As a constractor, I built a tool to construct asynchronous task-based training applications, allowing future
+            developers to
+            construct similar experiences.
+            Additionally, my colleague and I implemented the ability to collect new kinds of user/employee performance
+            data by tracking
+            timeliness of task execution along with generating heatmaps based on head-gaze in VR.
           </p>
           </br>
           <img src="img/bsi.png" alt="SWISH System Design">
-          <p>To build this application, we rigorously followed a sprint methodology. Further, we interviewed with
-            various teams to identify key performance metrics for an example use-case (crate inpsections).</p>
+          <p>To build this application, we rigorously followed a sprint methodology. We met with teams internal to BSI
+            to document the processes involved with such an inspection then reviewed previous training material.
+            Further, we interviewed with various teams to identify key performance metrics for an example use-case
+            (seacrate inpsections).</p>
         </div>
       </div>
     </div>
@@ -1228,14 +1234,15 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">STAIRCASE</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
           <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
-            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/FftMp_-CkPg"
-              allowfullscreen></iframe>
+            <iframe class="youtubeIframe" style="width: 100%; height: 100%;"
+              src="https://www.youtube.com/embed/FftMp_-CkPg" allowfullscreen="true"
+              allowscriptaccess="always"></iframe>
           </div>
           <p>At my old house, our staircase had no installed lighting, making it difficult at night to use the stairs.
             To solve this, we took existing LED strips, a microphone, PIR motion sensors, and a Arduino Uno to build a
@@ -1243,8 +1250,8 @@
             lighting system for our staircase.
           </p>
           <p>
-            The 'illuminated stairs' respond to music (dynamically changing light pattern) and motion. We built
-            everything from scratch, including any casings used.
+            The 'illuminated stairs' respond to music (dynamically changing light pattern) and motion. We wired
+            everything ourselves then 3D printed custom casing to mask away all the wires.
           </p>
         </div>
       </div>
@@ -1258,14 +1265,15 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">AI NPC</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
           <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
-            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/CyCedEBO_oA"
-              allowfullscreen></iframe>
+            <iframe class="youtubeIframe" style="width: 100%; height: 100%;"
+              src="https://www.youtube.com/embed/CyCedEBO_oA" allowfullscreen="true"
+              allowscriptaccess="always"></iframe>
           </div>
           <div class="button-group">
             <a href="https://github.com/TheWiselyBearded/ChatbotAvatarAI" class="btn btn-secondary" role="button"
@@ -1273,7 +1281,8 @@
               <i class="fas fa-code"></i>
             </a>
           </div>
-          <p>ChatbotAvatarAI is a dynamic Unity project that merges state-of-the-art technologies like OpenAI API, Azure
+          <p>I built ChatbotAvatarAI to serve as a starting Unity project for developers, merging state-of-the-art
+            technologies like OpenAI API, Azure
             Voice API, Google Cloud Speech to Text, and Oculus Lip Sync to craft an interactive AI-based chatbot
             interface.</p>
           </br>
@@ -1297,14 +1306,15 @@
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">The Smell Engine</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
           <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
-            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/vV36-LQbsOU"
-              allowfullscreen></iframe>
+            <iframe class="youtubeIframe" style="width: 100%; height: 100%;"
+              src="https://www.youtube.com/embed/vV36-LQbsOU" allowfullscreen="true"
+              allowscriptaccess="always"></iframe>
           </div>
           <div class="button-group">
             <a href="https://github.com/asu-meteor/The-Smell-Engine" class="btn btn-secondary" role="button"
@@ -1321,7 +1331,9 @@
             </a>
           </div>
           <p>The Smell Engine is a design framework and software/hardware system that presents users with a real-time
-            physical odor synthesis of virtual smells. </p>
+            physical odor synthesis of virtual smells. As project lead, I engineered the system closely with
+            collaborator Dr. Rick Gerkin, conducted system and user studies, and open-sourced the system.
+          </p>
           </br>
           <img src="https://meteor.ame.asu.edu/projects/smell-engine/images/Smell_Engine_Diagram.png"
             alt="Smell Engine System Design">
@@ -1344,21 +1356,22 @@
     </div>
   </div>
 
-  <!-- SMELL ENGINE -->
+  <!-- VSS -->
   <div class="modal fade" id="vssModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLongTitle">Volumetric Streaming Systems</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body d-flex flex-column align-items-center">
           <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
-            <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/a137i1YR2Os"
-              allowfullscreen></iframe>
+            <iframe class="youtubeIframe" style="width: 100%; height: 100%;"
+              src="https://www.youtube.com/embed/a137i1YR2Os" allowfullscreen="true"
+              allowscriptaccess="always"></iframe>
           </div>
           <div class="button-group">
             <a href="https://dl.acm.org/doi/abs/10.1145/3498361.3538660" class="btn btn-primary" target="_blank">
@@ -1368,23 +1381,31 @@
           <p>
             We introduce an AI- and edge-assisted Volumetric Streaming System (VSS) designed to distribute high-quality
             volumetric data between two endpoints efficiently. This research project focuses on creating an intelligent,
-            multi-process,
-            scheduling system that streamlines data filters and processes across multiple data streams.
+            multi-process, scheduling system to streamlines data manipulation with multiple data streams.
+            As lead researcher, I built
+            i) the core framework for feeding in data and transmitting it across the network, ii) a testing tool for
+            collecting and visualizing system metrics, iii) a set of WPF, Python, and Unity applications to use the
+            system in different runtime configurations, and iv) an API for other teams to
+            experiment with our framework.
           </p>
           </br>
           <img src="img/vss-system.jpg" alt="Smell Engine System Design">
           <p>
-            VSS supports reconfigurable network architecture (e.g., p2p, server/client), and streams volumetric data from
+            VSS supports reconfigurable network architecture (e.g., p2p, server/client), and streams volumetric data
+            from
             clients to a recipient client via WebRTC for Python and SipSorcery for .NET. The receiver, built in Unity,
             processes and visualizes the incoming volumetric data, supporting the use of the Kinect device in both
-            Python and .NET settings for the streaming of high-definition volumetric data. 
+            Python and .NET settings for the streaming of high-definition volumetric data.
           </p>
           </br>
           <img class="modal-image" src="img/vssStyle.gif" alt="Smell Engine System Design">
           <p>
-            As a starting prototype, we built a pipeline that incorporated body tracking models to single out human subjects within the RGBD frames, allowing us to
-            discard non-essential pixels and prioritize regions of interest, thereby optimizing subsequent processing steps.
-            Additionally, style transfer models are used to enhance the visual aesthetics of the RGB frames (and also showing the bottlenecks with such filter combinations).
+            As a starting prototype, we built a pipeline that incorporated body tracking models to single out human
+            subjects within the RGBD frames, allowing us to
+            discard non-essential pixels and prioritize regions of interest, thereby optimizing subsequent processing
+            steps.
+            Additionally, style transfer models are used to enhance the visual aesthetics of the RGB frames (and also
+            showing the bottlenecks with such filter combinations).
           </p>
         </div>
       </div>
@@ -1444,7 +1465,42 @@
     });
 
 
+    // Get all modal close buttons
+    const closeButtons = document.querySelectorAll('.closeButton');
 
+    // Add event listener to each modal close button
+    closeButtons.forEach(function (closeButton) {
+      closeButton.addEventListener('click', function () {
+        // Pause the YouTube video when the modal is closed
+        console.log("closing video");
+        $("iframe").each(function () {
+          var src = $(this).attr('src');
+          $(this).attr('src', src);
+        });
+
+      });
+    });
+
+    // Get all modal containers
+    const modalContainers = document.querySelectorAll('.modal');
+
+    // Add event listener to each modal container
+    modalContainers.forEach(function (modalContainer) {
+      modalContainer.addEventListener('click', function (event) {
+        // Check if the click event occurred outside of the modal content area
+        if (!event.target.closest('.modal-content')) {
+          // Pause the YouTube video when the user clicks outside of the modal
+          // const iframe = modalContainer.querySelector('.youtubeIframe');
+          // const player = players[iframe.dataset.videoId];
+          // player.pauseVideo();
+          console.log("closing video");
+          $("iframe").each(function () {
+            var src = $(this).attr('src');
+            $(this).attr('src', src);
+          });
+        }
+      });
+    });
   </script>
 
   <!-- Optional JavaScript -->
