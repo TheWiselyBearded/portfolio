@@ -285,6 +285,58 @@
       </div>
     </div> -->
 
+    <div class="container">
+      <div class="row card-row">
+        <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+          <div class="card" data-year="2024" style="width: 18rem;">
+            <img class="card-img-top" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDdhbDQzb2J4bHcyd2Vvbm1wMnM4dzEwMGdoeHZ6dmY5ZDc0MTJqYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LU0p0KHNLkpssMX1sC/giphy.gif" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Volumetric Video Editor</h5>
+              <p class="card-text">A spatial, volumetric video editing and streaming system for Quest and iOS.</p>
+              <div class="d-flex justify-content-end gap-4">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#vvespModal">
+                  <i class="fas fa-expand-arrows-alt icon-color"></i>
+                </button>
+                <!-- <a href="#" class="btn btn-primary">
+                    <i class="fas fa-code"></i>
+                  </a> -->
+                  <a href="https://www.linkedin.com/posts/alirezabahremand_augmentedreality-virtualreality-quest3-activity-7135665169048760321-IaIj?utm_source=share&utm_medium=member_desktop" class="btn btn-primary" target="_blank">
+                    <i class="fas fa-video icon-color"></i>
+                  </a>
+                <!-- <a href="#" class="btn btn-primary">
+                  <i class="fas fa-video icon-color"></i>
+                </a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+          <div class="card" data-year="2024" style="width: 18rem;">
+            <img class="card-img-top" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDJoaW9mNDd0czBncW8zbmM4eWdtcHo4enR0ZjIycXU5NWJqYW4yeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Alzjo2rA9rtpH0XsYz/giphy.gif" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">SBS Generator</h5>
+              <p class="card-text">A Mono to SBS Video Generator.</p>
+              <div class="d-flex justify-content-end gap-4">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sbsModal">
+                  <i class="fas fa-expand-arrows-alt icon-color"></i>
+                </button>
+                <!-- <a href="#" class="btn btn-primary">
+                    <i class="fas fa-code"></i>
+                  </a> -->
+                  <a href="https://www.linkedin.com/posts/alirezabahremand_virtualreality-mixedreality-spatialcomputing-activity-7150546795348025344-zxoZ?utm_source=share&utm_medium=member_desktop" class="btn btn-primary" target="_blank">
+                    <i class="fas fa-video icon-color"></i>
+                  </a>
+                <!-- <a href="#" class="btn btn-primary">
+                  <i class="fas fa-video icon-color"></i>
+                </a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
   <div class="container">
     <div class="row card-row">
@@ -1068,6 +1120,76 @@
     </div>
   </div>
 
+  <!-- VVESP -->
+  <div class="modal fade" id="vvespModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Volumetric Video Editing and Streaming</h5>
+          <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center">
+          <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
+            <iframe class="youtubeIframe" style="width: 100%; height: 100%;"
+              src="https://www.youtube.com/embed/pi86lBCggDs" allowfullscreen="true"
+              allowscriptaccess="always"></iframe>
+          </div>
+          <div class="button-group">
+            <a href="https://github.com/TheWiselyBearded/VVESP" class="btn btn-secondary" role="button"
+              target="_blank">
+              <i class="fas fa-code"></i>
+            </a>
+          </div>
+          <p>Composed of a 3D video editor, and a simple streaming/playback system, my hope is to 1) provide developers with a simple framework to create 3D movies using consumer devices (i.e., iPhone, Quest), and 2) use it to make my own 3D movies. 
+            The goal is to provide a seamless experience in manipulating 3D videos, adding effects, and merging them with virtual environments.
+            Under the hood, the system is built with various Unity frameworks and SDKs like Barracuda, URP, VFX Graph, Quest Integration, and ARKit. 
+            Key influences include work by Keijiro Takahashi and Marek Simonik, my work stems from their work. 
+            I’ve ported existing libraries to the Quest platform and written custom C++ libraries — loaded as linked libraries — to enhance performance for various tasks. 
+            The editor features multi-track support with customizable VFX graphs for various data types like voxels and point clouds. 
+            It offers flexible control over visual (# of particles, size of particles) and temporal properties (how frequently frames are updated).             
+            Users benefit from features like body segmentation and the ability to merge 3D videos with advanced cropping tools.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SBS -->
+  <div class="modal fade" id="sbsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">SBS Generator</h5>
+          <button type="button" class="close closeButton" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body d-flex flex-column align-items-center">
+          <div style="width: 90%; height: 200px;" class="d-flex align-items-center justify-content-center">
+            <iframe class="youtubeIframe" style="width: 100%; height: 100%;"
+              src="https://www.youtube.com/embed/lV_cto9JMc0" allowfullscreen="true"
+              allowscriptaccess="always"></iframe>
+          </div>
+          <div class="button-group">
+            <a href="https://github.com/TheWiselyBearded/sbs-generator" class="btn btn-secondary" role="button"
+              target="_blank">
+              <i class="fas fa-code"></i>
+            </a>
+          </div>
+          <p>Introducing a simple 2D-to-3D stereo (sbs) video generator. Make any normal video 3D and viewable on a Quest. 
+
+            All processed on a local home PC, this framework utilizes a combination of image processing techniques and depth map predictions to generate separate views for each eye, creating a 3D effect when viewed with appropriate hardware.
+            I made a simple Jupyter Notebook that people can run to generate and upload a sbs video directly to Quest. Dev can use whatever depth model (I tested with PatchFusion and Marigold).
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- MIXED REALITY MEMORIES -->
   <div class="modal fade" id="memoriesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
     aria-hidden="true">
@@ -1442,12 +1564,12 @@
 
     // Check and update button status based on current year
     function checkButtonStatus() {
-      upButton.disabled = (currentYear >= 2023);
+      upButton.disabled = (currentYear >= 2024);
       downButton.disabled = (currentYear <= 2019);
     }
 
     upButton.addEventListener('click', function () {
-      if (currentYear < 2023) {
+      if (currentYear < 2024) {
         currentYear++;
         yearDisplay.textContent = currentYear;
         filterCards(currentYear);
