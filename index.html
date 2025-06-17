@@ -25,8 +25,10 @@
     }
 
     .card-row {
-      /* margin-bottom: 20px; */
-      /* Adjust the value as per your desired vertical space */
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch; /* Make all cards in a row the same height */
+      /* margin-bottom: 24px; */ /* Add vertical spacing between rows */
     }
 
     .icon-color {
@@ -60,11 +62,17 @@
     }
 
     .card {
-      border: none;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-      transition: box-shadow 0.3s ease;
-      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 12px;
+      transform: scale(0.8);
+      overflow: hidden;
+      /* Remove fixed height */
+      height: auto;
+      flex: 1 1 0;
+      /* width: 13rem; */ /* Reduce width from 18rem to about 13rem (about 30% smaller) */
+      /* max-width: 100%; */
+      margin:-30px 40px;   /* Add horizontal spacing between cards */
     }
 
     .card:hover {
@@ -83,16 +91,8 @@
 
     .card-text {
       margin-bottom: 0.5rem;
-      /* originally 1.5 */
       font-size: 14px;
-      /* Adjust the font size to the desired value */
-    }
-
-    .card {
-      display: flex;
-      flex-direction: column;
-      border-radius: 12px;
-      overflow: hidden;
+      /* Remove max-height, overflow, ellipsis, and webkit clamp */
     }
 
     .card-img-top {
@@ -287,7 +287,27 @@
           </div>
         </div>
       </div>
-      
+
+      <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+        <div class="card" data-year="selected" style="width: 18rem;">
+          <img class="card-img-top" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXp0dDF5ZWJkdXJuYnRpOW5iejFwc205OWI5MGtyazBudm9oMjZ0MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8HghC5bv6iEGFY4P5x/giphy.gif" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Flaivor</h5>
+            <p class="card-text">A mixed-reality AI cooking assistant and the 2024 Presence Platform Digital Hackathon Winner. Flaivor allows users to take a photo of their ingredients or verbally tell an AI named Martha what they have, and then provides interactive, real-time cooking guidance through mixed reality on Meta Quest devices.</p>
+            <div class="d-flex justify-content-end gap-4">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#flaivorModal">
+                <i class="fas fa-expand-arrows-alt icon-color"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row card-row">
       <div class="col-sm-12 col-md-6 d-flex justify-content-center">
         <div class="card" data-year="selected" style="width: 18rem;">
           <img class="card-img-top" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDdhbDQzb2J4bHcyd2Vvbm1wMnM4dzEwMGdoeHZ6dmY5ZDc0MTJqYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LU0p0KHNLkpssMX1sC/giphy.gif" alt="Card image cap">
@@ -301,25 +321,6 @@
               <a href="https://www.linkedin.com/posts/alirezabahremand_augmentedreality-virtualreality-quest3-activity-7135665169048760321-IaIj?utm_source=share&utm_medium=member_desktop" class="btn btn-primary" target="_blank">
                 <i class="fas fa-video icon-color"></i>
               </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row card-row">
-      <div class="col-sm-12 col-md-6 d-flex justify-content-center">
-        <div class="card" data-year="selected" style="width: 18rem;">
-          <img class="card-img-top" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXp0dDF5ZWJkdXJuYnRpOW5iejFwc205OWI5MGtyazBudm9oMjZ0MSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/8HghC5bv6iEGFY4P5x/giphy.gif" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Flaivor</h5>
-            <p class="card-text">A mixed-reality AI cooking assistant and the 2024 Presence Platform Digital Hackathon Winner. Flaivor allows users to take a photo of their ingredients or verbally tell an AI named Martha what they have, and then provides interactive, real-time cooking guidance through mixed reality on Meta Quest devices.</p>
-            <div class="d-flex justify-content-end gap-4">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#flaivorModal">
-                <i class="fas fa-expand-arrows-alt icon-color"></i>
-              </button>
             </div>
           </div>
         </div>
