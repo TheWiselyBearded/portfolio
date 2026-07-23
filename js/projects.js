@@ -382,7 +382,11 @@ const PROJECTS = [
     thumb: "img/flaivorThumbnail.gif",
     blurb:
       "A mixed-reality AI cooking assistant on Quest, and winner of Meta's 2024 Presence Platform Hackathon — photograph your ingredients and get real-time cooking guidance.",
-    links: [],
+    links: [
+      { type: "code", url: "https://github.com/TheWiselyBearded/Flaivor", label: "Code" },
+      { type: "site", url: "https://devpost.com/software/spatial-agents", label: "Devpost" },
+      { type: "news", url: "https://developers.meta.com/horizon/blog/presence-platform-2024-digital-hackathon-winners-meta-quest/", label: "Meta announcement" },
+    ],
     media: { type: "youtube", src: "ty51mfmloTA" },
     body: [
       "Flaivor is a mixed-reality AI cooking assistant and the 2024 Presence Platform Digital Hackathon Winner. Users take a photo of their ingredients or verbally tell an AI named Martha what they have, and receive interactive, real-time cooking guidance through mixed reality on Meta Quest devices.",
