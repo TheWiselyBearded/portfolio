@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#999"/>
+    </marker>
+  </defs>
+  <rect width="680" height="300" fill="#ffffff"/>
+
+  <!-- Inference loop -->
+  <rect x="20" y="52" width="180" height="84" rx="8" fill="#f7f7f7" stroke="#d9d9d9"/>
+  <text x="110" y="76" font-size="12.5" font-weight="600" fill="#333" text-anchor="middle">Unity 6 simulation</text>
+  <text x="110" y="95" font-size="10.5" fill="#777" text-anchor="middle">G1 · H1 · GR-1 · WidowX</text>
+  <text x="110" y="110" font-size="10.5" fill="#777" text-anchor="middle">camera obs + proprioception</text>
+  <text x="110" y="125" font-size="10.5" fill="#777" text-anchor="middle">URDF import · frame conversion</text>
+
+  <rect x="480" y="52" width="180" height="84" rx="8" fill="#f7f7f7" stroke="#d9d9d9"/>
+  <text x="570" y="76" font-size="12.5" font-weight="600" fill="#333" text-anchor="middle">VLA policy server</text>
+  <text x="570" y="95" font-size="10.5" fill="#777" text-anchor="middle">GR00T N1.7 · LingBot</text>
+  <text x="570" y="110" font-size="10.5" fill="#777" text-anchor="middle">OpenVLA-7B</text>
+  <text x="570" y="125" font-size="10.5" fill="#777" text-anchor="middle">DGX Spark · Lambda GPU</text>
+
+  <!-- one shared protocol between them -->
+  <line x1="200" y1="78" x2="480" y2="78" stroke="#4a7db5" stroke-width="1.7" marker-end="url(#arr)"/>
+  <text x="340" y="70" font-size="10" fill="#4a7db5" text-anchor="middle" font-style="italic">camera obs + state  (one JSON WebSocket protocol)</text>
+  <line x1="480" y1="112" x2="200" y2="112" stroke="#4a7db5" stroke-width="1.7" marker-end="url(#arr)"/>
+  <text x="340" y="128" font-size="10" fill="#4a7db5" text-anchor="middle" font-style="italic">action chunks — absolute joint targets / EE deltas</text>
+
+  <!-- Data + fine-tune loop -->
+  <rect x="20" y="206" width="180" height="66" rx="8" fill="#4a7db5"/>
+  <text x="110" y="232" font-size="12" font-weight="600" fill="#fff" text-anchor="middle">EpisodeRecorder</text>
+  <text x="110" y="250" font-size="10" fill="#dce8f5" text-anchor="middle">decoupled from control source:</text>
+  <text x="110" y="263" font-size="10" fill="#dce8f5" text-anchor="middle">policy · keyboard · XR teleop</text>
+
+  <rect x="250" y="206" width="160" height="66" rx="8" fill="#f7f7f7" stroke="#d9d9d9"/>
+  <text x="330" y="234" font-size="12" font-weight="600" fill="#333" text-anchor="middle">LeRobot / RLDS</text>
+  <text x="330" y="253" font-size="10" fill="#777" text-anchor="middle">N-dim episodes → dataset</text>
+
+  <rect x="480" y="206" width="180" height="66" rx="8" fill="#f7f7f7" stroke="#d9d9d9"/>
+  <text x="570" y="234" font-size="12" font-weight="600" fill="#333" text-anchor="middle">Fine-tune</text>
+  <text x="570" y="253" font-size="10" fill="#777" text-anchor="middle">GR00T / LoRA on the Spark</text>
+
+  <path d="M 90 136 L 90 206" fill="none" stroke="#999" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="72" y="174" font-size="10" fill="#888" text-anchor="end" font-style="italic">record</text>
+  <line x1="200" y1="239" x2="250" y2="239" stroke="#999" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="410" y1="239" x2="480" y2="239" stroke="#999" stroke-width="1.5" marker-end="url(#arr)"/>
+  <path d="M 590 206 L 590 136" fill="none" stroke="#999" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="600" y="174" font-size="10" fill="#888" text-anchor="start" font-style="italic">deploy</text>
+</svg>

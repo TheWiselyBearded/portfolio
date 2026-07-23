@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#999"/>
+    </marker>
+  </defs>
+  <rect width="680" height="300" fill="#ffffff"/>
+
+  <rect x="10" y="90" width="150" height="86" rx="8" fill="#f7f7f7" stroke="#d9d9d9"/>
+  <text x="85" y="113" font-size="12.5" font-weight="600" fill="#333" text-anchor="middle">VITURE Luma Ultra</text>
+  <text x="85" y="132" font-size="10.5" fill="#777" text-anchor="middle">stereo cameras</text>
+  <text x="85" y="147" font-size="10.5" fill="#777" text-anchor="middle">6DoF pose (Carina VIO)</text>
+  <text x="85" y="162" font-size="10.5" fill="#777" text-anchor="middle">hand tracking</text>
+
+  <rect x="195" y="90" width="140" height="86" rx="8" fill="#f7f7f7" stroke="#d9d9d9"/>
+  <text x="265" y="113" font-size="12.5" font-weight="600" fill="#333" text-anchor="middle">Mac bridge</text>
+  <text x="265" y="132" font-size="10.5" fill="#777" text-anchor="middle">frame–pose sync</text>
+  <text x="265" y="147" font-size="10.5" fill="#777" text-anchor="middle">fisheye calibration</text>
+  <text x="265" y="162" font-size="10.5" fill="#777" text-anchor="middle">Unity 6 client</text>
+
+  <rect x="370" y="90" width="140" height="86" rx="8" fill="#4a7db5"/>
+  <text x="440" y="113" font-size="12.5" font-weight="600" fill="#fff" text-anchor="middle">GPU inference</text>
+  <text x="440" y="132" font-size="10.5" fill="#dce8f5" text-anchor="middle">MASt3R · Depth Anything 3</text>
+  <text x="440" y="147" font-size="10.5" fill="#dce8f5" text-anchor="middle">FastAPI · cloud GPU</text>
+  <text x="440" y="162" font-size="10.5" fill="#dce8f5" text-anchor="middle">Cloudflare tunnel</text>
+
+  <rect x="545" y="90" width="125" height="86" rx="8" fill="#f7f7f7" stroke="#d9d9d9"/>
+  <text x="607" y="113" font-size="12.5" font-weight="600" fill="#333" text-anchor="middle">Dense 3D map</text>
+  <text x="607" y="132" font-size="10.5" fill="#777" text-anchor="middle">point clouds</text>
+  <text x="607" y="147" font-size="10.5" fill="#777" text-anchor="middle">4D Gaussian splats</text>
+  <text x="607" y="162" font-size="10.5" fill="#777" text-anchor="middle">relocalization</text>
+
+  <!-- Outputs -->
+  <rect x="195" y="222" width="200" height="56" rx="8" fill="#f7f7f7" stroke="#d9d9d9"/>
+  <text x="295" y="245" font-size="12.5" font-weight="600" fill="#333" text-anchor="middle">Robot control</text>
+  <text x="295" y="263" font-size="10.5" fill="#777" text-anchor="middle">Reachy Mini — raycast · follow · look-at</text>
+
+  <rect x="440" y="222" width="230" height="56" rx="8" fill="#f7f7f7" stroke="#d9d9d9"/>
+  <text x="555" y="245" font-size="12.5" font-weight="600" fill="#333" text-anchor="middle">In-headset playback</text>
+  <text x="555" y="263" font-size="10.5" fill="#777" text-anchor="middle">AR overlays · 4DGS video on the glasses</text>
+
+  <!-- Arrows -->
+  <line x1="160" y1="133" x2="195" y2="133" stroke="#999" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="335" y1="133" x2="370" y2="133" stroke="#999" stroke-width="1.5" marker-end="url(#arr)"/>
+  <text x="352" y="123" font-size="10" fill="#888" text-anchor="middle" font-style="italic"> </text>
+  <line x1="510" y1="133" x2="545" y2="133" stroke="#999" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <path d="M 607 176 L 607 200 L 555 200 L 555 222" fill="none" stroke="#999" stroke-width="1.5" marker-end="url(#arr)"/>
+  <path d="M 570 195 L 295 195 L 295 222" fill="none" stroke="#999" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <!-- pose label above -->
+  <path d="M 85 90 L 85 40 L 440 40 L 440 90" fill="none" stroke="#c5c5c5" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#arr)"/>
+  <text x="262" y="32" font-size="10" fill="#888" text-anchor="middle" font-style="italic">onboard pose anchors world-frame registration</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 290" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 9 5 L 0 9 z" fill="#999"/>
+    </marker>
+  </defs>
+  <rect width="680" height="290" fill="#ffffff"/>
+
+  <rect x="20" y="30" width="150" height="80" rx="8" fill="#f7f7f7" stroke="#d9d9d9"/>
+  <text x="95" y="53" font-size="12.5" font-weight="600" fill="#333" text-anchor="middle">Course materials</text>
+  <text x="95" y="72" font-size="10.5" fill="#777" text-anchor="middle">syllabus · readings</text>
+  <text x="95" y="87" font-size="10.5" fill="#777" text-anchor="middle">chunked &amp; embedded</text>
+
+  <rect x="20" y="150" width="150" height="80" rx="8" fill="#f7f7f7" stroke="#d9d9d9"/>
+  <text x="95" y="173" font-size="12.5" font-weight="600" fill="#333" text-anchor="middle">Students · TAs · profs</text>
+  <text x="95" y="192" font-size="10.5" fill="#777" text-anchor="middle">questions · study guides</text>
+  <text x="95" y="207" font-size="10.5" fill="#777" text-anchor="middle">per-role views</text>
+
+  <rect x="220" y="30" width="200" height="90" rx="8" fill="#f7f7f7" stroke="#d9d9d9"/>
+  <text x="320" y="53" font-size="12.5" font-weight="600" fill="#333" text-anchor="middle">Course Brain</text>
+  <text x="320" y="72" font-size="10.5" fill="#777" text-anchor="middle">concept knowledge graph</text>
+  <text x="320" y="87" font-size="10.5" fill="#777" text-anchor="middle">isolated student learning graph</text>
+  <text x="320" y="102" font-size="10.5" fill="#777" text-anchor="middle">confusion-event tracking</text>
+
+  <rect x="220" y="150" width="200" height="90" rx="8" fill="#4a7db5"/>
+  <text x="320" y="173" font-size="12.5" font-weight="600" fill="#fff" text-anchor="middle">Grounded RAG</text>
+  <text x="320" y="192" font-size="10.5" fill="#dce8f5" text-anchor="middle">retrieval + refusal gate —</text>
+  <text x="320" y="207" font-size="10.5" fill="#dce8f5" text-anchor="middle">won't answer beyond course context</text>
+  <text x="320" y="222" font-size="10.5" fill="#dce8f5" text-anchor="middle">structured outputs (Pydantic)</text>
+
+  <rect x="470" y="30" width="190" height="90" rx="8" fill="#f7f7f7" stroke="#d9d9d9"/>
+  <text x="565" y="53" font-size="12.5" font-weight="600" fill="#333" text-anchor="middle">Provider-neutral models</text>
+  <text x="565" y="72" font-size="10.5" fill="#777" text-anchor="middle">Claude · GPT · Gemini · stub</text>
+  <text x="565" y="87" font-size="10.5" fill="#777" text-anchor="middle">one ChatModel abstraction</text>
+  <text x="565" y="102" font-size="10.5" fill="#777" text-anchor="middle">provider-parity test suite</text>
+
+  <rect x="470" y="150" width="190" height="90" rx="8" fill="#f7f7f7" stroke="#d9d9d9"/>
+  <text x="565" y="173" font-size="12.5" font-weight="600" fill="#333" text-anchor="middle">Audit log</text>
+  <text x="565" y="192" font-size="10.5" fill="#777" text-anchor="middle">append-only, every retrieval,</text>
+  <text x="565" y="207" font-size="10.5" fill="#777" text-anchor="middle">refusal, generation &amp;</text>
+  <text x="565" y="222" font-size="10.5" fill="#777" text-anchor="middle">state change</text>
+
+  <line x1="170" y1="70" x2="220" y2="70" stroke="#999" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="170" y1="190" x2="220" y2="190" stroke="#999" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="320" y1="150" x2="320" y2="120" stroke="#999" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="420" y1="180" x2="470" y2="90" stroke="#999" stroke-width="1.5" marker-end="url(#arr)" marker-start="url(#arr)"/>
+  <line x1="420" y1="200" x2="470" y2="195" stroke="#999" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <text x="340" y="270" font-size="10.5" fill="#888" text-anchor="middle" font-style="italic">FastAPI · SQLAlchemy · pgvector — every provider must satisfy the same output contract</text>
+</svg>
