@@ -57,12 +57,14 @@ const PROJECTS = [
     blurb:
       "A Meta Quest / Viture headset as an embodied teleop client — head, hands, and pointing retargeted onto humanoid robots and a Reachy Mini, to collect demonstration data.",
     links: [],
-    media: { type: "video", src: "img/xrTeleop.mp4", poster: "img/xrTeleopPoster.jpg" },
+    media: { type: "video", src: "img/xrTeleopQuest.mp4", poster: "img/xrTeleopQuestPoster.jpg" },
     body: [
       "Fine-tuning a robot policy needs demonstrations, and the cleanest way to give a humanoid a demonstration is to inhabit it. This bridge turns an XR headset into an embodied controller: your head pose, native hand tracking, and pointing stream over the network to a host that retargets them onto a robot in real time, and you watch the result in passthrough — the demonstration side of the sim2real pipeline.",
       "A headset is quietly the ideal teleop sensor: it gives inside-out head pose, true metric 3D hand skeletons (not a monocular guess at depth), per-frame camera pose and intrinsics, and unambiguous handedness — all natively and in real units. The Quest build maps its OVRSkeleton into a MediaPipe-order landmark set and sends head + both hands as UDP pose packets; a host-side server runs finger-curl, arm-IK, and head retargeting onto Unitree H1/G1 or Fourier GR-1 joints.",
-      { video: "img/xrTeleop.mp4", poster: "img/xrTeleopPoster.jpg", caption: "Driving a Unitree humanoid in Unity live from Viture glasses — hand skeletons on the right retarget to the robot's arms on the left." },
+      { video: "img/xrTeleopQuest.mp4", poster: "img/xrTeleopQuestPoster.jpg", caption: "Quest 3 driving a Unitree H1 in Unity. Right: the retargeting view — the tracked body skeleton and the headset's scanned room, live. Left: the resulting robot motion in the simulated kitchen." },
+      { video: "img/xrTeleop.mp4", poster: "img/xrTeleopPoster.jpg", caption: "The Viture Luma Ultra sibling driving the same humanoid — hand skeletons on the right retarget to the robot's arms on the left." },
       "Raw episodes are the source of truth: the server records the verbatim pose packets plus per-frame validity and a calibration fingerprint, so any recording can be re-retargeted offline to a different robot layout — bit-exact on same-robot replays — and a quality gate rejects short, frozen, or tracking-loss demos before they reach the dataset converters. A second bridge drives a Reachy Mini in follow, hand, raycast, and gaze modes from the same headset. Built on Meta's Passthrough Camera API on Quest 3, with a Viture Luma Ultra sibling.",
+      { video: "img/xrTeleopQuestPov.mp4", poster: "img/xrTeleopQuestPovPoster.jpg", caption: "The operator's view inside the Quest: tracked hands in passthrough, a point-cloud digital twin of the real desk registered on top of it, and a raycast for pointing the robot at a target." },
     ],
   },
   {
